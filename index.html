@@ -597,22 +597,108 @@
             const letterDatabase = loadedLetterCache[letter] || {};
             const fullProfile = letterDatabase[t.slug] || {};
             
-            // Dynamically generate text strings for every variable key found in the object
-            let fullStatsOutput = "";
-            Object.entries(fullProfile).forEach(([key, value]) => {
-              // Format complex objects or arrays like actions or speed cleanly into readable text strings
-              if (typeof value === 'object' && value !== null) {
-                fullStatsOutput += `<strong>${key.toUpperCase()}:</strong> ${JSON.stringify(value)}<br>`;
-              } else {
-                fullStatsOutput += `<strong>${key.toUpperCase()}:</strong> ${value}<br>`;
-              }
-            });
+            // Helper function to safely format core values or arrays
+            const formatArrayItems = (arr) => {
+              if (!Array.isArray(arr) || arr.length === 0) return "None";
+              return arr.map(item => typeof item === 'string' ? item : JSON.stringify(item)).join(", ");
+            };
+
+            // Format speed map cleanly
+            let speedDisplay = "N/A";
+            if (fullProfile.speed && typeof fullProfile.speed === 'object') {
+              speedDisplay = Object.entries(fullProfile.speed).map(([k, v]) => `${k} ${v} ft.`).join(", ");
+            }
+
+            // Build out nested blocks for traits, actions, and legendary items
+            let traitsHTML = "";
+            if (Array.isArray(fullProfile.special_abilities)) {
+              fullProfile.special_abilities.forEach(ability => {
+                traitsHTML += `<p style="margin: 0 0 6px 0; font-size: 13px; text-indent: -10px; padding-left: 10px; color: #222;"><strong><em>${ability.name}.</em></strong> ${ability.desc}</p>`;
+              });
+            }
+
+            let actionsHTML = "";
+            if (Array.isArray(fullProfile.actions)) {
+              fullProfile.actions.forEach(act => {
+                actionsHTML += `<p style="margin: 0 0 8px 0; font-size: 13px; text-indent: -10px; padding-left: 10px; color: #222;"><strong><em>${act.name}.</em></strong> ${act.desc}</p>`;
+              });
+            }
+
+            let legendaryHTML = "";
+            if (Array.isArray(fullProfile.legendary_actions) && fullProfile.legendary_actions.length > 0) {
+              legendaryHTML += `
+                <h3 style="font-family: 'Georgia', serif; font-size: 18px; font-weight: normal; color: #7A200D; border-bottom: 1px solid #7A200D; margin: 10px 0 6px 0; padding-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Legendary Actions</h3>
+                <p style="font-size: 12px; font-style: italic; margin: 0 0 6px 0; color: #444;">The creature can take legendary actions, choosing from the options below...</p>
+              `;
+              fullProfile.legendary_actions.forEach(lact => {
+                legendaryHTML += `<p style="margin: 0 0 6px 0; font-size: 13px; text-indent: -10px; padding-left: 10px; color: #222;"><strong><em>${lact.name}.</em></strong> ${lact.desc}</p>`;
+              });
+            }
+
+            // Calculate standard dnd score modifiers dynamically
+            const getModStr = (score) => {
+              const val = parseInt(score) || 10;
+              const mod = Math.floor((val - 10) / 2);
+              return `${val} (${mod >= 0 ? '+' : ''}${mod})`;
+            };
 
             monsterListText += `
-              <div style="margin-bottom:20px; padding-bottom:15px; border-bottom:1px solid #000; font-size:11px;">
-                <h4 style="margin:0 0 5px 0;">[${t.role.toUpperCase()}] ${t.name} x${t.count} (CR ${t.challenge_rating || 0})</h4>
-                <div style="padding-left:10px; line-height:1.4;">
-                  ${fullStatsOutput}
+              <div class="stat-block-wrapper" style="background: #FDF1DC; font-family: 'Georgia', serif; padding: 20px; box-sizing: border-box; border: 1px solid #DDD; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border-top: 5px solid #7A200D; border-bottom: 5px solid #7A200D; margin-bottom: 30px; border-radius: 4px; overflow: hidden; page-break-inside: avoid;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+                  <h2 style="font-size: 28px; font-weight: bold; color: #7A200D; margin: 0; font-family: 'Georgia', serif; letter-spacing: -0.5px;">${fullProfile.name || t.name}</h2>
+                  <span style="font-size: 14px; font-weight: bold; color: #7A200D; font-family: sans-serif; background: rgba(122,32,13,0.08); padding: 3px 8px; border-radius: 4px;">[${t.role.toUpperCase()}] x${t.count}</span>
+                </div>
+                <div style="font-size: 12px; font-style: italic; color: #555; margin-bottom: 8px; text-transform: capitalize;">${fullProfile.size || "Medium"} ${fullProfile.type || "creature"}, ${fullProfile.alignment || "unaligned"}</div>
+                
+                <svg height="4" width="100%" style="margin: 4px 0;"><line x1="0" y1="0" x2="1000" y2="0" stroke="#7A200D" stroke-width="4" /></svg>
+                
+                <div style="font-size: 13px; color: #7A200D; line-height: 1.4; font-family: sans-serif;">
+                  <strong>Armor Class</strong> <span style="color:#222;">${fullProfile.armor_class || "10"}${fullProfile.armor_desc ? ' (' + fullProfile.armor_desc + ')' : ''}</span><br>
+                  <strong>Hit Points</strong> <span style="color:#222;">${fullProfile.hit_points || "9"} (${fullProfile.hit_dice || "1d8"})</span><br>
+                  <strong>Speed</strong> <span style="color:#222;">${speedDisplay}</span>
+                </div>
+                
+                <svg height="4" width="100%" style="margin: 6px 0;"><line x1="0" y1="0" x2="1000" y2="0" stroke="#7A200D" stroke-width="4" /></svg>
+                
+                <!-- Core Ability Attributes Table Box Frame -->
+                <table style="width: 100%; text-align: center; border-collapse: collapse; margin: 6px 0; font-family: sans-serif;">
+                  <thead>
+                    <tr style="color: #7A200D; font-size: 12px; font-weight: bold; letter-spacing: 0.5px;">
+                      <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="color: #222; font-size: 13px; font-weight: 500;">
+                      <td>${getModStr(fullProfile.strength)}</td>
+                      <td>${getModStr(fullProfile.dexterity)}</td>
+                      <td>${getModStr(fullProfile.constitution)}</td>
+                      <td>${getModStr(fullProfile.intelligence)}</td>
+                      <td>${getModStr(fullProfile.wisdom)}</td>
+                      <td>${getModStr(fullProfile.charisma)}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <svg height="4" width="100%" style="margin: 6px 0;"><line x1="0" y1="0" x2="1000" y2="0" stroke="#7A200D" stroke-width="4" /></svg>
+                
+                <div style="font-size: 13px; color: #7A200D; line-height: 1.4; font-family: sans-serif; margin-bottom: 10px;">
+                  ${fullProfile.perception ? `<strong>Skills</strong> <span style="color:#222;">Perception +${fullProfile.perception}</span><br>` : ''}
+                  <strong>Senses</strong> <span style="color:#222;">${fullProfile.senses || "Passive Perception 10"}</span><br>
+                  <strong>Languages</strong> <span style="color:#222;">${fullProfile.languages || "None"}</span><br>
+                  <strong>Challenge</strong> <span style="color:#222;">${fullProfile.challenge_rating || "0"} (${CR_XP_MAP[fullProfile.challenge_rating] || 0} XP)</span>
+                </div>
+                
+                <div class="traits-section" style="margin-top: 10px; font-family: sans-serif;">
+                  ${traitsHTML}
+                </div>
+                
+                <h3 style="font-family: 'Georgia', serif; font-size: 18px; font-weight: normal; color: #7A200D; border-bottom: 1px solid #7A200D; margin: 12px 0 6px 0; padding-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Actions</h3>
+                <div class="actions-section" style="font-family: sans-serif;">
+                  ${actionsHTML}
+                </div>
+                
+                <div class="legendary-section" style="font-family: sans-serif;">
+                  ${legendaryHTML}
                 </div>
               </div>`;
           });
