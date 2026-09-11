@@ -660,20 +660,52 @@
                 <svg height="4" width="100%" style="margin: 6px 0;"><line x1="0" y1="0" x2="1000" y2="0" stroke="#7A200D" stroke-width="4" /></svg>
                 
                 <!-- Core Ability Attributes Table Box Frame -->
-                <table style="width: 100%; text-align: center; border-collapse: collapse; margin: 6px 0; font-family: sans-serif;">
+                <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-family: sans-serif; font-size: 12px; color: #222;">
                   <thead>
-                    <tr style="color: #7A200D; font-size: 12px; font-weight: bold; letter-spacing: 0.5px;">
-                      <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                    <tr style="color: #7A200D; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; border-bottom: 1px solid #7A200D; text-align: left;">
+                      <th style="padding: 4px;">ABILITY</th>
+                      <th style="padding: 4px; text-align: center;">SCORE</th>
+                      <th style="padding: 4px; text-align: center;">MOD</th>
+                      <th style="padding: 4px; text-align: center;">SAVE</th>
+                      <th style="border-left: 1px solid #D8C7A8; padding: 4px 4px 4px 15px;">ABILITY</th>
+                      <th style="padding: 4px; text-align: center;">SCORE</th>
+                      <th style="padding: 4px; text-align: center;">MOD</th>
+                      <th style="padding: 4px; text-align: center;">SAVE</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr style="color: #222; font-size: 13px; font-weight: 500;">
-                      <td>${getModStr(fullProfile.strength)}</td>
-                      <td>${getModStr(fullProfile.dexterity)}</td>
-                      <td>${getModStr(fullProfile.constitution)}</td>
-                      <td>${getModStr(fullProfile.intelligence)}</td>
-                      <td>${getModStr(fullProfile.wisdom)}</td>
-                      <td>${getModStr(fullProfile.charisma)}</td>
+                    <tr style="border-bottom: 1px solid #EAD8B3;">
+                      <td style="padding: 5px 4px; font-weight: bold; color: #7A200D;">STR</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.strength || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.strength || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.strength || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.strength_save !== undefined) ? (fullProfile.strength_save >= 0 ? '+' : '') + fullProfile.strength_save : (Math.floor(((fullProfile.strength || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.strength || 10) - 10) / 2)}</td>
+                      
+                      <td style="border-left: 1px solid #D8C7A8; padding: 5px 4px 5px 15px; font-weight: bold; color: #7A200D;">INT</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.intelligence || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.intelligence || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.intelligence || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.intelligence_save !== undefined) ? (fullProfile.intelligence_save >= 0 ? '+' : '') + fullProfile.intelligence_save : (Math.floor(((fullProfile.intelligence || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.intelligence || 10) - 10) / 2)}</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #EAD8B3;">
+                      <td style="padding: 5px 4px; font-weight: bold; color: #7A200D;">DEX</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.dexterity || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.dexterity || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.dexterity || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.dexterity_save !== undefined) ? (fullProfile.dexterity_save >= 0 ? '+' : '') + fullProfile.dexterity_save : (Math.floor(((fullProfile.dexterity || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.dexterity || 10) - 10) / 2)}</td>
+                      
+                      <td style="border-left: 1px solid #D8C7A8; padding: 5px 4px 5px 15px; font-weight: bold; color: #7A200D;">WIS</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.wisdom || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.wisdom || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.wisdom || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.wisdom_save !== undefined) ? (fullProfile.wisdom_save >= 0 ? '+' : '') + fullProfile.wisdom_save : (Math.floor(((fullProfile.wisdom || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.wisdom || 10) - 10) / 2)}</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 5px 4px; font-weight: bold; color: #7A200D;">CON</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.constitution || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.constitution || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.constitution || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.constitution_save !== undefined) ? (fullProfile.constitution_save >= 0 ? '+' : '') + fullProfile.constitution_save : (Math.floor(((fullProfile.constitution || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.constitution || 10) - 10) / 2)}</td>
+                      
+                      <td style="border-left: 1px solid #D8C7A8; padding: 5px 4px 5px 15px; font-weight: bold; color: #7A200D;">CHA</td>
+                      <td style="padding: 5px 4px; text-align: center;">${fullProfile.charisma || 10}</td>
+                      <td style="padding: 5px 4px; text-align: center;">${(Math.floor(((fullProfile.charisma || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.charisma || 10) - 10) / 2)}</td>
+                      <td style="padding: 5px 4px; text-align: center; font-weight: 500;">${(fullProfile.charisma_save !== undefined) ? (fullProfile.charisma_save >= 0 ? '+' : '') + fullProfile.charisma_save : (Math.floor(((fullProfile.charisma || 10) - 10) / 2) >= 0 ? '+' : '') + Math.floor(((fullProfile.charisma || 10) - 10) / 2)}</td>
                     </tr>
                   </tbody>
                 </table>
