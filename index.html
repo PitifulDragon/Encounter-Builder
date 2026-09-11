@@ -597,33 +597,23 @@
             const letterDatabase = loadedLetterCache[letter] || {};
             const fullProfile = letterDatabase[t.slug] || {};
             
-            const ac = fullProfile.armor_class || "N/A";
-            const hp = fullProfile.hit_points || "N/A";
-            
-            let speedStr = "N/A";
-            if (fullProfile.speed && typeof fullProfile.speed === 'object') {
-              speedStr = Object.entries(fullProfile.speed)
-                .map(([type, val]) => `${type}: ${val}`)
-                .join(", ");
-            } else if (typeof fullProfile.speed === 'string') {
-              speedStr = fullProfile.speed;
-            }
-
-            const str = fullProfile.strength || 10;
-            const dex = fullProfile.dexterity || 10;
-            const con = fullProfile.constitution || 10;
-            const intel = fullProfile.intelligence || 10;
-            const wis = fullProfile.wisdom || 10;
-            const cha = fullProfile.charisma || 10;
+            // Dynamically generate text strings for every variable key found in the object
+            let fullStatsOutput = "";
+            Object.entries(fullProfile).forEach(([key, value]) => {
+              // Format complex objects or arrays like actions or speed cleanly into readable text strings
+              if (typeof value === 'object' && value !== null) {
+                fullStatsOutput += `<strong>${key.toUpperCase()}:</strong> ${JSON.stringify(value)}<br>`;
+              } else {
+                fullStatsOutput += `<strong>${key.toUpperCase()}:</strong> ${value}<br>`;
+              }
+            });
 
             monsterListText += `
-              <div style="margin-bottom:15px; padding-bottom:10px; border-bottom:1px dotted #000;">
-                <strong>[${t.role.toUpperCase()}] ${t.name} x${t.count}</strong> (CR ${t.challenge_rating || 0})<br>
-                <span style="font-size:12px;">
-                  <strong>AC:</strong> ${ac} | <strong>HP:</strong> ${hp} | <strong>Speed:</strong> ${speedStr}<br>
-                  <strong>Attributes:</strong> 
-                  STR: ${str} | DEX: ${dex} | CON: ${con} | INT: ${intel} | WIS: ${wis} | CHA: ${cha}
-                </span>
+              <div style="margin-bottom:20px; padding-bottom:15px; border-bottom:1px solid #000; font-size:11px;">
+                <h4 style="margin:0 0 5px 0;">[${t.role.toUpperCase()}] ${t.name} x${t.count} (CR ${t.challenge_rating || 0})</h4>
+                <div style="padding-left:10px; line-height:1.4;">
+                  ${fullStatsOutput}
+                </div>
               </div>`;
           });
 
