@@ -217,7 +217,7 @@
     let loadedLetterCache = {};
 
     window.fetchOnlineDropdownIndex = function() {
-      fetch(GITHUB_BASE_URL + "index.json")
+      fetch(GITHUB_BASE_URL + "alphabetical_data/index.json")
         .then(res => {
           if (!res.ok) throw new Error("Index file not found on GitHub");
           return res.json();
@@ -583,7 +583,7 @@
 
         const fetchPromises = requiredLetters.map(letter => {
           if (loadedLetterCache[letter]) return Promise.resolve();
-          return fetch(GITHUB_BASE_URL + letter + ".json")
+          return fetch(GITHUB_BASE_URL + "alphabetical_data/" + letter + ".json")
             .then(res => res.json())
             .then(fileData => { loadedLetterCache[letter] = fileData; })
             .catch(err => console.error("Could not fetch file for letter " + letter, err));
