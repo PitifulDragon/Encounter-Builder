@@ -1,0 +1,50 @@
+{
+  "jackal": {
+    "name": "Jackal",
+    "slug": "jackal",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 3,
+    "hit_dice": "1d6",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 8,
+    "strength_save": -1,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 90 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +1, reach 5 ft. Hit: 1 (1d4 \u2013 1) Piercing damage.",
+        "damage_dice": "1d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "quasit": {
+    "name": "Quasit",
+    "slug": "quasit",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 25,
+    "hit_dice": "10d4",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 5,
+    "strength_save": -3,
+    "dexterity": 17,
+    "dexterity_save": 3,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 7,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 10,
+    "charisma_save": 0,
+    "damage_resistances": [
+      "Cold",
+      "Fire",
+      "Lightning"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Darkvision 120 ft.; Passive Perception 10",
+    "languages": "Abyssal, Common",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Magic Resistance",
+        "desc": "The quasit has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage, and the target has the Poisoned condition until the start of the quasit\u2019s next turn.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Invisibility",
+        "desc": "The quasit casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
+      },
+      {
+        "name": "Scare (1/Day)",
+        "desc": "Wisdom Saving Throw: DC 10, one creature within 20 feet. Failure: The target has the Frightened condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn\u2019t transformed."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

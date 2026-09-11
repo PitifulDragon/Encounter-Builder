@@ -1,0 +1,2568 @@
+{
+  "swarm-of-crawling-claws": {
+    "name": "Swarm of Crawling Claws",
+    "slug": "swarm-of-crawling-claws",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny undead",
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 49,
+    "hit_dice": "11d8",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 4,
+    "charisma_save": -3,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Grappled",
+      "Incapacitated",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "senses": "Blindsight 30 ft.; Passive Perception 10",
+    "languages": "Understands Common but can\u2019t speak",
+    "challenge_rating": "3",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Swarm of Grasping Hands",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 20 (4d8 + 2) Necrotic damage, or 11 (2d8 + 2) Necrotic damage if the swarm is Bloodied. If the target is a Medium or smaller creature, it has the Prone condition. Cultists",
+        "damage_dice": "4d8",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "shrieker-fungus": {
+    "name": "Shrieker Fungus",
+    "slug": "shrieker-fungus",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "plant",
+    "alignment": "unaligned",
+    "armor_class": 5,
+    "armor_desc": "",
+    "initiative": -5,
+    "hit_points": 13,
+    "hit_dice": "3d8",
+    "speed": {
+      "walk": 5
+    },
+    "strength": 1,
+    "strength_save": -5,
+    "dexterity": 1,
+    "dexterity_save": -5,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 3,
+    "wisdom_save": -4,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft.; Passive Perception 6",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [],
+    "actions": [],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Shriek",
+        "desc": "Trigger: A creature or a source of Bright Light moves within 30 feet of the shrieker. Response: The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "steam-mephit": {
+    "name": "Steam Mephit",
+    "slug": "steam-mephit",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "elemental",
+    "alignment": "neutral evil",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 17,
+    "hit_dice": "5d6",
+    "speed": {
+      "walk": 30,
+      "fly": 30
+    },
+    "strength": 5,
+    "strength_save": -3,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 12,
+    "charisma_save": 1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "Primordial (Aquan, Ignan)",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Blurred Form",
+        "desc": "Attack rolls against the mephit are made with Disadvantage unless the mephit has the Incapacitated condition."
+      },
+      {
+        "name": "Death Burst",
+        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot"
+      },
+      {
+        "name": "Emanation originating from the mephit",
+        "desc": "Failure: 5 (2d4) Fire damage. Success: Half damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.",
+        "damage_dice": "1d4"
+      },
+      {
+        "name": "Steam Breath (Recharge 6)",
+        "desc": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target\u2019s Speed decreases by 10 feet until the end of the mephit\u2019s next turn. Success:",
+        "damage_dice": "2d4"
+      },
+      {
+        "name": "Half damage only",
+        "desc": "Failure or Success: Being underwater doesn\u2019t grant Resistance to this Fire damage. Merfolk"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "sahuagin-warrior": {
+    "name": "Sahuagin Warrior",
+    "slug": "sahuagin-warrior",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 22,
+    "hit_dice": "4d8 + 4",
+    "speed": {
+      "walk": 30,
+      "swim": 40
+    },
+    "strength": 13,
+    "strength_save": 1,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 9,
+    "charisma_save": -1,
+    "perception": 5,
+    "damage_resistances": [
+      "Acid",
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 15",
+    "languages": "Sahuagin",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Blood Frenzy",
+        "desc": "The sahuagin has Advantage on attack rolls against any creature that doesn\u2019t have all its Hit Points."
+      },
+      {
+        "name": "Limited Amphibiousness",
+        "desc": "The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water."
+      },
+      {
+        "name": "Shark Telepathy",
+        "desc": "The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The sahuagin makes two Claw attacks."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 1
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Aquatic Charge",
+        "desc": "The sahuagin swims up to its Swim Speed straight toward an enemy it can see."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "salamander": {
+    "name": "Salamander",
+    "slug": "salamander",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "elemental",
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 90,
+    "hit_dice": "12d10 + 24",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 12,
+    "charisma_save": 1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [
+      "Cold"
+    ],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "Primordial (Ignan)",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Fire Aura",
+        "desc": "At the end of each of the salamander\u2019s turns, each creature of the salamander\u2019s choice in a 5-foot Emanation originating from the salamander takes 7 (2d6) Fire damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The salamander makes two Flame"
+      },
+      {
+        "name": "Spear attacks",
+        "desc": "It can replace one attack with a use of Constrict."
+      },
+      {
+        "name": "Flame Spear",
+        "desc": "Melee or Ranged Attack Roll: +7, reach 5 ft. or range 20/60 ft. Hit: 13 (2d8 + 4) Piercing damage plus 7 (2d6) Fire damage. Hit or Miss: The spear magically returns to the salamander\u2019s hand immediately after a ranged attack.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Constrict",
+        "desc": "Strength Saving Throw: DC 15, one Large or smaller creature the salamander can see within 10 feet. Failure: 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Fire damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "satyr": {
+    "name": "Satyr",
+    "slug": "satyr",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fey",
+    "alignment": "chaotic neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 31,
+    "hit_dice": "7d8",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 12,
+    "strength_save": 1,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 14,
+    "charisma_save": 2,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 12",
+    "languages": "Common, Elvish, Sylvan",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Magic Resistance",
+        "desc": "The satyr has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Mockery",
+        "desc": "Wisdom Saving Throw: DC 12, one creature the satyr can see within 90 feet. Failure: 5 (1d6 + 2) Psychic damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "scout": {
+    "name": "Scout",
+    "slug": "scout",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 16,
+    "hit_dice": "3d8 + 3",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 11,
+    "strength_save": 0,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 11,
+    "charisma_save": 0,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 15",
+    "languages": "Common plus one other language",
+    "challenge_rating": "1/2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+      },
+      {
+        "name": "Shortsword",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Longbow",
+        "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "sea-hag": {
+    "name": "Sea Hag",
+    "slug": "sea-hag",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fey",
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 52,
+    "hit_dice": "7d8 + 21",
+    "speed": {
+      "walk": 30,
+      "swim": 40
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 13,
+    "charisma_save": 1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 11",
+    "languages": "Common, Giant, Primordial (Aquan)",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The hag can breathe air and water."
+      },
+      {
+        "name": "Coven Magic",
+        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell\u2019s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+      },
+      {
+        "name": "Vile Appearance",
+        "desc": "Wisdom Saving Throw: DC 11, any Beast or Humanoid that starts its turn within 30 feet of the hag and can see the hag\u2019s true form. Failure: The target has the Frightened condition until the start of its next turn. Success: The target is immune to this hag\u2019s Vile Appearance for 24 hours."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Death Glare (Recharge 5\u20136)",
+        "desc": "Wisdom Saving Throw: DC 11, one Frightened creature the hag can see within 30 feet. Failure: If the target has 20 Hit Points or fewer, it drops to 0 Hit Points. Otherwise, the target takes 13 (3d8) Psychic damage.",
+        "damage_dice": "3d8"
+      },
+      {
+        "name": "Illusory Appearance",
+        "desc": "The hag casts Disguise Self, using Constitution as the spellcasting ability (spell save DC 13). The spell\u2019s duration is 24 hours."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "shadow": {
+    "name": "Shadow",
+    "slug": "shadow",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 27,
+    "hit_dice": "5d8 + 5",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 6,
+    "strength_save": -2,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 8,
+    "charisma_save": -1,
+    "damage_resistances": [
+      "Acid",
+      "Cold",
+      "Fire",
+      "Lightning",
+      "Thunder"
+    ],
+    "damage_vulnerabilities": [
+      "Radiant"
+    ],
+    "damage_immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Unconscious"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Amorphous",
+        "desc": "The shadow can move through a space as narrow as 1 inch without expending extra movement to do so."
+      },
+      {
+        "name": "Sunlight Weakness",
+        "desc": "While in sunlight, the shadow has Disadvantage on D20 Tests."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Draining Swipe",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target\u2019s Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shadow Stealth",
+        "desc": "While in Dim Light or Darkness, the shadow takes the Hide action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "shambling-mound": {
+    "name": "Shambling Mound",
+    "slug": "shambling-mound",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "plant",
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 110,
+    "hit_dice": "13d10 + 39",
+    "speed": {
+      "walk": 30,
+      "swim": 20
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [
+      "Cold",
+      "Fire"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning"
+    ],
+    "condition_immunities": [
+      "Deafened",
+      "Exhaustion"
+    ],
+    "senses": "Blindsight 60 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Lightning Absorption",
+        "desc": "Whenever the shambling mound is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The shambling mound makes three"
+      },
+      {
+        "name": "Charged Tendril attacks",
+        "desc": "It can replace one attack with a use of Engulf."
+      },
+      {
+        "name": "Charged Tendril",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Lightning damage. If the target is a Medium or smaller creature, the shambling mound pulls the target 5 feet straight toward itself.",
+        "damage_dice": "1d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Engulf",
+        "desc": "Strength Saving Throw: DC 15, one Medium or smaller creature within 5 feet. Failure: The target is pulled into the shambling mound\u2019s space and has the"
+      },
+      {
+        "name": "Grappled condition (escape DC 14)",
+        "desc": "Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (3d6) Lightning damage at the start of each of its turns. When the shambling mound moves, the Grappled target moves with it, costing it no extra movement. The shambling mound can have only one creature Grappled by this action at a time.",
+        "damage_dice": "3d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "shield-guardian": {
+    "name": "Shield Guardian",
+    "slug": "shield-guardian",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "construct",
+    "alignment": "unaligned",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 142,
+    "hit_dice": "15d10 + 60",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 7,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned"
+    ],
+    "senses": "Blindsight 10 ft., Darkvision 60 ft.;",
+    "languages": "Understands commands given in any language",
+    "challenge_rating": "7",
+    "special_abilities": [
+      {
+        "name": "Bound",
+        "desc": "The guardian is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet\u2019s wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet\u2019s wearer, half of any damage the wearer takes (round up) is transferred to the guardian."
+      },
+      {
+        "name": "Regeneration",
+        "desc": "The guardian regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+      },
+      {
+        "name": "Spell Storing",
+        "desc": "A spellcaster who wears the guardian\u2019s amulet can cause the guardian to store one spell of level 4 or lower. To do so, the wearer must cast the spell on the guardian while within 5 feet of it. The spell has no effect but is stored within the guardian. Any previously stored spell is lost when a new spell is stored. The guardian can cast the spell stored with any parameters set by the original caster, requiring no spell components and using the caster\u2019s spellcasting ability. The stored spell is then lost."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The guardian makes two Fist attacks."
+      },
+      {
+        "name": "Fist",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Force damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Protection",
+        "desc": "Trigger: An attack roll hits the wearer of the guardian\u2019s amulet while the wearer is within 5 feet of the guardian. Response: The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian\u2019s next turn. Silver Dragons"
+      }
+    ],
+    "legendary_actions": []
+  },
+  "silver-dragon-wyrmling": {
+    "name": "Silver Dragon Wyrmling",
+    "slug": "silver-dragon-wyrmling",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "dragon",
+    "alignment": "lawful good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 45,
+    "hit_dice": "6d8 + 18",
+    "speed": {
+      "walk": 30,
+      "fly": 60
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 11,
+    "wisdom_save": 2,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft., Darkvision 60 ft.;",
+    "languages": "Draconic",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes two Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (1d10 + 4) Piercing damage.",
+        "damage_dice": "1d10",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Cold Breath (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage.",
+        "damage_dice": "4d8"
+      },
+      {
+        "name": "Paralyzing Breath",
+        "desc": "Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "skeleton": {
+    "name": "Skeleton",
+    "slug": "skeleton",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 13,
+    "hit_dice": "2d8 + 4",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [
+      "Bludgeoning"
+    ],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 9",
+    "languages": "Understands Common plus one other language",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Shortsword",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Shortbow",
+        "desc": "Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "solar": {
+    "name": "Solar",
+    "slug": "solar",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "celestial",
+    "alignment": "lawful good",
+    "armor_class": 21,
+    "armor_desc": "",
+    "initiative": 20,
+    "hit_points": 297,
+    "hit_dice": "22d10 + 176",
+    "speed": {
+      "walk": 50,
+      "fly": 150,
+      "hover": true
+    },
+    "strength": 26,
+    "strength_save": 8,
+    "dexterity": 22,
+    "dexterity_save": 6,
+    "constitution": 26,
+    "constitution_save": 8,
+    "intelligence": 25,
+    "intelligence_save": 7,
+    "wisdom": 25,
+    "wisdom_save": 7,
+    "charisma": 30,
+    "charisma_save": 10,
+    "perception": 14,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison",
+      "Radiant"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Poisoned"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 24",
+    "languages": "All; telepathy 120 ft.",
+    "challenge_rating": "21",
+    "special_abilities": [
+      {
+        "name": "Divine Awareness",
+        "desc": "The solar knows if it hears a lie."
+      },
+      {
+        "name": "Exalted Restoration",
+        "desc": "If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+      },
+      {
+        "name": "Legendary Resistance (4/Day)",
+        "desc": "If the solar fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The solar has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow."
+      },
+      {
+        "name": "Flying Sword",
+        "desc": "Melee or Ranged Attack Roll: +15, reach 10 ft. or range 120 ft. Hit: 22 (4d6 + 8) Slashing damage plus 36 (8d8) Radiant damage. Hit or Miss: The sword magically returns to the solar\u2019s hand or hovers within 5 feet of the solar immediately after a ranged attack.",
+        "damage_dice": "4d6",
+        "damage_bonus": 8
+      },
+      {
+        "name": "Slaying Bow",
+        "desc": "Dexterity Saving Throw: DC 21, one creature the solar can see within 600 feet. Failure: If the creature has 100 Hit Points or fewer, it dies. It otherwise takes 24 (4d8 + 6) Piercing damage plus 36 (8d8) Radiant damage.",
+        "damage_dice": "4d8",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 25):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Evil and Good"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Commune, Control Weather, Dispel Evil and Good, Resurrection"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Divine Aid (3/Day)",
+        "desc": "The solar casts Cure Wounds (level 2 version), Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Blinding Gaze",
+        "desc": "Constitution Saving Throw: DC 25, one creature the solar can see within 120 feet. Failure: The target has the Blinded condition for 1 minute. Failure or Success: The solar can\u2019t take this action again until the start of its next turn."
+      },
+      {
+        "name": "Radiant Teleport",
+        "desc": "The solar teleports up to 60 feet to an unoccupied space it can see. Dexterity Saving Throw: DC 25, each creature in a 10-foot Emanation originating from the solar at its destination space. Failure: 11 (2d10) Radiant damage. Success: Half damage.",
+        "damage_dice": "2d10"
+      }
+    ]
+  },
+  "specter": {
+    "name": "Specter",
+    "slug": "specter",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 22,
+    "hit_dice": "5d8",
+    "speed": {
+      "walk": 30,
+      "fly": 50,
+      "hover": true
+    },
+    "strength": 1,
+    "strength_save": -5,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 11,
+    "charisma_save": 0,
+    "damage_resistances": [
+      "Acid",
+      "Bludgeoning",
+      "Cold",
+      "Fire",
+      "Lightning",
+      ""
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Unconscious"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "Understands Common plus one other language",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Incorporeal Movement",
+        "desc": "The specter can move through other creatures and objects as if they were Difficult"
+      },
+      {
+        "name": "Terrain",
+        "desc": "It takes 5 (1d10) Force damage if it ends its turn inside an object."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, the specter has Disadvantage on ability checks and attack rolls."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Life Drain",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken. Sphinxes",
+        "damage_dice": "2d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "sphinx-of-wonder": {
+    "name": "Sphinx of Wonder",
+    "slug": "sphinx-of-wonder",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "celestial",
+    "alignment": "lawful good",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 24,
+    "hit_dice": "7d4 + 7",
+    "speed": {
+      "walk": 20,
+      "fly": 40
+    },
+    "strength": 6,
+    "strength_save": -2,
+    "dexterity": 17,
+    "dexterity_save": 3,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 15,
+    "intelligence_save": 2,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 11,
+    "charisma_save": 0,
+    "damage_resistances": [
+      "Necrotic",
+      "Psychic",
+      "Radiant"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 11",
+    "languages": "Celestial, Common",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Magic Resistance",
+        "desc": "The sphinx has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Burst of Ingenuity (2/Day)",
+        "desc": "Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "sphinx-of-lore": {
+    "name": "Sphinx of Lore",
+    "slug": "sphinx-of-lore",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "celestial",
+    "alignment": "lawful neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 10,
+    "hit_points": 170,
+    "hit_dice": "20d10 + 60",
+    "speed": {
+      "walk": 40,
+      "fly": 60
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 18,
+    "intelligence_save": 4,
+    "wisdom": 18,
+    "wisdom_save": 4,
+    "charisma": 18,
+    "charisma_save": 4,
+    "perception": 8,
+    "damage_resistances": [
+      "Necrotic",
+      "Radiant"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Psychic"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Frightened"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 18",
+    "languages": "Celestial, Common",
+    "challenge_rating": "11",
+    "special_abilities": [
+      {
+        "name": "Inscrutable",
+        "desc": "No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage."
+      },
+      {
+        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The sphinx makes three Claw attacks."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +8, reach 5 ft. Hit: 14 (3d6 + 4) Slashing damage.",
+        "damage_dice": "3d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Mind-Rending Roar (Recharge 5\u20136)",
+        "desc": "Wisdom Saving Throw: DC 16, each enemy in a 300-foot Emanation originating from the sphinx. Failure: 35 (10d6) Psychic damage, and the target has the Incapacitated condition until the start of the sphinx\u2019s next turn.",
+        "damage_dice": "10d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Identify, Mage Hand, Minor Illusion, Prestidigitation"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Dispel Magic, Legend Lore, Locate Object, Plane Shift, Remove Curse, Tongues"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Arcane Prowl",
+        "desc": "The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack."
+      },
+      {
+        "name": "Weight of Years",
+        "desc": "Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can\u2019t take this action again until the start of its next turn."
+      }
+    ]
+  },
+  "sphinx-of-valor": {
+    "name": "Sphinx of Valor",
+    "slug": "sphinx-of-valor",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "celestial",
+    "alignment": "lawful neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 12,
+    "hit_points": 199,
+    "hit_dice": "19d10 + 95",
+    "speed": {
+      "walk": 40,
+      "fly": 60
+    },
+    "strength": 22,
+    "strength_save": 6,
+    "dexterity": 10,
+    "dexterity_save": 6,
+    "constitution": 20,
+    "constitution_save": 11,
+    "intelligence": 16,
+    "intelligence_save": 9,
+    "wisdom": 23,
+    "wisdom_save": 12,
+    "charisma": 18,
+    "charisma_save": 4,
+    "perception": 12,
+    "damage_resistances": [
+      "Necrotic",
+      "Radiant"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Psychic"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Frightened"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 22",
+    "languages": "Celestial, Common",
+    "challenge_rating": "17",
+    "special_abilities": [
+      {
+        "name": "Inscrutable",
+        "desc": "No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage."
+      },
+      {
+        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The sphinx makes two Claw attacks and uses Roar."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +12, reach 5 ft. Hit: 20 (4d6 + 6) Slashing damage.",
+        "damage_dice": "4d6",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Roar (3/Day)",
+        "desc": "The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):"
+      },
+      {
+        "name": "First Roar",
+        "desc": "Wisdom Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: The target has the Frightened condition for 1 minute."
+      },
+      {
+        "name": "Second Roar",
+        "desc": "Wisdom Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+      },
+      {
+        "name": "Third Roar",
+        "desc": "Constitution Saving Throw: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Failure: 44 (8d10) Thunder damage, and the target has the Prone condition. Success: Half damage only.",
+        "damage_dice": "8d10"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 20):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Evil and Good, Thaumaturgy"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Detect Magic, Dispel Magic, Greater Restoration, Heroes\u2019 Feast, Zone of Truth"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Arcane Prowl",
+        "desc": "The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack."
+      },
+      {
+        "name": "Weight of Years",
+        "desc": "Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can\u2019t take this action again until the start of its next turn."
+      }
+    ]
+  },
+  "spirit-naga": {
+    "name": "Spirit Naga",
+    "slug": "spirit-naga",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 135,
+    "hit_dice": "18d10 + 36",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 17,
+    "dexterity_save": 6,
+    "constitution": 14,
+    "constitution_save": 5,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 15,
+    "wisdom_save": 5,
+    "charisma": 16,
+    "charisma_save": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 12",
+    "languages": "Abyssal, Common",
+    "challenge_rating": "8",
+    "special_abilities": [
+      {
+        "name": "Fiendish Restoration",
+        "desc": "If it dies, the naga returns to life in 1d6 days and regains all its Hit Points. Only a Wish spell can prevent this trait from functioning."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The naga makes three attacks, using Bite or Necrotic Ray in any combination."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 7 (1d6 + 4) Piercing damage plus 14 (4d6) Poison damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Necrotic Ray",
+        "desc": "Ranged Attack Roll: +6, range 60 ft. Hit: 21 (6d6) Necrotic damage.",
+        "damage_dice": "6d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Mage Hand, Minor Illusion, Water Breathing"
+      },
+      {
+        "name": "2/Day Each",
+        "desc": "Detect Thoughts, Dimension Door, Hold Person (level 3 version), Lightning Bolt (level 4 version)"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "sprite": {
+    "name": "Sprite",
+    "slug": "sprite",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "fey",
+    "alignment": "neutral good",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 10,
+    "hit_dice": "4d4",
+    "speed": {
+      "walk": 10,
+      "fly": 40
+    },
+    "strength": 3,
+    "strength_save": -4,
+    "dexterity": 18,
+    "dexterity_save": 4,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 11,
+    "charisma_save": 0,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "Common, Elvish, Sylvan",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Needle Sword",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Piercing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Enchanting Bow",
+        "desc": "Ranged Attack Roll: +6, range 40/160 ft. Hit: 1 Piercing damage, and the target has the Charmed condition until the start of the sprite\u2019s next turn."
+      },
+      {
+        "name": "Heart Sight",
+        "desc": "Charisma Saving Throw: DC 10, one creature within 5 feet the sprite can see (Celestials, Fiends, and Undead automatically fail the save). Failure: The sprite knows the target\u2019s emotions and alignment."
+      },
+      {
+        "name": "Invisibility",
+        "desc": "The sprite casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "spy": {
+    "name": "Spy",
+    "slug": "spy",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 27,
+    "hit_dice": "6d8",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 16,
+    "charisma_save": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 16",
+    "languages": "Common plus one other language",
+    "challenge_rating": "1",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Shortsword",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Hand Crossbow",
+        "desc": "Ranged Attack Roll: +4, range 30/120 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Cunning Action",
+        "desc": "The spy takes the Dash, Disengage, or Hide action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "stirge": {
+    "name": "Stirge",
+    "slug": "stirge",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 5,
+    "hit_dice": "2d4",
+    "speed": {
+      "walk": 10,
+      "fly": 40
+    },
+    "strength": 4,
+    "strength_save": -3,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 9",
+    "languages": "None",
+    "challenge_rating": "1/8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Proboscis",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage, and the stirge attaches to the target. While attached, the stirge can\u2019t make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stirge\u2019s turns. The stirge can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the stirge as an action.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "stone-giant": {
+    "name": "Stone Giant",
+    "slug": "stone-giant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "giant",
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 126,
+    "hit_dice": "11d12 + 55",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 15,
+    "dexterity_save": 5,
+    "constitution": 20,
+    "constitution_save": 8,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 12,
+    "wisdom_save": 4,
+    "charisma": 9,
+    "charisma_save": -1,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "Giant",
+    "challenge_rating": "7",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The giant makes two attacks, using Stone Club or Boulder in any combination."
+      },
+      {
+        "name": "Stone Club",
+        "desc": "Melee Attack Roll: +9, reach 15 ft. Hit: 22 (3d10 + 6) Bludgeoning damage.",
+        "damage_dice": "3d10",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Boulder",
+        "desc": "Ranged Attack Roll: +9, range 60/240 ft. Hit: 15 (2d8 + 6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.",
+        "damage_dice": "2d8",
+        "damage_bonus": 6
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Deflect Missile (Recharge 5\u20136)",
+        "desc": "Trigger: The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. Response: The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack\u2019s force. Dexterity Saving Throw: DC 17, one creature the giant can see within 60 feet. Failure: 11 (1d10 + 6) Force damage."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "stone-golem": {
+    "name": "Stone Golem",
+    "slug": "stone-golem",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "construct",
+    "alignment": "unaligned",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 220,
+    "hit_dice": "21d10 + 105",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 22,
+    "strength_save": 6,
+    "dexterity": 9,
+    "dexterity_save": -1,
+    "constitution": 20,
+    "constitution_save": 5,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison",
+      "Psychic"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 120 ft.; Passive Perception 10",
+    "languages": "Understands Common plus two other",
+    "challenge_rating": "10",
+    "special_abilities": [
+      {
+        "name": "Immutable Form",
+        "desc": "The golem can\u2019t shape-shift."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The golem has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The golem makes two attacks, using Slam or Force Bolt in any combination."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +10, reach 5 ft. Hit: 15 (2d8 + 6) Bludgeoning damage plus 9 (2d8) Force damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Force Bolt",
+        "desc": "Ranged Attack Roll: +9, range 120 ft. Hit: 22 (4d10) Force damage.",
+        "damage_dice": "4d10"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Slow (Recharge 5\u20136)",
+        "desc": "The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17)."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "storm-giant": {
+    "name": "Storm Giant",
+    "slug": "storm-giant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "giant",
+    "alignment": "chaotic good",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 7,
+    "hit_points": 230,
+    "hit_dice": "20d12 + 100",
+    "speed": {
+      "walk": 50,
+      "fly": 25,
+      "hover": true,
+      "swim": 50
+    },
+    "strength": 29,
+    "strength_save": 14,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 20,
+    "constitution_save": 10,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 20,
+    "wisdom_save": 10,
+    "charisma": 18,
+    "charisma_save": 9,
+    "perception": 10,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning",
+      "Thunder"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft., Truesight 30 ft.;",
+    "languages": "Common, Giant",
+    "challenge_rating": "13",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The giant can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The giant makes two attacks, using Storm Sword or Thunderbolt in any combination."
+      },
+      {
+        "name": "Storm Sword",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 23 (4d6 + 9) Slashing damage plus 13 (3d8) Lightning damage.",
+        "damage_dice": "4d6",
+        "damage_bonus": 9
+      },
+      {
+        "name": "Thunderbolt",
+        "desc": "Ranged Attack Roll: +14, range 500 ft. Hit: 22 (2d12 + 9) Lightning damage, and the target has the Blinded and Deafened conditions until the start of the giant\u2019s next turn.",
+        "damage_dice": "2d12",
+        "damage_bonus": 9
+      },
+      {
+        "name": "Lightning Storm (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 18, each creature in a 10-foot-radius, 40-foot-high Cylinder originating from a point the giant can see within 500 feet. Failure: 55 (10d10) Lightning damage. Success: Half damage.",
+        "damage_dice": "10d10"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Light"
+      },
+      {
+        "name": "1/Day",
+        "desc": "Control Weather"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "succubus": {
+    "name": "Succubus",
+    "slug": "succubus",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 71,
+    "hit_dice": "13d8 + 13",
+    "speed": {
+      "walk": 30,
+      "fly": 60
+    },
+    "strength": 8,
+    "strength_save": -1,
+    "dexterity": 17,
+    "dexterity_save": 3,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 15,
+    "intelligence_save": 2,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 20,
+    "charisma_save": 5,
+    "perception": 5,
+    "damage_resistances": [
+      "Cold",
+      "Fire",
+      "Poison",
+      "Psychic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "Abyssal, Common, Infernal; telepathy 60 ft.",
+    "challenge_rating": "4",
+    "special_abilities": [
+      {
+        "name": "Incubus Form",
+        "desc": "When the succubus finishes a Long Rest, it can shape-shift into an Incubus, using that stat block instead of this one."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss."
+      },
+      {
+        "name": "Fiendish Touch",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 16 (2d10 + 5) Psychic damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Charm",
+        "desc": "The succubus casts Dominate Person (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15)."
+      },
+      {
+        "name": "Draining Kiss",
+        "desc": "Constitution Saving Throw: DC 15, one creature Charmed by the succubus within 5 feet. Failure: 13 (3d8) Psychic damage. Success: Half damage. Failure or Success: The target\u2019s Hit Point maximum decreases by an amount equal to the damage taken.",
+        "damage_dice": "3d8"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly"
+      },
+      {
+        "name": "Speed is available only in its true form",
+        "desc": "Any equipment it is wearing or carrying isn\u2019t transformed."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "saber-toothed-tiger": {
+    "name": "Saber-Toothed Tiger",
+    "slug": "saber-toothed-tiger",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 52,
+    "hit_dice": "7d10 + 14",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 18,
+    "strength_save": 6,
+    "dexterity": 17,
+    "dexterity_save": 5,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 8,
+    "charisma_save": -1,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Running Leap",
+        "desc": "With a 10-foot running start, the tiger can Long Jump up to 25 feet."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The tiger makes two Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6 + 4) Slashing damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Nimble Escape",
+        "desc": "The tiger takes the Disengage or Hide action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "scorpion": {
+    "name": "Scorpion",
+    "slug": "scorpion",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 10
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 8,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 2,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft.; Passive Perception 9",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Sting",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage plus 3 (1d6) Poison damage.",
+        "damage_dice": "1d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "seahorse": {
+    "name": "Seahorse",
+    "slug": "seahorse",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 5,
+      "swim": 20
+    },
+    "strength": 1,
+    "strength_save": -5,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 8,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 2,
+    "charisma_save": -4,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 12",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Water Breathing",
+        "desc": "The seahorse can breathe only underwater."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bubble Dash",
+        "desc": "While underwater, the seahorse moves up to its Swim Speed without provoking Opportunity Attacks."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "spider": {
+    "name": "Spider",
+    "slug": "spider",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 20,
+      "climb": 20
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 8,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 2,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 30 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Web Walker",
+        "desc": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 2 (1d4) Poison damage.",
+        "damage_dice": "1d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-bats": {
+    "name": "Swarm of Bats",
+    "slug": "swarm-of-bats",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 11,
+    "hit_dice": "2d10",
+    "speed": {
+      "walk": 5,
+      "fly": 30
+    },
+    "strength": 5,
+    "strength_save": -3,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 4,
+    "charisma_save": -3,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 60 ft.; Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bites",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.",
+        "damage_dice": "2d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-insects": {
+    "name": "Swarm of Insects",
+    "slug": "swarm-of-insects",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 19,
+    "hit_dice": "3d8 + 6",
+    "speed": {
+      "walk": 20
+    },
+    "strength": 3,
+    "strength_save": -4,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 7,
+    "wisdom_save": -2,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft.; Passive Perception 8",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "If the swarm has a Climb Speed, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bites",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Poison damage, or 3 (1d4 + 1) Poison damage if the swarm is Bloodied.",
+        "damage_dice": "2d4",
+        "damage_bonus": 1
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-piranhas": {
+    "name": "Swarm of Piranhas",
+    "slug": "swarm-of-piranhas",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 28,
+    "hit_dice": "8d8 \u2212 8",
+    "speed": {
+      "walk": 5,
+      "swim": 40
+    },
+    "strength": 13,
+    "strength_save": 1,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 9,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 7,
+    "wisdom_save": -2,
+    "charisma": 2,
+    "charisma_save": -4,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "None",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny piranha. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      },
+      {
+        "name": "Water Breathing",
+        "desc": "The swarm can breathe only underwater."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bites",
+        "desc": "Melee Attack Roll: +5 (with Advantage if the target doesn\u2019t have all its Hit Points), reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage, or 5 (1d4 + 3) Piercing damage if the swarm is Bloodied.",
+        "damage_dice": "2d4",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-rats": {
+    "name": "Swarm of Rats",
+    "slug": "swarm-of-rats",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 14,
+    "hit_dice": "4d8 \u2212 4",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 9,
+    "strength_save": -1,
+    "dexterity": 11,
+    "dexterity_save": 2,
+    "constitution": 9,
+    "constitution_save": -1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 30 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bites",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.",
+        "damage_dice": "2d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-ravens": {
+    "name": "Swarm of Ravens",
+    "slug": "swarm-of-ravens",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 11,
+    "hit_dice": "2d8 + 2",
+    "speed": {
+      "walk": 10,
+      "fly": 50
+    },
+    "strength": 6,
+    "strength_save": -2,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Beaks",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Cacophony (Recharge 6)",
+        "desc": "Wisdom Saving Throw: DC 10, one creature in the swarm\u2019s space. Failure: The target has the Deafened condition until the start of the swarm\u2019s next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "swarm-of-venomous-snakes": {
+    "name": "Swarm of Venomous Snakes",
+    "slug": "swarm-of-venomous-snakes",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "swarm of tiny beasts",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 36,
+    "hit_dice": "8d8",
+    "speed": {
+      "walk": 30,
+      "swim": 30
+    },
+    "strength": 8,
+    "strength_save": -1,
+    "dexterity": 18,
+    "dexterity_save": 4,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Prone",
+      "Restrained",
+      "Stunned"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Swarm",
+        "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can\u2019t regain Hit Points or gain Temporary Hit Points."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bites",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Piercing damage\u2014or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied\u2014plus 10 (3d6) Poison damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

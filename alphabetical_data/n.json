@@ -1,0 +1,297 @@
+{
+  "nalfeshnee": {
+    "name": "Nalfeshnee",
+    "slug": "nalfeshnee",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 184,
+    "hit_dice": "16d10 + 96",
+    "speed": {
+      "walk": 20,
+      "fly": 30
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 22,
+    "constitution_save": 11,
+    "intelligence": 19,
+    "intelligence_save": 9,
+    "wisdom": 12,
+    "wisdom_save": 6,
+    "charisma": 15,
+    "charisma_save": 7,
+    "damage_resistances": [
+      "Cold",
+      "Fire",
+      "Lightning"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Frightened",
+      "Poisoned"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 11",
+    "languages": "Abyssal; telepathy 120 ft.",
+    "challenge_rating": "13",
+    "special_abilities": [
+      {
+        "name": "Demonic Restoration",
+        "desc": "If the nalfeshnee dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The nalfeshnee has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The nalfeshnee makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +10, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage plus 11 (2d10) Force damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Teleport",
+        "desc": "The nalfeshnee teleports up to 120 feet to an unoccupied space it can see."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Horror Nimbus (Recharge 5\u20136)",
+        "desc": "Wisdom Saving Throw: DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. Failure: 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. Success: The target is immune to this nalfeshnee\u2019s Horror Nimbus for 24 hours."
+      }
+    ],
+    "reactions": [
+      {
+        "name": "Pursuit",
+        "desc": "Trigger: Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. Response: The nalfeshnee uses Teleport, but its destination space must be within 10 feet of the triggering creature."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "night-hag": {
+    "name": "Night Hag",
+    "slug": "night-hag",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "neutral evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 112,
+    "hit_dice": "15d8 + 45",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 16,
+    "charisma_save": 3,
+    "perception": 5,
+    "damage_resistances": [
+      "Cold",
+      "Fire"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 15",
+    "languages": "Abyssal, Common, Infernal, Primordial",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Coven Magic",
+        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell\u2019s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The hag has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Soul Bag",
+        "desc": "The hag has a soul bag. While holding or carrying the bag, the hag can use its Nightmare Haunting action. The bag has AC 15, HP 20, and Resistance to all damage. The bag turns to dust if reduced to 0 Hit Points. If the bag is destroyed, any souls the bag is holding are released. The hag can create a new bag after 7 days."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The hag makes two Claw attacks."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage. Nightmare Haunting (1/Day; Requires Soul Bag). While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell\u2019s messenger, and the target must be a creature the hag can see on the Material",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Plane",
+        "desc": "The spell fails and is wasted if the target is under the effect of the Protection from Evil and Good spell or within a Magic Circle spell. If the target takes damage from the Dream spell, the target\u2019s Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the hag\u2019s soul bag, and the target can\u2019t be raised from the dead until its soul is released."
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The hag casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 14):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Etherealness, Magic Missile (level 4 version)"
+      },
+      {
+        "name": "2/Day Each",
+        "desc": "Phantasmal Killer, Plane Shift (self only)"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "nightmare": {
+    "name": "Nightmare",
+    "slug": "nightmare",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 68,
+    "hit_dice": "8d10 + 24",
+    "speed": {
+      "walk": 60,
+      "fly": 90,
+      "hover": true
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 15,
+    "charisma_save": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Passive Perception 11",
+    "languages": "Understands Abyssal, Common, and Infernal",
+    "challenge_rating": "3",
+    "special_abilities": [
+      {
+        "name": "Confer Fire Resistance",
+        "desc": "The nightmare can grant Resistance to Fire damage to a rider while it is on the nightmare."
+      },
+      {
+        "name": "Illumination",
+        "desc": "The nightmare sheds Bright Light in a 10foot radius and Dim Light for an additional 10 feet."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 10 (3d6) Fire damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Ethereal Stride",
+        "desc": "The nightmare and up to three willing creatures within 5 feet of it teleport to the Ethereal Plane from the Material Plane or vice versa."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "noble": {
+    "name": "Noble",
+    "slug": "noble",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 9,
+    "hit_dice": "2d8",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 11,
+    "strength_save": 0,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 16,
+    "charisma_save": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 12",
+    "languages": "Common plus two other languages",
+    "challenge_rating": "1/8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Rapier",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 1
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Parry",
+        "desc": "Trigger: The noble is hit by a melee attack roll while holding a weapon. Response: The noble adds 2 to its AC against that attack, possibly causing it to miss."
+      }
+    ],
+    "legendary_actions": []
+  }
+}

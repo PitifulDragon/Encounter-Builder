@@ -1,0 +1,670 @@
+{
+  "young-black-dragon": {
+    "name": "Young Black Dragon",
+    "slug": "young-black-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 127,
+    "hit_dice": "15d10 + 45",
+    "speed": {
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 14,
+    "dexterity_save": 5,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 11,
+    "wisdom_save": 3,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Acid"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "7",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The dragon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 3 (1d6) Acid damage.",
+        "damage_dice": "2d4",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Acid Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-footwide Line. Failure: 49 (14d6) Acid damage. Success: Half damage.",
+        "damage_dice": "14d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-blue-dragon": {
+    "name": "Young Blue Dragon",
+    "slug": "young-blue-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 152,
+    "hit_dice": "16d10 + 64",
+    "speed": {
+      "walk": 40,
+      "burrow": 20,
+      "fly": 80
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "constitution": 19,
+    "constitution_save": 4,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 13,
+    "wisdom_save": 5,
+    "charisma": 17,
+    "charisma_save": 3,
+    "perception": 9,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "9",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +9, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 5 (1d10) Lightning damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Lightning Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-footwide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage.",
+        "damage_dice": "10d10"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-brass-dragon": {
+    "name": "Young Brass Dragon",
+    "slug": "young-brass-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "chaotic good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 110,
+    "hit_dice": "13d10 + 39",
+    "speed": {
+      "walk": 40,
+      "burrow": 20,
+      "fly": 80
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 3,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 11,
+    "wisdom_save": 3,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "6",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 15 (2d10 + 4) Slashing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Fire Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-footwide Line. Failure: 38 (11d6) Fire damage. Success: Half damage.",
+        "damage_dice": "11d6"
+      },
+      {
+        "name": "Sleep Breath",
+        "desc": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn, at which point it repeats the save. Second Failure: The target has the Unconscious condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-bronze-dragon": {
+    "name": "Young Bronze Dragon",
+    "slug": "young-bronze-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "lawful good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 142,
+    "hit_dice": "15d10 + 60",
+    "speed": {
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 10,
+    "dexterity_save": 3,
+    "constitution": 19,
+    "constitution_save": 4,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 13,
+    "wisdom_save": 4,
+    "charisma": 17,
+    "charisma_save": 3,
+    "perception": 7,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "8",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The dragon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +8, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Lightning Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 15, each creature in a 60-foot-long, 5-footwide Line. Failure: 49 (9d10) Lightning damage. Success: Half damage.",
+        "damage_dice": "9d10"
+      },
+      {
+        "name": "Repulsion Breath",
+        "desc": "Strength Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: The target is pushed up to 40 feet straight away from the dragon and has the Prone condition."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-copper-dragon": {
+    "name": "Young Copper Dragon",
+    "slug": "young-copper-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "chaotic good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 119,
+    "hit_dice": "14d10 + 42",
+    "speed": {
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 12,
+    "dexterity_save": 4,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 13,
+    "wisdom_save": 4,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 7,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Acid"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "7",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 15 (2d10 + 4) Slashing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Acid Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-footwide Line. Failure: 40 (9d8) Acid damage. Success: Half damage.",
+        "damage_dice": "9d8"
+      },
+      {
+        "name": "Slowing Breath",
+        "desc": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target can\u2019t take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-gold-dragon": {
+    "name": "Young Gold Dragon",
+    "slug": "young-gold-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "lawful good",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 6,
+    "hit_points": 178,
+    "hit_dice": "17d10 + 85",
+    "speed": {
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 14,
+    "dexterity_save": 6,
+    "constitution": 21,
+    "constitution_save": 5,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 13,
+    "wisdom_save": 5,
+    "charisma": 20,
+    "charisma_save": 5,
+    "perception": 9,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "10",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The dragon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +10, reach 10 ft. Hit: 17 (2d10 + 6) Slashing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Fire Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 55 (10d10) Fire damage. Success: Half damage.",
+        "damage_dice": "10d10"
+      },
+      {
+        "name": "Weakening Breath",
+        "desc": "Strength Saving Throw: DC 17, each creature that isn\u2019t currently affected by this breath in a 30-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+        "damage_dice": "1d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-green-dragon": {
+    "name": "Young Green Dragon",
+    "slug": "young-green-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 136,
+    "hit_dice": "16d10 + 48",
+    "speed": {
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 12,
+    "dexterity_save": 4,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 13,
+    "wisdom_save": 4,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 7,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "8",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The dragon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage plus 7 (2d6) Poison damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Poison Breath (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage.",
+        "damage_dice": "12d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-red-dragon": {
+    "name": "Young Red Dragon",
+    "slug": "young-red-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 178,
+    "hit_dice": "17d10 + 85",
+    "speed": {
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "constitution": 21,
+    "constitution_save": 5,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 11,
+    "wisdom_save": 4,
+    "charisma": 19,
+    "charisma_save": 4,
+    "perception": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "10",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +10, reach 10 ft. Hit: 13 (2d6 + 6) Slashing damage plus 3 (1d6) Fire damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Fire Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage.",
+        "damage_dice": "16d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-silver-dragon": {
+    "name": "Young Silver Dragon",
+    "slug": "young-silver-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "lawful good",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 168,
+    "hit_dice": "16d10 + 80",
+    "speed": {
+      "walk": 40,
+      "fly": 80
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "constitution": 21,
+    "constitution_save": 5,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 11,
+    "wisdom_save": 4,
+    "charisma": 19,
+    "charisma_save": 4,
+    "perception": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "9",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Slashing damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Cold Breath (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 49 (11d8) Cold damage. Success: Half damage.",
+        "damage_dice": "11d8"
+      },
+      {
+        "name": "Paralyzing Breath",
+        "desc": "Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "young-white-dragon": {
+    "name": "Young White Dragon",
+    "slug": "young-white-dragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "dragon",
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 123,
+    "hit_dice": "13d10 + 52",
+    "speed": {
+      "walk": 40,
+      "burrow": 20,
+      "fly": 80,
+      "swim": 40
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 3,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 6,
+    "intelligence_save": 2,
+    "wisdom": 11,
+    "wisdom_save": 3,
+    "charisma": 12,
+    "charisma_save": 1,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Darkvision 120 ft.;",
+    "languages": "Common, Draconic",
+    "challenge_rating": "6",
+    "special_abilities": [
+      {
+        "name": "Ice Walk",
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn\u2019t cost it extra movement."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 2 (1d4) Cold damage.",
+        "damage_dice": "2d4",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Cold Breath (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage.",
+        "damage_dice": "9d8"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

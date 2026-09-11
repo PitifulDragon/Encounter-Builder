@@ -1,0 +1,601 @@
+{
+  "tarrasque": {
+    "name": "Tarrasque",
+    "slug": "tarrasque",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Gargantuan",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 25,
+    "armor_desc": "",
+    "initiative": 18,
+    "hit_points": 697,
+    "hit_dice": "34d20 + 340",
+    "speed": {
+      "walk": 60,
+      "burrow": 40,
+      "climb": 60
+    },
+    "strength": 30,
+    "strength_save": 10,
+    "dexterity": 11,
+    "dexterity_save": 9,
+    "constitution": 30,
+    "constitution_save": 10,
+    "intelligence": 3,
+    "intelligence_save": 5,
+    "wisdom": 11,
+    "wisdom_save": 9,
+    "charisma": 11,
+    "charisma_save": 9,
+    "perception": 9,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Deafened",
+      "Frightened",
+      "Paralyzed",
+      "Poisoned"
+    ],
+    "senses": "Blindsight 120 ft.; Passive Perception 19",
+    "languages": "None",
+    "challenge_rating": "30",
+    "special_abilities": [
+      {
+        "name": "Legendary Resistance (6/Day)",
+        "desc": "If the tarrasque fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The tarrasque has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Reflective Carapace",
+        "desc": "If the tarrasque is targeted by a Magic Missile spell or a spell that requires a ranged attack roll, roll 1d6. On a 1\u20135, the tarrasque is unaffected. On a 6, the tarrasque is unaffected and reflects the spell, turning the caster into the target."
+      },
+      {
+        "name": "Siege Monster",
+        "desc": "The tarrasque deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +19, reach 15 ft. Hit: 36 (4d12 + 10) Piercing damage, and the target has the Grappled condition (escape DC 20). Until the grapple ends, the target has the Restrained condition and can\u2019t teleport.",
+        "damage_dice": "4d12",
+        "damage_bonus": 10
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +19, reach 15 ft. Hit: 28 (4d8 + 10) Slashing damage.",
+        "damage_dice": "4d8",
+        "damage_bonus": 10
+      },
+      {
+        "name": "Tail",
+        "desc": "Melee Attack Roll: +19, reach 30 ft. Hit: 23 (3d8 + 10) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+        "damage_dice": "3d8",
+        "damage_bonus": 10
+      },
+      {
+        "name": "Thunderous Bellow (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 27, each creature and each object that isn\u2019t being worn or carried in a 150-foot Cone. Failure: 78 (12d12) Thunder damage, and the target has the Deafened and Frightened conditions until the end of its next turn. Success: Half damage only.",
+        "damage_dice": "12d12"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Swallow",
+        "desc": "Strength Saving Throw: DC 27, one Large or smaller creature Grappled by the tarrasque (it can have up to six creatures swallowed at a time). Failure: The target is swallowed, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions and can\u2019t teleport, it has Total Cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) Acid damage at the start of each of the tarrasque\u2019s turns. If the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the tarrasque and has the Prone condition. If the tarrasque dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Onslaught",
+        "desc": "The tarrasque moves up to half its Speed, and it makes one Claw or Tail attack."
+      },
+      {
+        "name": "World-Shaking Movement",
+        "desc": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the Prone condition. The tarrasque can\u2019t take this action again until the start of its next turn. Toughs"
+      }
+    ]
+  },
+  "tough": {
+    "name": "Tough",
+    "slug": "tough",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 32,
+    "hit_dice": "5d8 + 10",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 15,
+    "strength_save": 2,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 11,
+    "charisma_save": 0,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "Common",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The tough has Advantage on an attack roll against a creature if at least one of the tough\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Mace",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Heavy Crossbow",
+        "desc": "Ranged Attack Roll: +3, range 100/400 ft. Hit: 6 (1d10 + 1) Piercing damage.",
+        "damage_dice": "1d10",
+        "damage_bonus": 1
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "tough-boss": {
+    "name": "Tough Boss",
+    "slug": "tough-boss",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 82,
+    "hit_dice": "11d8 + 33",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 17,
+    "strength_save": 5,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 5,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 11,
+    "charisma_save": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "Common plus one other language",
+    "challenge_rating": "4",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The tough has Advantage on an attack roll against a creature if at least one of the tough\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination."
+      },
+      {
+        "name": "Warhammer",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Bludgeoning damage. If the target is a Large or smaller creature, the tough pushes the target up to 10 feet straight away from itself.",
+        "damage_dice": "2d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Heavy Crossbow",
+        "desc": "Ranged Attack Roll: +4, range 100/400 ft. Hit: 13 (2d10 + 2) Piercing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "treant": {
+    "name": "Treant",
+    "slug": "treant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "plant",
+    "alignment": "chaotic good",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 138,
+    "hit_dice": "12d12 + 60",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 21,
+    "constitution_save": 5,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 12,
+    "charisma_save": 1,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing"
+    ],
+    "damage_vulnerabilities": [
+      "Fire"
+    ],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "Common, Druidic, Elvish, Sylvan",
+    "challenge_rating": "9",
+    "special_abilities": [
+      {
+        "name": "Siege Monster",
+        "desc": "The treant deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The treant makes two Slam attacks."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +10, reach 5 ft. Hit: 16 (3d6 + 6) Bludgeoning damage.",
+        "damage_dice": "3d6",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Hail of Bark",
+        "desc": "Ranged Attack Roll: +10, range 180 ft. Hit: 28 (4d10 + 6) Piercing damage.",
+        "damage_dice": "4d10",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Animate Trees (1/Day)",
+        "desc": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can\u2019t speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "troll": {
+    "name": "Troll",
+    "slug": "troll",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 94,
+    "hit_dice": "9d10 + 45",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 20,
+    "constitution_save": 5,
+    "intelligence": 7,
+    "intelligence_save": -2,
+    "wisdom": 9,
+    "wisdom_save": -1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "Giant",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Loathsome Limbs (4/Day)",
+        "desc": "If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll\u2019s limbs is severed, falls into the troll\u2019s space, and becomes a Troll Limb. The limb acts immediately after the troll\u2019s turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points."
+      },
+      {
+        "name": "Regeneration",
+        "desc": "The troll regains 15 Hit Points at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn\u2019t function on the troll\u2019s next turn. The troll dies only if it starts its turn with 0 Hit Points and doesn\u2019t regenerate."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The troll makes three Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Charge",
+        "desc": "The troll moves up to half its Speed straight toward an enemy it can see."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "troll-limb": {
+    "name": "Troll Limb",
+    "slug": "troll-limb",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 14,
+    "hit_dice": "4d6",
+    "speed": {
+      "walk": 20
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 9,
+    "wisdom_save": -1,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 9",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Regeneration",
+        "desc": "The limb regains 5 Hit Points at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn\u2019t function on the limb\u2019s next turn. The limb dies only if it starts its turn with 0 Hit Points and doesn\u2019t regenerate."
+      },
+      {
+        "name": "Troll Spawn",
+        "desc": "The limb uncannily has the same senses as a whole troll. If the limb isn\u2019t destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage.",
+        "damage_dice": "2d4",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "tiger": {
+    "name": "Tiger",
+    "slug": "tiger",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 30,
+    "hit_dice": "4d10 + 8",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 17,
+    "strength_save": 3,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 8,
+    "charisma_save": -1,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "1",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.",
+        "damage_dice": "2d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Nimble Escape",
+        "desc": "The tiger takes the Disengage or Hide action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "triceratops": {
+    "name": "Triceratops",
+    "slug": "triceratops",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 114,
+    "hit_dice": "12d12 + 36",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 22,
+    "strength_save": 6,
+    "dexterity": 9,
+    "dexterity_save": -1,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "5",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The triceratops makes two Gore attacks."
+      },
+      {
+        "name": "Gore",
+        "desc": "Melee Attack Roll: +9, reach 5 ft. Hit: 19 (2d12 + 6) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.",
+        "damage_dice": "2d12",
+        "damage_bonus": 6
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "tyrannosaurus-rex": {
+    "name": "Tyrannosaurus Rex",
+    "slug": "tyrannosaurus-rex",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 136,
+    "hit_dice": "13d12 + 52",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 25,
+    "strength_save": 10,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 19,
+    "constitution_save": 4,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 4,
+    "charisma": 9,
+    "charisma_save": -1,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 14",
+    "languages": "None",
+    "challenge_rating": "8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The tyrannosaurus makes one Bite attack and one Tail attack."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +10, reach 10 ft. Hit: 33 (4d12 + 7) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17). While Grappled, the target has the Restrained condition and can\u2019t be targeted by the tyrannosaurus\u2019s Tail.",
+        "damage_dice": "4d12",
+        "damage_bonus": 7
+      },
+      {
+        "name": "Tail",
+        "desc": "Melee Attack Roll: +10, reach 15 ft. Hit: 25 (4d8 + 7) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+        "damage_dice": "4d8",
+        "damage_bonus": 7
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

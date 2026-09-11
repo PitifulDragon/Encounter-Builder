@@ -1,0 +1,673 @@
+{
+  "rakshasa": {
+    "name": "Rakshasa",
+    "slug": "rakshasa",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 8,
+    "hit_points": 221,
+    "hit_dice": "26d8 + 104",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 17,
+    "dexterity_save": 3,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 13,
+    "intelligence_save": 1,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 20,
+    "charisma_save": 5,
+    "perception": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [
+      "Piercing damage from weapons wielded by"
+    ],
+    "damage_immunities": [
+      "Charmed",
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Truesight 60 ft.; Passive Perception 18",
+    "languages": "Common, Infernal",
+    "challenge_rating": "13",
+    "special_abilities": [
+      {
+        "name": "Greater Magic Resistance",
+        "desc": "The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa\u2019s permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment."
+      },
+      {
+        "name": "Fiendish Restoration",
+        "desc": "If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The rakshasa makes three Cursed Touch attacks."
+      },
+      {
+        "name": "Cursed Touch",
+        "desc": "Melee Attack Roll: +10, reach 5 ft. Hit: 12 (2d6 + 5) Slashing damage plus 19 (3d12) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target gains no benefit from finishing a Short or Long Rest.",
+        "damage_dice": "2d6",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Baleful Command (Recharge 5\u20136)",
+        "desc": "Wisdom Saving Throw: DC 18, each enemy in a 30-foot Emanation originating from the rakshasa. Failure: 28 (8d6) Psychic damage, and the target has the Frightened and Incapacitated conditions until the start of the rakshasa\u2019s next turn.",
+        "damage_dice": "8d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Detect Thoughts, Disguise Self, Mage Hand, Minor Illusion"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Fly, Invisibility, Major Image, Plane Shift Red Dragons"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "red-dragon-wyrmling": {
+    "name": "Red Dragon Wyrmling",
+    "slug": "red-dragon-wyrmling",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "dragon",
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 75,
+    "hit_dice": "10d8 + 30",
+    "speed": {
+      "walk": 30,
+      "climb": 30,
+      "fly": 60
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 11,
+    "wisdom_save": 2,
+    "charisma": 15,
+    "charisma_save": 2,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft., Darkvision 60 ft.;",
+    "languages": "Draconic",
+    "challenge_rating": "4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes two Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (1d10 + 4) Slashing damage plus 3 (1d6) Fire damage.",
+        "damage_dice": "1d10",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Fire Breath (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 24 (7d6) Fire damage. Success: Half damage.",
+        "damage_dice": "7d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "remorhaz": {
+    "name": "Remorhaz",
+    "slug": "remorhaz",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 195,
+    "hit_dice": "17d12 + 85",
+    "speed": {
+      "walk": 40,
+      "burrow": 30
+    },
+    "strength": 24,
+    "strength_save": 7,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 21,
+    "constitution_save": 5,
+    "intelligence": 4,
+    "intelligence_save": -3,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold",
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft., Tremorsense 60 ft.;",
+    "languages": "None",
+    "challenge_rating": "11",
+    "special_abilities": [
+      {
+        "name": "Heat Aura",
+        "desc": "At the end of each of the remorhaz\u2019s turns, each creature in a 5-foot Emanation originating from the remorhaz takes 16 (3d10) Fire damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +11, reach 10 ft. Hit: 18 (2d10 + 7) Piercing damage plus 14 (4d6) Fire damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17), and it has the Restrained condition until the grapple ends.",
+        "damage_dice": "2d10",
+        "damage_bonus": 7
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Swallow",
+        "desc": "Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the remorhaz (it can have up to two creatures swallowed at a time). Failure: The target is swallowed by the remorhaz, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 10 (3d6) Acid damage plus 10 (3d6) Fire damage at the start of each of the remorhaz\u2019s turns. If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the Prone condition. If the remorhaz dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse by using 15 feet of movement, exiting Prone."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "roc": {
+    "name": "Roc",
+    "slug": "roc",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Gargantuan",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 8,
+    "hit_points": 248,
+    "hit_dice": "16d20 + 80",
+    "speed": {
+      "walk": 20,
+      "fly": 120
+    },
+    "strength": 28,
+    "strength_save": 9,
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "constitution": 20,
+    "constitution_save": 5,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 10,
+    "wisdom_save": 4,
+    "charisma": 9,
+    "charisma_save": -1,
+    "perception": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 18",
+    "languages": "None",
+    "challenge_rating": "11",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The roc makes two Beak attacks. It can replace one attack with a Talons attack."
+      },
+      {
+        "name": "Beak",
+        "desc": "Melee Attack Roll: +13, reach 10 ft. Hit: 28 (3d12 + 9) Piercing damage.",
+        "damage_dice": "3d12",
+        "damage_bonus": 9
+      },
+      {
+        "name": "Talons",
+        "desc": "Melee Attack Roll: +13, reach 5 ft. Hit: 23 (4d6 + 9) Slashing damage. If the target is a Huge or smaller creature, it has the Grappled condition (escape DC 19) from both talons, and it has the Restrained condition until the grapple ends.",
+        "damage_dice": "4d6",
+        "damage_bonus": 9
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Swoop (Recharge 5\u20136)",
+        "desc": "If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "roper": {
+    "name": "Roper",
+    "slug": "roper",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "aberration",
+    "alignment": "neutral evil",
+    "armor_class": 20,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 93,
+    "hit_dice": "11d10 + 33",
+    "speed": {
+      "walk": 10,
+      "climb": 20
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 7,
+    "intelligence_save": -2,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 16",
+    "languages": "None",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The roper can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 17 (3d8 + 4) Piercing damage.",
+        "damage_dice": "3d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Tentacle",
+        "desc": "Melee Attack Roll: +7, reach 60 ft. Hit: The target has the Grappled condition (escape DC 14) from one of six tentacles, and the target has the Poisoned condition until the grapple ends. The tentacle can be damaged, freeing a creature it has Grappled when destroyed (AC 20, HP 10, Immunity to Poison and Psychic damage). Damaging the tentacle deals no damage to the roper, and a destroyed tentacle regrows at the start of the roper\u2019s next turn."
+      },
+      {
+        "name": "Reel",
+        "desc": "The roper pulls each creature Grappled by it up to 30 feet straight toward it."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "rust-monster": {
+    "name": "Rust Monster",
+    "slug": "rust-monster",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 33,
+    "hit_dice": "6d8 + 6",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 13,
+    "strength_save": 1,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Iron Scent",
+        "desc": "The rust monster can pinpoint the location of ferrous metal within 30 feet of itself."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The rust monster makes one Bite attack and uses Antennae twice."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 1
+      },
+      {
+        "name": "Antennae",
+        "desc": "The rust monster targets one nonmagical metal object\u2014armor or a weapon\u2014worn or carried by a creature within 5 feet of itself. Dexterity Saving Throw: DC 11, the creature with the object. Failure: The object takes a \u22121 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches \u22125. The penalty can be removed by casting the Mending spell on the armor or weapon."
+      },
+      {
+        "name": "Destroy Metal",
+        "desc": "The rust monster touches a nonmagical metal object within 5 feet of itself that isn\u2019t being worn or carried. The touch destroys a 1-foot Cube of the object."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Reflexive Antennae",
+        "desc": "Trigger: An attack roll hits the rust monster. Response: The rust monster uses Antennae. Sahuagin"
+      }
+    ],
+    "legendary_actions": []
+  },
+  "rat": {
+    "name": "Rat",
+    "slug": "rat",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 20,
+      "climb": 20
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 9,
+    "constitution_save": -1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 4,
+    "charisma_save": -3,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 30 ft.; Passive Perception 12",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Agile",
+        "desc": "The rat doesn\u2019t provoke an Opportunity Attack when it moves out of an enemy\u2019s reach."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "raven": {
+    "name": "Raven",
+    "slug": "raven",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 2,
+    "hit_dice": "1d4",
+    "speed": {
+      "walk": 10,
+      "fly": 50
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Mimicry",
+        "desc": "The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (Insight) check."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Beak",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "reef-shark": {
+    "name": "Reef Shark",
+    "slug": "reef-shark",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 22,
+    "hit_dice": "4d8 + 4",
+    "speed": {
+      "walk": 5,
+      "swim": 30
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 4,
+    "charisma_save": -3,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft.; Passive Perception 12",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The shark has Advantage on an attack roll against a creature if at least one of the shark\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      },
+      {
+        "name": "Water Breathing",
+        "desc": "The shark can breathe only underwater."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage.",
+        "damage_dice": "2d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "rhinoceros": {
+    "name": "Rhinoceros",
+    "slug": "rhinoceros",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 45,
+    "hit_dice": "6d10 + 12",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Gore",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Piercing damage. If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.",
+        "damage_dice": "2d8",
+        "damage_bonus": 5
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "riding-horse": {
+    "name": "Riding Horse",
+    "slug": "riding-horse",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 13,
+    "hit_dice": "2d10 + 2",
+    "speed": {
+      "walk": 60
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 7,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

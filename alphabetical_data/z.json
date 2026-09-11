@@ -1,0 +1,60 @@
+{
+  "zombie": {
+    "name": "Zombie",
+    "slug": "zombie",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "armor_class": 8,
+    "armor_desc": "",
+    "initiative": -2,
+    "hit_points": 15,
+    "hit_dice": "2d8 + 6",
+    "speed": {
+      "walk": 20
+    },
+    "strength": 13,
+    "strength_save": 1,
+    "dexterity": 6,
+    "dexterity_save": -2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 6,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "Understands Common plus one other language",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Undead Fortitude",
+        "desc": "If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Bludgeoning damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 1
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

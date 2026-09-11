@@ -1,0 +1,278 @@
+{
+  "knight": {
+    "name": "Knight",
+    "slug": "knight",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 52,
+    "hit_dice": "8d8 + 16",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 14,
+    "constitution_save": 4,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 11,
+    "wisdom_save": 2,
+    "charisma": 15,
+    "charisma_save": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "Common plus one other language",
+    "challenge_rating": "3",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination."
+      },
+      {
+        "name": "Greatsword",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage plus 4 (1d8) Radiant damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Heavy Crossbow",
+        "desc": "Ranged Attack Roll: +2, range 100/400 ft. Hit: 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage.",
+        "damage_dice": "2d10"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Parry",
+        "desc": "Trigger: The knight is hit by a melee attack roll while holding a weapon. Response: The knight adds 2 to its AC against that attack, possibly causing it to miss. Kobold"
+      }
+    ],
+    "legendary_actions": []
+  },
+  "kobold-warrior": {
+    "name": "Kobold Warrior",
+    "slug": "kobold-warrior",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "dragon",
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 7,
+    "hit_dice": "3d6 \u2212 3",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 7,
+    "strength_save": -2,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 9,
+    "constitution_save": -1,
+    "intelligence": 8,
+    "intelligence_save": -1,
+    "wisdom": 7,
+    "wisdom_save": -2,
+    "charisma": 8,
+    "charisma_save": -1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "Common, Draconic",
+    "challenge_rating": "1/8",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The kobold has Advantage on an attack roll against a creature if at least one of the kobold\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, the kobold has Disadvantage on ability checks and attack rolls."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Dagger",
+        "desc": "Melee or Ranged Attack Roll: +4, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "kraken": {
+    "name": "Kraken",
+    "slug": "kraken",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Gargantuan",
+    "type": "monstrosity",
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 14,
+    "hit_points": 481,
+    "hit_dice": "26d20 + 208",
+    "speed": {
+      "walk": 30,
+      "swim": 120
+    },
+    "strength": 30,
+    "strength_save": 17,
+    "dexterity": 11,
+    "dexterity_save": 7,
+    "constitution": 26,
+    "constitution_save": 15,
+    "intelligence": 22,
+    "intelligence_save": 6,
+    "wisdom": 18,
+    "wisdom_save": 11,
+    "charisma": 20,
+    "charisma_save": 5,
+    "perception": 11,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold",
+      "Lightning"
+    ],
+    "condition_immunities": [
+      "Frightened",
+      "Grappled",
+      "Paralyzed",
+      "Restrained"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 21",
+    "languages": "Understands Abyssal, Celestial, Infernal, and",
+    "challenge_rating": "23",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The kraken can breathe air and water."
+      },
+      {
+        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
+        "desc": "If the kraken fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Siege Monster",
+        "desc": "The kraken deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The kraken makes two Tentacle attacks and uses Fling, Lightning Strike, or Swallow."
+      },
+      {
+        "name": "Tentacle",
+        "desc": "Melee Attack Roll: +17, reach 30 ft. Hit: 24 (4d6 + 10) Bludgeoning damage. The target has the Grappled condition (escape DC 20) from one of ten tentacles, and it has the Restrained condition until the grapple ends.",
+        "damage_dice": "4d6",
+        "damage_bonus": 10
+      },
+      {
+        "name": "Fling",
+        "desc": "The kraken throws a Large or smaller creature Grappled by it to a space it can see within 60 feet of itself that isn\u2019t in the air. Dexterity Saving Throw: DC 25, the creature thrown and each creature in the destination space. Failure: 18 (4d8) Bludgeoning damage, and the target has the Prone condition. Success: Half damage only.",
+        "damage_dice": "4d8"
+      },
+      {
+        "name": "Lightning Strike",
+        "desc": "Dexterity Saving Throw: DC 23, one creature the kraken can see within 120 feet. Failure: 33 (6d10) Lightning damage. Success: Half damage.",
+        "damage_dice": "6d10"
+      },
+      {
+        "name": "Swallow",
+        "desc": "Dexterity Saving Throw: DC 25, one creature Grappled by the kraken (it can have up to four creatures swallowed at a time). Failure: 23 (3d8 + 10) Piercing damage. If the target is Large or smaller, it is swallowed and no longer Grappled. A swallowed creature has the Restrained condition, has Total Cover against attacks and other effects outside the kraken, and takes 24 (7d6) Acid damage at the start of each of its turns. If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the kraken with the Prone condition. If the kraken dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone.",
+        "damage_dice": "3d8",
+        "damage_bonus": 10
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Storm Bolt",
+        "desc": "The kraken uses Lightning Strike."
+      },
+      {
+        "name": "Toxic Ink",
+        "desc": "Constitution Saving Throw: DC 23, each creature in a 15-foot Emanation originating from the kraken while it is underwater. Failure: The target has the Blinded and Poisoned conditions until the end of the kraken\u2019s next turn. The kraken then moves up to its Speed. Failure or Success: The kraken can\u2019t take this action again until the start of its next turn."
+      }
+    ]
+  },
+  "killer-whale": {
+    "name": "Killer Whale",
+    "slug": "killer-whale",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 90,
+    "hit_dice": "12d12 + 12",
+    "speed": {
+      "walk": 5,
+      "swim": 60
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 120 ft.; Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "3",
+    "special_abilities": [
+      {
+        "name": "Hold Breath",
+        "desc": "The whale can hold its breath for 30 minutes."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 21 (5d6 + 4) Piercing damage.",
+        "damage_dice": "5d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

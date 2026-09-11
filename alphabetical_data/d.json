@@ -1,0 +1,964 @@
+{
+  "darkmantle": {
+    "name": "Darkmantle",
+    "slug": "darkmantle",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "aberration",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 22,
+    "hit_dice": "5d6 + 5",
+    "speed": {
+      "walk": 10,
+      "fly": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 60 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Crush",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage, and the darkmantle attaches to the target. If the target is a Medium or smaller creature and the darkmantle had Advantage on the attack roll, it covers the target, which has the Blinded condition and is suffocating while the darkmantle is attached in this way. While attached to a target, the darkmantle can attack only the target but has Advantage on its attack rolls. Its Speed becomes 0, it can\u2019t benefit from any bonus to its Speed, and it moves with the target. A creature can take an action to try to detach the darkmantle from itself, doing so with a successful DC 13 Strength (Athletics) check. On its turn, the darkmantle can detach itself by using 5 feet of movement.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Darkness Aura (1/Day)",
+        "desc": "Magical Darkness fills a 15-foot"
+      },
+      {
+        "name": "Emanation originating from the darkmantle",
+        "desc": "This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can\u2019t penetrate this area, and no light can illuminate it."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "death-dog": {
+    "name": "Death Dog",
+    "slug": "death-dog",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "monstrosity",
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 39,
+    "hit_dice": "6d8 + 12",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 15,
+    "strength_save": 2,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Frightened",
+      "Stunned",
+      "Unconscious"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "1",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The death dog makes two Bite attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 12. First Failure: The target has the Poisoned condition. While Poisoned, the target\u2019s Hit Point maximum doesn\u2019t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Poisoned target\u2019s Hit Point maximum decreases by 5 (1d10).",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "deva": {
+    "name": "Deva",
+    "slug": "deva",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "celestial",
+    "alignment": "lawful good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 229,
+    "hit_dice": "27d8 + 108",
+    "speed": {
+      "walk": 30,
+      "fly": 90,
+      "hover": true
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 18,
+    "dexterity_save": 4,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 17,
+    "intelligence_save": 3,
+    "wisdom": 20,
+    "wisdom_save": 9,
+    "charisma": 20,
+    "charisma_save": 9,
+    "perception": 9,
+    "damage_resistances": [
+      "Radiant"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 19",
+    "languages": "All; telepathy 120 ft.",
+    "challenge_rating": "10",
+    "special_abilities": [
+      {
+        "name": "Exalted Restoration",
+        "desc": "If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The deva has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The deva makes two Holy Mace attacks."
+      },
+      {
+        "name": "Holy Mace",
+        "desc": "Melee Attack Roll: +8, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 18 (4d8) Radiant damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The deva casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Evil and Good, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Commune, Raise Dead"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Divine Aid (2/Day)",
+        "desc": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "djinni": {
+    "name": "Djinni",
+    "slug": "djinni",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "elemental",
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 218,
+    "hit_dice": "19d10 + 114",
+    "speed": {
+      "walk": 30,
+      "fly": 90,
+      "hover": true
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 15,
+    "dexterity_save": 6,
+    "constitution": 22,
+    "constitution_save": 6,
+    "intelligence": 15,
+    "intelligence_save": 2,
+    "wisdom": 16,
+    "wisdom_save": 7,
+    "charisma": 20,
+    "charisma_save": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning",
+      "Thunder"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 13",
+    "languages": "Primordial (Auran)",
+    "challenge_rating": "11",
+    "special_abilities": [
+      {
+        "name": "Elemental Restoration",
+        "desc": "If the djinni dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Air."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The djinni has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Wishes",
+        "desc": "The djinni has a 30 percent chance of knowing the Wish spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who communicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell\u2019s stress. Once the djinni has cast it three times, the djinni can\u2019t do so again for 365 days."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination."
+      },
+      {
+        "name": "Storm Blade",
+        "desc": "Melee Attack Roll: +9, reach 5 feet. Hit: 12 (2d6 + 5) Slashing damage plus 7 (2d6) Lightning damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Storm Bolt",
+        "desc": "Ranged Attack Roll: +9, range 120 feet. Hit: 13 (3d8) Thunder damage. If the target is a Large or smaller creature, it has the Prone condition.",
+        "damage_dice": "3d8"
+      },
+      {
+        "name": "Create Whirlwind",
+        "desc": "The djinni conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a 20-foot-radius, 60-foot-high Cylinder centered on that point. The whirlwind lasts until the djinni\u2019s Concentration on it ends. The djinni can move the whirlwind up to 20 feet at the start of each of its turns. Whenever the whirlwind enters a creature\u2019s space or a creature enters the whirlwind, that creature is subjected to the following effect. Strength Saving Throw: DC 17 (a creature makes this save only once per turn, and the djinni is unaffected). Failure: While in the whirlwind, the target has the Restrained condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes 21 (6d6) Thunder damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.",
+        "damage_dice": "6d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Evil and Good, Detect Magic"
+      },
+      {
+        "name": "2/Day Each",
+        "desc": "Create Food and Water (can create wine instead of water), Tongues, Wind Walk"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Creation, Gaseous Form, Invisibility, Major Image, Plane Shift"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "doppelganger": {
+    "name": "Doppelganger",
+    "slug": "doppelganger",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "monstrosity",
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 52,
+    "hit_dice": "8d8 + 16",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 11,
+    "strength_save": 0,
+    "dexterity": 18,
+    "dexterity_save": 4,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 14,
+    "charisma_save": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 11",
+    "languages": "Common plus three other languages",
+    "challenge_rating": "3",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The doppelganger makes two Slam attacks and uses Unsettling Visage if available."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +6 (with Advantage during the first round of each combat), reach 5 ft. Hit: 11 (2d6 + 4) Bludgeoning damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Read Thoughts",
+        "desc": "The doppelganger casts Detect Thoughts, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 12)."
+      },
+      {
+        "name": "Unsettling Visage (Recharge 6)",
+        "desc": "Wisdom Saving Throw: DC 12, each creature in a 15-foot Emanation originating from the doppelganger that can see the doppelganger. Failure: The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "dragon-turtle": {
+    "name": "Dragon Turtle",
+    "slug": "dragon-turtle",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Gargantuan",
+    "type": "dragon",
+    "alignment": "neutral",
+    "armor_class": 20,
+    "armor_desc": "",
+    "initiative": 6,
+    "hit_points": 356,
+    "hit_dice": "23d20 + 115",
+    "speed": {
+      "walk": 20,
+      "swim": 50
+    },
+    "strength": 25,
+    "strength_save": 7,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 20,
+    "constitution_save": 11,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 12,
+    "wisdom_save": 7,
+    "charisma": 12,
+    "charisma_save": 1,
+    "damage_resistances": [
+      "Fire"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 11",
+    "languages": "Draconic, Primordial (Aquan)",
+    "challenge_rating": "17",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The dragon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dragon makes three Bite attacks. It can replace one attack with a Tail attack."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +13, reach 15 ft. Hit: 23 (3d10 + 7) Piercing damage plus 7 (2d6) Fire damage. Being underwater doesn\u2019t grant Resistance to this Fire damage.",
+        "damage_dice": "3d10",
+        "damage_bonus": 7
+      },
+      {
+        "name": "Tail",
+        "desc": "Melee Attack Roll: +13, reach 15 ft. Hit: 18 (2d10 + 7) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition.",
+        "damage_dice": "2d10",
+        "damage_bonus": 7
+      },
+      {
+        "name": "Steam Breath (Recharge 5\u20136)",
+        "desc": "Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage. Failure or Success: Being underwater doesn\u2019t grant Resistance to this Fire damage.",
+        "damage_dice": "16d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "dretch": {
+    "name": "Dretch",
+    "slug": "dretch",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 18,
+    "hit_dice": "4d6 + 4",
+    "speed": {
+      "walk": 20
+    },
+    "strength": 12,
+    "strength_save": 1,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [
+      "Cold",
+      "Fire",
+      "Lightning"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 9",
+    "languages": "Abyssal; telepathy 60 ft. (works only with",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 1
+      },
+      {
+        "name": "Fetid Cloud (1/Day)",
+        "desc": "Constitution Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the dretch. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can\u2019t take Reactions."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "drider": {
+    "name": "Drider",
+    "slug": "drider",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "monstrosity",
+    "alignment": "chaotic evil",
+    "armor_class": 19,
+    "armor_desc": "",
+    "initiative": 4,
+    "hit_points": 123,
+    "hit_dice": "13d10 + 52",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 19,
+    "dexterity_save": 4,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 13,
+    "intelligence_save": 1,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 12,
+    "charisma_save": 1,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 16",
+    "languages": "Elvish, Undercommon",
+    "challenge_rating": "6",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, the drider has Disadvantage on ability checks and attack rolls."
+      },
+      {
+        "name": "Web Walker",
+        "desc": "The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the same web."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The drider makes three attacks, using Foreleg or Poison Burst in any combination."
+      },
+      {
+        "name": "Foreleg",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 13 (2d8 + 4) Piercing damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Poison Burst",
+        "desc": "Ranged Attack Roll: +6, range 120 ft. Hit: 13 (3d6 + 3) Poison damage.",
+        "damage_dice": "3d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Magic of the Spider Queen (Recharge 5\u20136)",
+        "desc": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14)."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "druid": {
+    "name": "Druid",
+    "slug": "druid",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 44,
+    "hit_dice": "8d8 + 8",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 12,
+    "intelligence_save": 1,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 11,
+    "charisma_save": 0,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 15",
+    "languages": "Common, Druidic, Sylvan",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination."
+      },
+      {
+        "name": "Vine Staff",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 2 (1d4) Poison damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Verdant Wisp",
+        "desc": "Ranged Attack Roll: +5, range 90 ft. Hit: 10 (3d6) Radiant damage.",
+        "damage_dice": "3d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Druidcraft, Speak with Animals"
+      },
+      {
+        "name": "2/Day Each",
+        "desc": "Entangle, Thunderwave"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Animal Messenger, Longstrider, Moonbeam"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "dryad": {
+    "name": "Dryad",
+    "slug": "dryad",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fey",
+    "alignment": "neutral",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 22,
+    "hit_dice": "5d8",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 15,
+    "wisdom_save": 2,
+    "charisma": 18,
+    "charisma_save": 4,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "Elvish, Sylvan",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Magic Resistance",
+        "desc": "The dryad has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Speak with Beasts and Plants",
+        "desc": "The dryad can communicate with Beasts and Plants as if they shared a language."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The dryad makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast Charm Monster."
+      },
+      {
+        "name": "Vine Lash",
+        "desc": "Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d8 + 4) Slashing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Thorn Burst",
+        "desc": "Ranged Attack Roll: +6, range 60 ft. Hit: 7 (1d6 + 4) Piercing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The dryad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Animal Friendship, Charm Monster (lasts 24 hours; ends early if the dryad casts the spell again), Druidcraft"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Entangle, Pass without Trace"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Tree Stride",
+        "desc": "If within 5 feet of a Large or bigger tree, the dryad teleports to an unoccupied space within 5 feet of a second Large or bigger tree that is within 60 feet of the previous tree."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "dust-mephit": {
+    "name": "Dust Mephit",
+    "slug": "dust-mephit",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "elemental",
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 17,
+    "hit_dice": "5d6",
+    "speed": {
+      "walk": 30,
+      "fly": 30
+    },
+    "strength": 5,
+    "strength_save": -3,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 9,
+    "intelligence_save": -1,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 10,
+    "charisma_save": 0,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [
+      "Fire"
+    ],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 12",
+    "languages": "Primordial (Auran, Terran)",
+    "challenge_rating": "1/2",
+    "special_abilities": [
+      {
+        "name": "Death Burst",
+        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot"
+      },
+      {
+        "name": "Emanation originating from the mephit",
+        "desc": "Failure: 5 (2d4) Bludgeoning damage. Success: Half damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Blinding Breath (Recharge 6)",
+        "desc": "Dexterity Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: The target has the Blinded condition until the end of the mephit\u2019s next turn."
+      },
+      {
+        "name": "Sleep (1/Day)",
+        "desc": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10)."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "deer": {
+    "name": "Deer",
+    "slug": "deer",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 4,
+    "hit_dice": "1d8",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 11,
+    "strength_save": 0,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 5,
+    "charisma_save": -3,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Agile",
+        "desc": "The deer doesn\u2019t provoke an Opportunity Attack when it moves out of an enemy\u2019s reach."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ram",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage.",
+        "damage_dice": "1d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "dire-wolf": {
+    "name": "Dire Wolf",
+    "slug": "dire-wolf",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 22,
+    "hit_dice": "3d10 + 6",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 17,
+    "strength_save": 3,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The wolf has Advantage on an attack roll against a creature if at least one of the wolf\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "draft-horse": {
+    "name": "Draft Horse",
+    "slug": "draft-horse",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 15,
+    "hit_dice": "2d10 + 4",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 7,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Bludgeoning damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

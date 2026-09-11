@@ -1,0 +1,511 @@
+{
+  "violet-fungus": {
+    "name": "Violet Fungus",
+    "slug": "violet-fungus",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "plant",
+    "alignment": "unaligned",
+    "armor_class": 5,
+    "armor_desc": "",
+    "initiative": -5,
+    "hit_points": 18,
+    "hit_dice": "4d8",
+    "speed": {
+      "walk": 5
+    },
+    "strength": 3,
+    "strength_save": -4,
+    "dexterity": 1,
+    "dexterity_save": -5,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 3,
+    "wisdom_save": -4,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft.; Passive Perception 6",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The fungus makes two Rotting Touch attacks."
+      },
+      {
+        "name": "Rotting Touch",
+        "desc": "Melee Attack Roll: +2, reach 10 ft. Hit: 4 (1d8) Necrotic damage.",
+        "damage_dice": "1d8"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "vampire-familiar": {
+    "name": "Vampire Familiar",
+    "slug": "vampire-familiar",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 65,
+    "hit_dice": "10d8 + 20",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 17,
+    "strength_save": 3,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 2,
+    "charisma": 14,
+    "charisma_save": 2,
+    "perception": 4,
+    "damage_resistances": [
+      "Necrotic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed (except from its vampire master)"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "Common plus one other language",
+    "challenge_rating": "3",
+    "special_abilities": [
+      {
+        "name": "Vampiric Connection",
+        "desc": "While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar\u2019s senses."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The familiar makes two Umbral Dagger attacks."
+      },
+      {
+        "name": "Umbral Dagger",
+        "desc": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage plus 7 (3d4) Necrotic damage. If the target is reduced to 0 Hit Points by this attack, the target becomes Stable but has the Poisoned condition for 1 hour. While it has the Poisoned condition, the target has the Paralyzed condition.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Deathless Agility",
+        "desc": "The familiar takes the Dash or Disengage action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "vampire-spawn": {
+    "name": "Vampire Spawn",
+    "slug": "vampire-spawn",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small undead",
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 90,
+    "hit_dice": "12d8 + 36",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 16,
+    "dexterity_save": 6,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 11,
+    "intelligence_save": 0,
+    "wisdom": 10,
+    "wisdom_save": 3,
+    "charisma": 12,
+    "charisma_save": 1,
+    "perception": 3,
+    "damage_resistances": [
+      "Necrotic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 13",
+    "languages": "Common plus one other language",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Vampire Weakness",
+        "desc": "The vampire has these weaknesses:"
+      },
+      {
+        "name": "Forbiddance",
+        "desc": "The vampire can\u2019t enter a residence without an invitation from an occupant."
+      },
+      {
+        "name": "Running Water",
+        "desc": "The vampire takes 20 Acid damage if it ends its turn in running water."
+      },
+      {
+        "name": "Stake to the Heart",
+        "desc": "The vampire is destroyed if a weapon that deals Piercing damage is driven into the vampire\u2019s heart while the vampire has the Incapacitated condition."
+      },
+      {
+        "name": "Sunlight",
+        "desc": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The vampire makes two Claw attacks and uses Bite."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 8 (2d4 + 3) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two claws."
+      },
+      {
+        "name": "Bite",
+        "desc": "Constitution Saving Throw: DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 5 (1d4 + 3) Piercing damage plus 10 (3d6) Necrotic damage. The target\u2019s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Deathless Agility",
+        "desc": "The vampire takes the Dash or Disengage action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "vampire": {
+    "name": "Vampire",
+    "slug": "vampire",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small undead",
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "",
+    "initiative": 14,
+    "hit_points": 195,
+    "hit_dice": "23d8 + 92",
+    "speed": {
+      "walk": 40,
+      "climb": 40
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 18,
+    "dexterity_save": 9,
+    "constitution": 18,
+    "constitution_save": 9,
+    "intelligence": 17,
+    "intelligence_save": 3,
+    "wisdom": 15,
+    "wisdom_save": 7,
+    "charisma": 18,
+    "charisma_save": 9,
+    "perception": 7,
+    "damage_resistances": [
+      "Necrotic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 17",
+    "languages": "Common plus two other languages",
+    "challenge_rating": "13",
+    "special_abilities": [
+      {
+        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Misty Escape",
+        "desc": "If the vampire drops to 0 Hit Points outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can\u2019t use ShapeShift, it is destroyed. While it has 0 Hit Points in mist form, it can\u2019t return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Paralyzed condition until it regains any Hit Points, and it regains 1 Hit Point after spending 1 hour there."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Vampire Weakness",
+        "desc": "The vampire has these weaknesses:"
+      },
+      {
+        "name": "Forbiddance",
+        "desc": "The vampire can\u2019t enter a residence without an invitation from an occupant."
+      },
+      {
+        "name": "Running Water",
+        "desc": "The vampire takes 20 Acid damage if it ends its turn in running water."
+      },
+      {
+        "name": "Stake to the Heart",
+        "desc": "If a weapon that deals Piercing damage is driven into the vampire\u2019s heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed."
+      },
+      {
+        "name": "Sunlight",
+        "desc": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack (Vampire Form Only)",
+        "desc": "The vampire makes two Grave Strike attacks and uses Bite."
+      },
+      {
+        "name": "Grave Strike (Vampire Form Only)",
+        "desc": "Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.",
+        "damage_dice": "1d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Bite (Bat or Vampire Form Only)",
+        "desc": "Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target\u2019s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire\u2019s control.",
+        "damage_dice": "1d4",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Charm (Recharge 5\u20136)",
+        "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire\u2019s Bite, the damage of which doesn\u2019t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire."
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "If the vampire isn\u2019t in sunlight or running water, it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft.) or a Medium cloud of mist (Speed 5 ft., Fly Speed 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it. While in bat form, the vampire can\u2019t speak. Its game statistics, other than its size and Speed, are unchanged. While in mist form, the vampire can\u2019t take any actions, speak, or manipulate objects. It is weightless and can enter an enemy\u2019s space and stop there. If air can pass through a space, the mist can do so, but it can\u2019t pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": [
+      {
+        "name": "Beguile",
+        "desc": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can\u2019t take this action again until the start of its next turn."
+      },
+      {
+        "name": "Deathless Strike",
+        "desc": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
+      }
+    ]
+  },
+  "vrock": {
+    "name": "Vrock",
+    "slug": "vrock",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 152,
+    "hit_dice": "16d10 + 64",
+    "speed": {
+      "walk": 40,
+      "fly": 60
+    },
+    "strength": 17,
+    "strength_save": 3,
+    "dexterity": 15,
+    "dexterity_save": 5,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 8,
+    "intelligence_save": -1,
+    "wisdom": 13,
+    "wisdom_save": 4,
+    "charisma": 8,
+    "charisma_save": 2,
+    "damage_resistances": [
+      "Cold",
+      "Fire",
+      "Lightning"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Darkvision 120 ft.; Passive Perception 11",
+    "languages": "Abyssal; telepathy 120 ft.",
+    "challenge_rating": "6",
+    "special_abilities": [
+      {
+        "name": "Demonic Restoration",
+        "desc": "If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The vrock has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The vrock makes two Shred attacks."
+      },
+      {
+        "name": "Shred",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage plus 10 (3d6) Poison damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Spores (Recharge 6)",
+        "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While Poisoned, the target takes 5 (1d10) Poison damage at the start of each of its turns. Emptying a flask of Holy Water on the target ends the effect early.",
+        "damage_dice": "1d10"
+      },
+      {
+        "name": "Stunning Screech (1/Day)",
+        "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock\u2019s next turn. Warriors",
+        "damage_dice": "3d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "venomous-snake": {
+    "name": "Venomous Snake",
+    "slug": "venomous-snake",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 5,
+    "hit_dice": "2d4",
+    "speed": {
+      "walk": 30,
+      "swim": 30
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage plus 3 (1d6) Poison damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "vulture": {
+    "name": "Vulture",
+    "slug": "vulture",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 5,
+    "hit_dice": "1d8 + 1",
+    "speed": {
+      "walk": 10,
+      "fly": 50
+    },
+    "strength": 7,
+    "strength_save": -2,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 4,
+    "charisma_save": -3,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The vulture has Advantage on an attack roll against a creature if at least one of the vulture\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Beak",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Piercing damage.",
+        "damage_dice": "1d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

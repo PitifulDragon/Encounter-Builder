@@ -1,0 +1,371 @@
+{
+  "lamia": {
+    "name": "Lamia",
+    "slug": "lamia",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 97,
+    "hit_dice": "13d10 + 26",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 15,
+    "constitution_save": 2,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 15,
+    "wisdom_save": 2,
+    "charisma": 16,
+    "charisma_save": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 12",
+    "languages": "Abyssal, Common",
+    "challenge_rating": "4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage plus 7 (2d6) Psychic damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Corrupting Touch",
+        "desc": "Wisdom Saving Throw: DC 13, one creature the lamia can see within 5 feet. Failure: 13 (3d8) Psychic damage, and the target is cursed for 1 hour. Until the curse ends, the target has the Charmed and Poisoned conditions.",
+        "damage_dice": "3d8"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The lamia casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Disguise Self (can appear as a Large or Medium biped), Minor Illusion"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Geas, Major Image, Scrying"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Leap",
+        "desc": "The lamia jumps up to 30 feet by spending 10 feet of movement."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "lemure": {
+    "name": "Lemure",
+    "slug": "lemure",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 9,
+    "armor_desc": "",
+    "initiative": -3,
+    "hit_points": 9,
+    "hit_dice": "2d8",
+    "speed": {
+      "walk": 20
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 5,
+    "dexterity_save": -3,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Frightened",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 120 ft. (unimpeded by magical",
+    "languages": "Understands Infernal but can\u2019t speak",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Hellish Restoration",
+        "desc": "If the lemure dies in the Nine Hells, it revives with all its Hit Points in 1d10 days unless it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Vile Slime",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Poison damage.",
+        "damage_dice": "1d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "lich": {
+    "name": "Lich",
+    "slug": "lich",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "armor_class": 20,
+    "armor_desc": "",
+    "initiative": 17,
+    "hit_points": 315,
+    "hit_dice": "42d8 + 126",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 11,
+    "strength_save": 0,
+    "dexterity": 16,
+    "dexterity_save": 10,
+    "constitution": 16,
+    "constitution_save": 10,
+    "intelligence": 21,
+    "intelligence_save": 12,
+    "wisdom": 14,
+    "wisdom_save": 9,
+    "charisma": 16,
+    "charisma_save": 3,
+    "perception": 9,
+    "damage_resistances": [
+      "Cold",
+      "Lightning"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Poisoned"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 19",
+    "languages": "All",
+    "challenge_rating": "21",
+    "special_abilities": [
+      {
+        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
+        "desc": "If the lich fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Spirit Jar",
+        "desc": "If destroyed, the lich reforms in 1d10 days if it has a spirit jar, reviving with all its Hit Points. The new body appears in an unoccupied space within the lich\u2019s lair."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The lich makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination."
+      },
+      {
+        "name": "Eldritch Burst",
+        "desc": "Melee or Ranged Attack Roll: +12, reach 5 ft. or range 120 ft. Hit: 31 (4d12 + 5) Force damage.",
+        "damage_dice": "4d12",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Paralyzing Touch",
+        "desc": "Melee Attack Roll: +12, reach 5 ft. Hit: 15 (3d6 + 5) Cold damage, and the target has the Paralyzed condition until the start of the lich\u2019s next turn.",
+        "damage_dice": "3d6",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The lich casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 20):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Detect Thoughts, Dispel Magic, Fireball (level 5 version), Invisibility, Lightning Bolt (level 5 version), Mage Hand, Prestidigitation"
+      },
+      {
+        "name": "2/Day Each",
+        "desc": "Animate Dead, Dimension Door, Plane Shift"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Chain Lightning, Finger of Death, Power Word Kill, Scrying"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Protective Magic",
+        "desc": "The lich casts Counterspell or Shield in response to the spell\u2019s trigger, using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Deathly Teleport",
+        "desc": "The lich teleports up to 60 feet to an unoccupied space it can see, and each creature within 10 feet of the space it left takes 11 (2d10) Necrotic damage.",
+        "damage_dice": "2d10"
+      },
+      {
+        "name": "Disrupt Life",
+        "desc": "Constitution Saving Throw: DC 20, each creature that isn\u2019t an Undead in a 20-foot Emanation originating from the lich. Failure: 31 (9d6) Necrotic damage. Success: Half damage. Failure or Success: The lich can\u2019t take this action again until the start of its next turn.",
+        "damage_dice": "9d6"
+      },
+      {
+        "name": "Frightening Gaze",
+        "desc": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can\u2019t take this action again until the start of its next turn. Mages"
+      }
+    ]
+  },
+  "lion": {
+    "name": "Lion",
+    "slug": "lion",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 22,
+    "hit_dice": "4d10",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 17,
+    "strength_save": 3,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 8,
+    "charisma_save": -1,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "1",
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The lion has Advantage on an attack roll against a creature if at least one of the lion\u2019s allies is within 5 feet of the creature and the ally doesn\u2019t have the Incapacitated condition."
+      },
+      {
+        "name": "Running Leap",
+        "desc": "With a 10-foot running start, the lion can Long Jump up to 25 feet."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The lion makes two Rend attacks. It can replace one attack with a use of Roar."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Roar",
+        "desc": "Wisdom Saving Throw: DC 11, one creature within 15 feet. Failure: The target has the Frightened condition until the start of the lion\u2019s next turn."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "lizard": {
+    "name": "Lizard",
+    "slug": "lizard",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 2,
+    "hit_dice": "1d4",
+    "speed": {
+      "walk": 20,
+      "climb": 20
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 3,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 30 ft.; Passive Perception 9",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

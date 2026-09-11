@@ -1,0 +1,550 @@
+{
+  "earth-elemental": {
+    "name": "Earth Elemental",
+    "slug": "earth-elemental",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "elemental",
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 147,
+    "hit_dice": "14d10 + 70",
+    "speed": {
+      "walk": 30,
+      "burrow": 30
+    },
+    "strength": 20,
+    "strength_save": 5,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 20,
+    "constitution_save": 5,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [
+      "Thunder"
+    ],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Unconscious"
+    ],
+    "senses": "Darkvision 60 ft., Tremorsense 60 ft.;",
+    "languages": "Primordial (Terran)",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Earth Glide",
+        "desc": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn\u2019t disturb the material it moves through."
+      },
+      {
+        "name": "Siege Monster",
+        "desc": "The elemental deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The elemental makes two attacks, using Slam or Rock Launch in any combination."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +8, reach 10 ft. Hit: 14 (2d8 + 5) Bludgeoning damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Rock Launch",
+        "desc": "Ranged Attack Roll: +8, range 60 ft. Hit: 8 (1d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.",
+        "damage_dice": "1d6",
+        "damage_bonus": 5
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "efreeti": {
+    "name": "Efreeti",
+    "slug": "efreeti",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "elemental",
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 212,
+    "hit_dice": "17d10 + 119",
+    "speed": {
+      "walk": 40,
+      "fly": 60,
+      "hover": true
+    },
+    "strength": 22,
+    "strength_save": 6,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 24,
+    "constitution_save": 7,
+    "intelligence": 16,
+    "intelligence_save": 3,
+    "wisdom": 15,
+    "wisdom_save": 6,
+    "charisma": 19,
+    "charisma_save": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 12",
+    "languages": "Primordial (Ignan)",
+    "challenge_rating": "11",
+    "special_abilities": [
+      {
+        "name": "Elemental Restoration",
+        "desc": "If the efreeti dies outside the Elemental Plane of Fire, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Fire."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The efreeti has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Wishes",
+        "desc": "The efreeti has a 30 percent chance of knowing the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communicates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell\u2019s stress. Once the efreeti has cast it three times, the efreeti can\u2019t do so again for 365 days."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination."
+      },
+      {
+        "name": "Heated Blade",
+        "desc": "Melee Attack Roll: +10, reach 5 ft. Hit: 13 (2d6 + 6) Slashing damage plus 13 (2d12) Fire damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Hurl Flame",
+        "desc": "Ranged Attack Roll: +8, range 120 ft. Hit: 24 (7d6) Fire damage.",
+        "damage_dice": "7d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The efreeti casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Magic, Elementalism"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fire (level 7 version)"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "erinyes": {
+    "name": "Erinyes",
+    "slug": "erinyes",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 7,
+    "hit_points": 178,
+    "hit_dice": "21d8 + 84",
+    "speed": {
+      "walk": 30,
+      "fly": 60
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 16,
+    "dexterity_save": 7,
+    "constitution": 18,
+    "constitution_save": 8,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 18,
+    "charisma_save": 8,
+    "perception": 6,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 16",
+    "languages": "Infernal; telepathy 120 ft.",
+    "challenge_rating": "12",
+    "special_abilities": [
+      {
+        "name": "Diabolical Restoration",
+        "desc": "If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The erinyes has Advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Magic Rope",
+        "desc": "The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a Short or Long Rest."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The erinyes makes three Withering Sword attacks and can use Entangling Rope."
+      },
+      {
+        "name": "Withering Sword",
+        "desc": "Melee Attack Roll: +8, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage plus 11 (2d10) Necrotic damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Entangling Rope (Requires Magic Rope)",
+        "desc": "Strength Saving Throw: DC 16, one creature the erinyes can see within 120 feet. Failure: 14 (4d6) Force damage, and the target has the Restrained condition until the rope is destroyed, the erinyes uses a Bonus Action to release the target, or the erinyes uses Entangling Rope again.",
+        "damage_dice": "4d6"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Parry",
+        "desc": "Trigger: The erinyes is hit by a melee attack roll while holding a weapon. Response: The erinyes adds 4 to its AC against that attack, possibly causing it to miss."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "ettercap": {
+    "name": "Ettercap",
+    "slug": "ettercap",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "monstrosity",
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 44,
+    "hit_dice": "8d8 + 8",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 7,
+    "intelligence_save": -2,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 8,
+    "charisma_save": -1,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The ettercap can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Web Walker",
+        "desc": "The ettercap ignores movement restrictions caused by webs, and the ettercap knows the location of any other creature in contact with the same web."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The ettercap makes one Bite attack and one Claw attack."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 2 (1d4) Poison damage, and the target has the Poisoned condition until the start of the ettercap\u2019s next turn.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.",
+        "damage_dice": "2d4",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Web Strand (Recharge 5\u20136)",
+        "desc": "Dexterity Saving Throw: DC 12, one Large or smaller creature the ettercap can see within 30 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage)."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Reel",
+        "desc": "The ettercap pulls one creature within 30 feet of itself that is Restrained by its Web Strand up to 25 feet straight toward itself."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "ettin": {
+    "name": "Ettin",
+    "slug": "ettin",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 85,
+    "hit_dice": "10d10 + 30",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 21,
+    "strength_save": 5,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 8,
+    "charisma_save": -1,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Frightened",
+      "Stunned",
+      "Unconscious"
+    ],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "Giant",
+    "challenge_rating": "4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The ettin makes one Battleaxe attack and one Morningstar attack."
+      },
+      {
+        "name": "Battleaxe",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.",
+        "damage_dice": "2d8",
+        "damage_bonus": 5
+      },
+      {
+        "name": "Morningstar",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Piercing damage, and the target has Disadvantage on the next attack roll it makes before the end of its next turn.",
+        "damage_dice": "2d8",
+        "damage_bonus": 5
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "eagle": {
+    "name": "Eagle",
+    "slug": "eagle",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Small",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 4,
+    "hit_dice": "1d6 + 1",
+    "speed": {
+      "walk": 10,
+      "fly": 60
+    },
+    "strength": 6,
+    "strength_save": -2,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 16",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Talons",
+        "desc": "Melee Attack Roll: +4, reach 5 feet. Hit: 4 (1d4 + 2) Slashing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "elephant": {
+    "name": "Elephant",
+    "slug": "elephant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 76,
+    "hit_dice": "8d12 + 24",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 22,
+    "strength_save": 6,
+    "dexterity": 9,
+    "dexterity_save": -1,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The elephant makes two Gore attacks."
+      },
+      {
+        "name": "Gore",
+        "desc": "Melee Attack Roll: +8, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.",
+        "damage_dice": "2d8",
+        "damage_bonus": 6
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Trample",
+        "desc": "Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 17 (2d10 + 6) Bludgeoning damage. Success: Half damage."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "elk": {
+    "name": "Elk",
+    "slug": "elk",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 11,
+    "hit_dice": "2d10",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 6,
+    "charisma_save": -2,
+    "perception": 2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 12",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Ram",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the target is a Large or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and has the Prone condition.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

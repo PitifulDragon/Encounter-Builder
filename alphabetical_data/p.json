@@ -1,0 +1,1028 @@
+{
+  "pegasus": {
+    "name": "Pegasus",
+    "slug": "pegasus",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "celestial",
+    "alignment": "chaotic good",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 59,
+    "hit_dice": "7d10 + 21",
+    "speed": {
+      "walk": 60,
+      "fly": 90
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 15,
+    "dexterity_save": 4,
+    "constitution": 16,
+    "constitution_save": 5,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 15,
+    "wisdom_save": 4,
+    "charisma": 13,
+    "charisma_save": 3,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 16",
+    "languages": "Understands Celestial, Common, Elvish, and",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "phase-spider": {
+    "name": "Phase Spider",
+    "slug": "phase-spider",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 45,
+    "hit_dice": "7d10 + 7",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "strength": 15,
+    "strength_save": 2,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "3",
+    "special_abilities": [
+      {
+        "name": "Ethereal Sight",
+        "desc": "The spider can see 60 feet into the Ethereal Plane while on the Material Plane and vice versa."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Web Walker",
+        "desc": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The spider makes two Bite attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage plus 9 (2d8) Poison damage. If this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the Poisoned condition for 1 hour. While Poisoned, the target also has the Paralyzed condition.",
+        "damage_dice": "1d10",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Ethereal Jaunt",
+        "desc": "The spider teleports from the Material Plane to the Ethereal Plane or vice versa. Pirates"
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "pirate": {
+    "name": "Pirate",
+    "slug": "pirate",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 5,
+    "hit_points": 33,
+    "hit_dice": "6d8 + 6",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 8,
+    "intelligence_save": -1,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 14,
+    "charisma_save": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 11",
+    "languages": "Common plus one other language",
+    "challenge_rating": "1",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The pirate makes two Dagger attacks. It can replace one attack with a use of Enthralling Panache."
+      },
+      {
+        "name": "Dagger",
+        "desc": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Enthralling Panache",
+        "desc": "Wisdom Saving Throw: DC 12, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate\u2019s next turn."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "pirate-captain": {
+    "name": "Pirate Captain",
+    "slug": "pirate-captain",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 7,
+    "hit_points": 84,
+    "hit_dice": "13d8 + 26",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 10,
+    "strength_save": 3,
+    "dexterity": 18,
+    "dexterity_save": 7,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 14,
+    "wisdom_save": 5,
+    "charisma": 17,
+    "charisma_save": 6,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 15",
+    "languages": "Common plus one other language",
+    "challenge_rating": "6",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The pirate makes three attacks, using Rapier or Pistol in any combination."
+      },
+      {
+        "name": "Rapier",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Piercing damage, and the pirate has Advantage on the next attack roll it makes before the end of this turn.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Pistol",
+        "desc": "Ranged Attack Roll: +7, range 30/90 ft. Hit: 15 (2d10 + 4) Piercing damage.",
+        "damage_dice": "2d10",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Riposte",
+        "desc": "Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "pit-fiend": {
+    "name": "Pit Fiend",
+    "slug": "pit-fiend",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 21,
+    "armor_desc": "",
+    "initiative": 14,
+    "hit_points": 337,
+    "hit_dice": "27d10 + 189",
+    "speed": {
+      "walk": 30,
+      "fly": 60
+    },
+    "strength": 26,
+    "strength_save": 8,
+    "dexterity": 14,
+    "dexterity_save": 8,
+    "constitution": 24,
+    "constitution_save": 7,
+    "intelligence": 22,
+    "intelligence_save": 6,
+    "wisdom": 18,
+    "wisdom_save": 10,
+    "charisma": 24,
+    "charisma_save": 7,
+    "perception": 10,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": "Truesight 120 ft.; Passive Perception 20",
+    "languages": "Infernal; telepathy 120 ft.",
+    "challenge_rating": "20",
+    "special_abilities": [
+      {
+        "name": "Diabolical Restoration",
+        "desc": "If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+      },
+      {
+        "name": "Fear Aura",
+        "desc": "The pit fiend emanates an aura in a 20foot Emanation while it doesn\u2019t have the Incapacitated condition. Wisdom Saving Throw: DC 21, any enemy that starts its turn in the aura. Failure: The target has the Frightened condition until the start of its next turn. Success: The target is immune to this pit fiend\u2019s aura for 24 hours."
+      },
+      {
+        "name": "Legendary Resistance (4/Day)",
+        "desc": "If the pit fiend fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The pit fiend has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 18 (3d6 + 8) Piercing damage. If the target is a creature, it must make the following saving throw. Constitution Saving Throw: DC 21. Failure: The target has the Poisoned condition. While Poisoned, the target can\u2019t regain Hit Points and takes 21 (6d6) Poison damage at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+        "damage_dice": "3d6",
+        "damage_bonus": 8
+      },
+      {
+        "name": "Devilish Claw",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 26 (4d8 + 8) Necrotic damage.",
+        "damage_dice": "4d8",
+        "damage_bonus": 8
+      },
+      {
+        "name": "Fiery Mace",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 22 (4d6 + 8) Force damage plus 21 (6d6) Fire damage.",
+        "damage_dice": "4d6",
+        "damage_bonus": 8
+      },
+      {
+        "name": "Hellfire Spellcasting (Recharge 4\u20136)",
+        "desc": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "planetar": {
+    "name": "Planetar",
+    "slug": "planetar",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "celestial",
+    "alignment": "lawful good",
+    "armor_class": 19,
+    "armor_desc": "",
+    "initiative": 10,
+    "hit_points": 262,
+    "hit_dice": "21d10 + 147",
+    "speed": {
+      "walk": 40,
+      "fly": 120,
+      "hover": true
+    },
+    "strength": 24,
+    "strength_save": 12,
+    "dexterity": 20,
+    "dexterity_save": 5,
+    "constitution": 24,
+    "constitution_save": 12,
+    "intelligence": 19,
+    "intelligence_save": 4,
+    "wisdom": 22,
+    "wisdom_save": 11,
+    "charisma": 25,
+    "charisma_save": 12,
+    "perception": 11,
+    "damage_resistances": [
+      "Radiant"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened"
+    ],
+    "condition_immunities": [],
+    "senses": "Truesight 120 ft.; Passive Perception 21",
+    "languages": "All; telepathy 120 ft.",
+    "challenge_rating": "16",
+    "special_abilities": [
+      {
+        "name": "Divine Awareness",
+        "desc": "The planetar knows if it hears a lie."
+      },
+      {
+        "name": "Exalted Restoration",
+        "desc": "If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The planetar has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The planetar makes three Radiant Sword attacks or uses Holy Burst twice."
+      },
+      {
+        "name": "Radiant Sword",
+        "desc": "Melee Attack Roll: +12, reach 10 ft. Hit: 14 (2d6 + 7) Slashing damage plus 18 (4d8) Radiant damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 7
+      },
+      {
+        "name": "Holy Burst",
+        "desc": "Dexterity Saving Throw: DC 20, each enemy in a 20-foot-radius Sphere centered on a point the planetar can see within 120 feet. Failure: 24 (7d6) Radiant damage. Success: Half damage.",
+        "damage_dice": "7d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The planetar casts one of the following spells, requiring no Material components and using Charisma as spellcasting ability (spell save DC 20):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Detect Evil and Good"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Commune, Control Weather, Dispel Evil and Good, Raise Dead"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Divine Aid (2/Day)",
+        "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting. Priests"
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "priest-acolyte": {
+    "name": "Priest Acolyte",
+    "slug": "priest-acolyte",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 11,
+    "hit_dice": "2d8 + 2",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 11,
+    "charisma_save": 0,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 12",
+    "languages": "Common",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Mace",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage plus 2 (1d4) Radiant damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Radiant Flame",
+        "desc": "Ranged Attack Roll: +4, range 60 ft. Hit: 7 (2d6) Radiant damage.",
+        "damage_dice": "2d6"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability:"
+      },
+      {
+        "name": "At Will",
+        "desc": "Light, Thaumaturgy"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Divine Aid (1/Day)",
+        "desc": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "priest": {
+    "name": "Priest",
+    "slug": "priest",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "or small humanoid",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 38,
+    "hit_dice": "7d8 + 7",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 12,
+    "constitution_save": 1,
+    "intelligence": 13,
+    "intelligence_save": 1,
+    "wisdom": 16,
+    "wisdom_save": 3,
+    "charisma": 13,
+    "charisma_save": 1,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 15",
+    "languages": "Common plus one other language",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The priest makes two attacks, using Mace or Radiant Flame in any combination."
+      },
+      {
+        "name": "Mace",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage plus 5 (2d4) Radiant damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Radiant Flame",
+        "desc": "Ranged Attack Roll: +5, range 60 ft. Hit: 11 (2d10) Radiant damage.",
+        "damage_dice": "2d10"
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):"
+      },
+      {
+        "name": "At Will",
+        "desc": "Light, Thaumaturgy"
+      },
+      {
+        "name": "1/Day",
+        "desc": "Spirit Guardians"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Divine Aid (3/Day)",
+        "desc": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "pseudodragon": {
+    "name": "Pseudodragon",
+    "slug": "pseudodragon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "dragon",
+    "alignment": "neutral good",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 10,
+    "hit_dice": "3d4 + 3",
+    "speed": {
+      "walk": 15,
+      "fly": 60
+    },
+    "strength": 6,
+    "strength_save": -2,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 10,
+    "charisma_save": 0,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft., Darkvision 60 ft.;",
+    "languages": "Understands Common and Draconic but can\u2019t",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Magic Resistance",
+        "desc": "The pseudodragon has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The pseudodragon makes two Bite attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Sting",
+        "desc": "Constitution Saving Throw: DC 12, one creature the pseudodragon can see within 5 feet. Failure: 5 (2d4) Poison damage, and the target has the Poisoned condition for 1 hour. Failure by 5 or More: While Poisoned, the target also has the Unconscious condition, which ends early if the target takes damage or a creature within 5 feet of it takes an action to wake it.",
+        "damage_dice": "2d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "purple-worm": {
+    "name": "Purple Worm",
+    "slug": "purple-worm",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Gargantuan",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 247,
+    "hit_dice": "15d20 + 90",
+    "speed": {
+      "walk": 50,
+      "burrow": 50
+    },
+    "strength": 28,
+    "strength_save": 9,
+    "dexterity": 7,
+    "dexterity_save": -2,
+    "constitution": 22,
+    "constitution_save": 11,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 8,
+    "wisdom_save": 4,
+    "charisma": 4,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 30 ft., Tremorsense 60 ft.;",
+    "languages": "None",
+    "challenge_rating": "15",
+    "special_abilities": [
+      {
+        "name": "Tunneler",
+        "desc": "The worm can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The worm makes one Bite attack and one Tail Stinger attack."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 22 (3d8 + 9) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 19), and it has the Restrained condition until the grapple ends.",
+        "damage_dice": "3d8",
+        "damage_bonus": 9
+      },
+      {
+        "name": "Tail Stinger",
+        "desc": "Melee Attack Roll: +14, reach 10 ft. Hit: 16 (2d6 + 9) Piercing damage plus 35 (10d6) Poison damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 9
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Swallow",
+        "desc": "Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the worm (it can have up to three creatures swallowed at a time). Failure: The target is swallowed by the worm, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm\u2019s turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the worm and has the Prone condition. If the worm dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "panther": {
+    "name": "Panther",
+    "slug": "panther",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 13,
+    "hit_dice": "3d8",
+    "speed": {
+      "walk": 50,
+      "climb": 40
+    },
+    "strength": 14,
+    "strength_save": 2,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
+        "damage_dice": "1d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Nimble Escape",
+        "desc": "The panther takes the Disengage or Hide action."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "piranha": {
+    "name": "Piranha",
+    "slug": "piranha",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 5,
+      "swim": 40
+    },
+    "strength": 2,
+    "strength_save": -4,
+    "dexterity": 16,
+    "dexterity_save": 3,
+    "constitution": 9,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 7,
+    "wisdom_save": -2,
+    "charisma": 2,
+    "charisma_save": -4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Water Breathing",
+        "desc": "The piranha can breathe only underwater."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5 (with Advantage if the target doesn\u2019t have all its Hit Points), reach 5 ft. Hit: 1 Piercing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "plesiosaurus": {
+    "name": "Plesiosaurus",
+    "slug": "plesiosaurus",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 68,
+    "hit_dice": "8d10 + 24",
+    "speed": {
+      "walk": 20,
+      "swim": 40
+    },
+    "strength": 18,
+    "strength_save": 4,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 5,
+    "charisma_save": -3,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Hold Breath",
+        "desc": "The plesiosaurus can hold its breath for 1 hour."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +6, reach 10 ft. Hit: 11 (2d6 + 4) Piercing damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "polar-bear": {
+    "name": "Polar Bear",
+    "slug": "polar-bear",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 42,
+    "hit_dice": "5d10 + 15",
+    "speed": {
+      "walk": 40,
+      "swim": 40
+    },
+    "strength": 20,
+    "strength_save": 5,
+    "dexterity": 14,
+    "dexterity_save": 2,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The bear makes two Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 9 (1d8 + 5) Slashing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 5
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "pony": {
+    "name": "Pony",
+    "slug": "pony",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 11,
+    "hit_dice": "2d8 + 2",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 15,
+    "strength_save": 4,
+    "dexterity": 10,
+    "dexterity_save": 0,
+    "constitution": 13,
+    "constitution_save": 1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 11,
+    "wisdom_save": 0,
+    "charisma": 7,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 10",
+    "languages": "None",
+    "challenge_rating": "1/8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Hooves",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.",
+        "damage_dice": "1d4",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "pteranodon": {
+    "name": "Pteranodon",
+    "slug": "pteranodon",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 13,
+    "hit_dice": "3d8",
+    "speed": {
+      "walk": 10,
+      "fly": 60
+    },
+    "strength": 12,
+    "strength_save": 1,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 10,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 9,
+    "wisdom_save": -1,
+    "charisma": 5,
+    "charisma_save": -3,
+    "perception": 1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "1/4",
+    "special_abilities": [
+      {
+        "name": "Flyby",
+        "desc": "The pteranodon doesn\u2019t provoke an Opportunity Attack when it flies out of an enemy\u2019s reach."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+        "damage_dice": "1d8",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

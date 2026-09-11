@@ -1,0 +1,408 @@
+{
+  "fire-elemental": {
+    "name": "Fire Elemental",
+    "slug": "fire-elemental",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "elemental",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 93,
+    "hit_dice": "11d10 + 33",
+    "speed": {
+      "walk": 50
+    },
+    "strength": 10,
+    "strength_save": 0,
+    "dexterity": 17,
+    "dexterity_save": 3,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 7,
+    "charisma_save": -2,
+    "damage_resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Grappled",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Unconscious"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "Primordial (Ignan)",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Fire Aura",
+        "desc": "At the end of each of the elemental\u2019s turns, each creature in a 10-foot Emanation originating from the elemental takes 5 (1d10) Fire damage. Creatures and flammable objects in the Emanation start burning."
+      },
+      {
+        "name": "Fire Form",
+        "desc": "The elemental can move through a space as narrow as 1 inch without expending extra movement to do so, and it can enter a creature\u2019s space and stop there. The first time it enters a creature\u2019s space on a turn, that creature takes 5 (1d10) Fire damage."
+      },
+      {
+        "name": "Illumination",
+        "desc": "The elemental sheds Bright Light in a 30foot radius and Dim Light for an additional 30 feet."
+      },
+      {
+        "name": "Water Susceptibility",
+        "desc": "The elemental takes 3 (1d6) Cold damage for every 5 feet the elemental moves in water or for every gallon of water splashed on it."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The elemental makes two Burn attacks."
+      },
+      {
+        "name": "Burn",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Fire damage. If the target is a creature or a flammable object, it starts burning.",
+        "damage_dice": "2d6",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "fire-giant": {
+    "name": "Fire Giant",
+    "slug": "fire-giant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "giant",
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "initiative": 3,
+    "hit_points": 162,
+    "hit_dice": "13d12 + 78",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 25,
+    "strength_save": 7,
+    "dexterity": 9,
+    "dexterity_save": 3,
+    "constitution": 23,
+    "constitution_save": 10,
+    "intelligence": 10,
+    "intelligence_save": 0,
+    "wisdom": 14,
+    "wisdom_save": 2,
+    "charisma": 13,
+    "charisma_save": 5,
+    "perception": 6,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": "Passive Perception 16",
+    "languages": "Giant",
+    "challenge_rating": "9",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The giant makes two attacks, using Flame Sword or Hammer Throw in any combination."
+      },
+      {
+        "name": "Flame Sword",
+        "desc": "Melee Attack Roll: +11, reach 10 ft. Hit: 21 (4d6 + 7) Slashing damage plus 10 (3d6) Fire damage.",
+        "damage_dice": "4d6",
+        "damage_bonus": 7
+      },
+      {
+        "name": "Hammer Throw",
+        "desc": "Ranged Attack Roll: +11, range 60/240 ft. Hit: 23 (3d10 + 7) Bludgeoning damage plus 4 (1d8) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn.",
+        "damage_dice": "3d10",
+        "damage_bonus": 7
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "flesh-golem": {
+    "name": "Flesh Golem",
+    "slug": "flesh-golem",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Medium",
+    "type": "construct",
+    "alignment": "neutral",
+    "armor_class": 9,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 127,
+    "hit_dice": "15d8 + 60",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 9,
+    "dexterity_save": -1,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 10,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 10",
+    "languages": "Understands Common plus one other language",
+    "challenge_rating": "5",
+    "special_abilities": [
+      {
+        "name": "Aversion to Fire",
+        "desc": "If the golem takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn."
+      },
+      {
+        "name": "Berserk",
+        "desc": "Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer Bloodied. The golem\u2019s creator, if within 60 feet of the berserk golem, can try to calm it by taking an action to make a DC 15 Charisma (Persuasion) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still Bloodied."
+      },
+      {
+        "name": "Immutable Form",
+        "desc": "The golem can\u2019t shape-shift."
+      },
+      {
+        "name": "Lightning Absorption",
+        "desc": "Whenever the golem is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The golem has Advantage on saving throws against spells and other magical effects."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The golem makes two Slam attacks."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 4 (1d8) Lightning damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "frost-giant": {
+    "name": "Frost Giant",
+    "slug": "frost-giant",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Huge",
+    "type": "giant",
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 149,
+    "hit_dice": "13d12 + 65",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 23,
+    "strength_save": 6,
+    "dexterity": 9,
+    "dexterity_save": -1,
+    "constitution": 21,
+    "constitution_save": 8,
+    "intelligence": 9,
+    "intelligence_save": -1,
+    "wisdom": 10,
+    "wisdom_save": 3,
+    "charisma": 12,
+    "charisma_save": 4,
+    "perception": 3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Cold"
+    ],
+    "condition_immunities": [],
+    "senses": "Passive Perception 13",
+    "languages": "Giant",
+    "challenge_rating": "8",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The giant makes two attacks, using Frost Axe or Great Bow in any combination."
+      },
+      {
+        "name": "Frost Axe",
+        "desc": "Melee Attack Roll: +9, reach 10 ft. Hit: 19 (2d12 + 6) Slashing damage plus 9 (2d8) Cold damage.",
+        "damage_dice": "2d12",
+        "damage_bonus": 6
+      },
+      {
+        "name": "Great Bow",
+        "desc": "Ranged Attack Roll: +9, range 150/600 ft. Hit: 17 (2d10 + 6) Piercing damage plus 7 (2d6) Cold damage, and the target\u2019s Speed decreases by 10 feet until the end of its next turn.",
+        "damage_dice": "2d10",
+        "damage_bonus": 6
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "War Cry (Recharge 5\u20136)",
+        "desc": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant\u2019s next turn. Fungi"
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "flying-snake": {
+    "name": "Flying Snake",
+    "slug": "flying-snake",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 2,
+    "hit_points": 5,
+    "hit_dice": "2d4",
+    "speed": {
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
+    },
+    "strength": 4,
+    "strength_save": -3,
+    "dexterity": 15,
+    "dexterity_save": 2,
+    "constitution": 11,
+    "constitution_save": 0,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Blindsight 10 ft.; Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "1/8",
+    "special_abilities": [
+      {
+        "name": "Flyby",
+        "desc": "The snake doesn\u2019t provoke an Opportunity Attack when it flies out of an enemy\u2019s reach."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 5 (2d4) Poison damage.",
+        "damage_dice": "2d4"
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "frog": {
+    "name": "Frog",
+    "slug": "frog",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 20,
+      "swim": 20
+    },
+    "strength": 1,
+    "strength_save": -5,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 8,
+    "constitution_save": -1,
+    "intelligence": 1,
+    "intelligence_save": -5,
+    "wisdom": 8,
+    "wisdom_save": -1,
+    "charisma": 3,
+    "charisma_save": -4,
+    "perception": 1,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 30 ft.; Passive Perception 11",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Amphibious",
+        "desc": "The frog can breathe air and water."
+      },
+      {
+        "name": "Standing Leap",
+        "desc": "The frog\u2019s Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 1 Piercing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}

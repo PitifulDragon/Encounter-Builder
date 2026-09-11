@@ -1,0 +1,450 @@
+{
+  "ochre-jelly": {
+    "name": "Ochre Jelly",
+    "slug": "ochre-jelly",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "ooze",
+    "alignment": "unaligned",
+    "armor_class": 8,
+    "armor_desc": "",
+    "initiative": -2,
+    "hit_points": 52,
+    "hit_dice": "7d10 + 14",
+    "speed": {
+      "walk": 20,
+      "climb": 20
+    },
+    "strength": 15,
+    "strength_save": 2,
+    "dexterity": 6,
+    "dexterity_save": -2,
+    "constitution": 14,
+    "constitution_save": 2,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 6,
+    "wisdom_save": -2,
+    "charisma": 1,
+    "charisma_save": -5,
+    "damage_resistances": [
+      "Acid"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Lightning",
+      "Slashing"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Deafened",
+      "Exhaustion",
+      "Frightened",
+      "Grappled",
+      "Prone",
+      "Restrained"
+    ],
+    "senses": "Blindsight 60 ft.; Passive Perception 8",
+    "languages": "None",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Amorphous",
+        "desc": "The jelly can move through a space as narrow as 1 inch without expending extra movement to do so."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "The jelly can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Pseudopod",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 12 (3d6 + 2) Acid damage.",
+        "damage_dice": "3d6",
+        "damage_bonus": 2
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": [
+      {
+        "name": "Split",
+        "desc": "Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly\u2019s Hit Points are divided evenly between the new jellies (round down)."
+      }
+    ],
+    "legendary_actions": []
+  },
+  "ogre": {
+    "name": "Ogre",
+    "slug": "ogre",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": -1,
+    "hit_points": 68,
+    "hit_dice": "8d10 + 24",
+    "speed": {
+      "walk": 40
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 8,
+    "dexterity_save": -1,
+    "constitution": 16,
+    "constitution_save": 3,
+    "intelligence": 5,
+    "intelligence_save": -3,
+    "wisdom": 7,
+    "wisdom_save": -2,
+    "charisma": 7,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "Common, Giant",
+    "challenge_rating": "2",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Greatclub",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 11 (2d6 + 4) Piercing damage.",
+        "damage_dice": "2d6",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "oni": {
+    "name": "Oni",
+    "slug": "oni",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "armor_class": 17,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 119,
+    "hit_dice": "14d10 + 42",
+    "speed": {
+      "walk": 30,
+      "fly": 30,
+      "hover": true
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 11,
+    "dexterity_save": 3,
+    "constitution": 16,
+    "constitution_save": 6,
+    "intelligence": 14,
+    "intelligence_save": 2,
+    "wisdom": 12,
+    "wisdom_save": 4,
+    "charisma": 15,
+    "charisma_save": 5,
+    "perception": 4,
+    "damage_resistances": [
+      "Cold"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 14",
+    "languages": "Common, Giant",
+    "challenge_rating": "7",
+    "special_abilities": [
+      {
+        "name": "Regeneration",
+        "desc": "The oni regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The oni makes two Claw or Nightmare"
+      },
+      {
+        "name": "Ray attacks",
+        "desc": "It can replace one attack with a use of Spellcasting."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 10 (1d12 + 4) Slashing damage plus 9 (2d8) Necrotic damage.",
+        "damage_dice": "1d12",
+        "damage_bonus": 4
+      },
+      {
+        "name": "Nightmare Ray",
+        "desc": "Ranged Attack Roll: +5, range 60 ft. Hit: 9 (2d6 + 2) Psychic damage, and the target has the Frightened condition until the start of the oni\u2019s next turn.",
+        "damage_dice": "2d6",
+        "damage_bonus": 2
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "The oni shape-shifts into a Small or Medium Humanoid or a Large Giant, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
+      },
+      {
+        "name": "Spellcasting",
+        "desc": "The oni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):"
+      },
+      {
+        "name": "1/Day Each",
+        "desc": "Charm Person (level 2 version), Darkness, Gaseous Form, Sleep"
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Invisibility",
+        "desc": "The oni casts Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting."
+      }
+    ],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "otyugh": {
+    "name": "Otyugh",
+    "slug": "otyugh",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "aberration",
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "initiative": 0,
+    "hit_points": 104,
+    "hit_dice": "11d10 + 44",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 3,
+    "dexterity": 11,
+    "dexterity_save": 0,
+    "constitution": 19,
+    "constitution_save": 7,
+    "intelligence": 6,
+    "intelligence_save": -2,
+    "wisdom": 13,
+    "wisdom_save": 1,
+    "charisma": 6,
+    "charisma_save": -2,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 11",
+    "languages": "Otyugh; telepathy 120 ft. (doesn\u2019t allow the",
+    "challenge_rating": "5",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The otyugh makes one Bite attack and two Tentacle attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage, and the target has the Poisoned condition. Whenever the Poisoned target finishes a Long Rest, it is subjected to the following effect. Constitution Saving Throw: DC 15. Failure: The target\u2019s Hit Point maximum decreases by 5 (1d10) and doesn\u2019t return to normal until the Poisoned condition ends on the target. Success: The Poisoned condition ends.",
+        "damage_dice": "2d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Tentacle",
+        "desc": "Melee Attack Roll: +6, reach 10 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two tentacles.",
+        "damage_dice": "2d8",
+        "damage_bonus": 3
+      },
+      {
+        "name": "Tentacle Slam",
+        "desc": "Constitution Saving Throw: DC 14, each creature Grappled by the otyugh. Failure: 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh\u2019s next turn. Success: Half damage only.",
+        "damage_dice": "3d8",
+        "damage_bonus": 3
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "owlbear": {
+    "name": "Owlbear",
+    "slug": "owlbear",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 59,
+    "hit_dice": "7d10 + 21",
+    "speed": {
+      "walk": 40,
+      "climb": 40
+    },
+    "strength": 20,
+    "strength_save": 5,
+    "dexterity": 12,
+    "dexterity_save": 1,
+    "constitution": 17,
+    "constitution_save": 3,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 60 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "3",
+    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The owlbear makes two Rend attacks."
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage.",
+        "damage_dice": "2d8",
+        "damage_bonus": 5
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "ogre-zombie": {
+    "name": "Ogre Zombie",
+    "slug": "ogre-zombie",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Large",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "armor_class": 8,
+    "armor_desc": "",
+    "initiative": -2,
+    "hit_points": 85,
+    "hit_dice": "9d10 + 36",
+    "speed": {
+      "walk": 30
+    },
+    "strength": 19,
+    "strength_save": 4,
+    "dexterity": 6,
+    "dexterity_save": -2,
+    "constitution": 18,
+    "constitution_save": 4,
+    "intelligence": 3,
+    "intelligence_save": -4,
+    "wisdom": 6,
+    "wisdom_save": 0,
+    "charisma": 5,
+    "charisma_save": -3,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": "Darkvision 60 ft.; Passive Perception 8",
+    "languages": "Understands Common and Giant but can\u2019t",
+    "challenge_rating": "2",
+    "special_abilities": [
+      {
+        "name": "Undead Fortitude",
+        "desc": "If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Slam",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage. Animals",
+        "damage_dice": "2d8",
+        "damage_bonus": 4
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  },
+  "owl": {
+    "name": "Owl",
+    "slug": "owl",
+    "group": null,
+    "document_slug": "systems-reference-document",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "initiative": 1,
+    "hit_points": 1,
+    "hit_dice": "1d4 \u2212 1",
+    "speed": {
+      "walk": 5,
+      "fly": 60
+    },
+    "strength": 3,
+    "strength_save": -4,
+    "dexterity": 13,
+    "dexterity_save": 1,
+    "constitution": 8,
+    "constitution_save": -1,
+    "intelligence": 2,
+    "intelligence_save": -4,
+    "wisdom": 12,
+    "wisdom_save": 1,
+    "charisma": 7,
+    "charisma_save": -2,
+    "perception": 5,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "Darkvision 120 ft.; Passive Perception 15",
+    "languages": "None",
+    "challenge_rating": "0",
+    "special_abilities": [
+      {
+        "name": "Flyby",
+        "desc": "The owl doesn\u2019t provoke an Opportunity Attack when it flies out of an enemy\u2019s reach."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Talons",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 1 Slashing damage."
+      }
+    ],
+    "bonus_actions": [],
+    "reactions": "",
+    "legendary_actions": []
+  }
+}
