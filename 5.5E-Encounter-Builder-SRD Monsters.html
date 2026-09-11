@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D 5.5e Encounter Builder & Stat Printer</title>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("https://unsplash.com");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #000000 !important;
+      color: #f5f6f9;
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    :root {
+      --bg-dark: #000000;
+      --card-bg: #111217;
+      --text-main: #f5f6f9;
+      --text-muted: #adafb8;
+      --success: #2e7d32; 
+      --warning: #ff6d00;
+      --error: #d32f2f;
+      --players: #34a853; 
+      --minions: #fbbc04; 
+      --leaders: #ff6d00; 
+      --bosses: #ea4335;
+      --primary: #336ef3; 
+      --border: #363840; 
+      --muted: #2c2e35; 
+      --card: #272930;
+    }
+    #srd-encounter-builder-app {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: rgba(26, 26, 26, 0.9); color: #e6e8f0; padding: 20px; border-radius: 12px;
+      max-width: 900px; margin: 20px auto; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    #srd-encounter-builder-app h2, #srd-encounter-builder-app h3, #srd-encounter-builder-app h4 { color: #ff4747; margin-top: 0; }
+    #srd-encounter-builder-app .graph-container { position: relative; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 15px; margin-bottom: 15px; overflow: hidden; }
+    #srd-encounter-builder-app .graph-title { font-size: 12px; font-weight: 500; color: #fff; background: rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 10px; border: 1px solid var(--border); }
+    #srd-encounter-builder-app svg { width: 100%; height: auto; display: block; }
+    #srd-encounter-builder-app svg text { fill: #adafb8; font-size: 11px; font-family: sans-serif; }
+    #srd-encounter-builder-app .flex-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+    #srd-encounter-builder-app .panel { flex: 1; min-width: 280px; background: var(--card); padding: 15px; border-radius: 8px; border: 1px solid var(--border); }
+    #srd-encounter-builder-app .metrics-bar { display: flex; justify-content: space-around; border-bottom: 1px solid var(--border); padding: 12px; background: var(--card); border-radius: 8px; margin-bottom: 20px; text-align: center; }
+    #srd-encounter-builder-app input, #srd-encounter-builder-app select { background: var(--muted); color: #fff; border: 1px solid var(--border); padding: 6px 10px; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+    #srd-encounter-builder-app input:focus, #srd-encounter-builder-app select:focus { outline: none; border-color: var(--primary); }
+    #srd-encounter-builder-app .party-row, #srd-encounter-builder-app .threat-row { display: flex; gap: 10px; align-items: center; background: #1a1a1a; padding: 10px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 8px; position: relative; }
+    #srd-encounter-builder-app .threat-container { padding: 15px; border-radius: 12px; margin-bottom: 15px; border: 1px solid transparent; background: rgba(255,255,255,0.02); }
+    #srd-encounter-builder-app .autocomplete-wrapper { position: relative; flex: 2; min-width: 150px; }
+    #srd-encounter-builder-app .suggestions-box { position: absolute; top: 100%; left: 0; right: 0; background: var(--card); border: 1px solid var(--border); max-height: 200px; overflow-y: auto; z-index: 999; border-radius: 6px; box-shadow: 0 10px 15px rgba(0,0,0,0.5); }
+    #srd-encounter-builder-app .suggestion-item { padding: 8px; cursor: pointer; display: flex; justify-content: space-between; font-size: 13px; color: #fff; border-bottom: 1px solid #333; }
+    #srd-encounter-builder-app .suggestion-item:hover { background: var(--primary); }
+    #srd-encounter-builder-app .status-badge { display: inline-block; padding: 4px 12px; border-radius: 4px; font-weight: bold; text-transform: uppercase; font-size: 13px; }
+    #srd-encounter-builder-app .bg-low { background: var(--success); color: white; }
+    #srd-encounter-builder-app .bg-mod { background: var(--warning); color: black; }
+    #srd-encounter-builder-app .bg-deadly { background: var(--error); color: white; }
+    #srd-encounter-builder-app .btn { background: var(--primary); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
+    #srd-encounter-builder-app .btn-del { background: rgba(234,67,53,0.2); color: var(--error); border: 1px solid var(--error); padding: 4px 8px; }
+    #srd-encounter-builder-app .btn-del:hover { background: var(--error); color: white; }
+  </style>
+  <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+ <div id="srd-encounter-builder-app">
+  <h2 style="color:var(--primary);">D&D 2024 (5.5e) Encounter Builder - Sandbox!</h2>
+  
+  <!-- Encounter Panel -->
+  <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
+    <h4 style="color: var(--primary); margin: 0 0 5px 0;">Encounter Information</h4>
+    <span style="font-size: 12px; color: #adafb8; display: block; margin-bottom: 15px; font-style: italic;">Complete the following fields to begin.</span>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end;">
+      <div style="flex: 2; min-width: 150px;">
+        <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Campaign Name</span>
+        <input type="text" id="aux-campaign" placeholder="e.g., Curse of Strahd" style="width: 100%;" oninput="checkEncounterRequirements()">
+      </div>
+      <div style="flex: 2; min-width: 150px;">
+        <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Encounter Title</span>
+        <input type="text" id="aux-encounter" placeholder="e.g., Ambush at Old Bonegrinder" style="width: 100%;" oninput="checkEncounterRequirements()">
+      </div>
+      <div style="width: 90px;">
+        <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Map Key</span>
+        <input type="text" id="aux-mapkey" placeholder="A1" style="width: 100%; text-align: center;" oninput="checkEncounterRequirements()">
+      </div>
+      <div style="min-width: 150px;">
+        <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Encounter Difficulty</span>
+        <select id="budget-tier-selector" style="width: 100%; height: 34px; padding: 6px 10px;" onchange="checkEncounterRequirements(); updateMath();">
+          <option value="PLEASE_SELECT" selected>PLEASE SELECT</option>
+          <option value="low">Low Challenge</option>
+          <option value="moderate">Moderate Challenge</option>
+          <option value="deadly">Deadly Challenge</option>
+        </select>
+      </div>
+      
+      <!-- Checkbox field to toggle homebrew activation -->
+      <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px;">
+        <input type="checkbox" id="hb-enable-checkbox" onchange="checkEncounterRequirements()" style="cursor: pointer; width: auto;">
+        <label for="hb-enable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Enable Homebrew</label>
+      </div>
+
+      <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
+    </div>
+    
+    <!-- Instruction box that toggles with the checkbox -->
+    <div id="hb-instructions-text" style="display: none; margin-top: 15px; font-size: 12px; color: #adafb8; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 10px; padding-bottom: 10px;">
+      Add the Homebrew Monster Name, CR and Creature Type below and click "Add HB Monster". You can do this multiple times. The Homebrew monster will be available in the monster tiers below (depending on CR and Encounter Difficulty) while this tab remains open.
+    </div>
+
+    <!-- Nested Homebrew Fields Input Sub-Grid -->
+    <div id="homebrew-panel" style="display: none; margin-top: 10px; padding-top: 15px; border-top: 1px dashed var(--border);">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end;">
+        <div style="flex: 2; min-width: 150px;">
+          <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Monster Name</span>
+          <input type="text" id="hb-name" placeholder="e.g., Void Dragon Wolf" style="width: 100%;">
+        </div>
+        <div style="width: 100px;">
+          <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">CR Choice</span>
+          <select id="hb-cr" style="width: 100%;">
+            <option value="0">CR 0</option><option value="1/8">CR 1/8</option><option value="1/4">CR 1/4</option><option value="1/2">CR 1/2</option>
+            <option value="1">CR 1</option><option value="2">CR 2</option><option value="3">CR 3</option><option value="4">CR 4</option>
+            <option value="5">CR 5</option><option value="6">CR 6</option><option value="7">CR 7</option><option value="8">CR 8</option>
+            <option value="9">CR 9</option><option value="10">CR 10</option><option value="11">CR 11</option><option value="12">CR 12</option>
+            <option value="13">CR 13</option><option value="14">CR 14</option><option value="15">CR 15</option><option value="16">CR 16</option>
+            <option value="17">CR 17</option><option value="18">CR 18</option><option value="19">CR 19</option><option value="20">CR 20</option>
+            <option value="21">CR 21</option><option value="22">CR 22</option><option value="23">CR 23</option><option value="24">CR 24</option>
+            <option value="25">CR 25</option><option value="30">CR 30</option>
+          </select>
+        </div>
+        <div style="width: 120px;">
+          <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Creature Type</span>
+          <input type="text" id="hb-type" placeholder="e.g., Monstrosity" style="width: 100%;">
+        </div>
+        <button type="button" class="btn" onclick="injectHomebrewMonster()" style="background: var(--primary); height: 34px;">Add HB Monster</button>
+      </div>
+      
+      <!-- Live Session Homebrew Inventory List -->
+      <div id="hb-session-list" style="margin-top: 15px; font-size: 12px; color: #fff; line-height: 1.5; font-family: monospace; padding: 6px 10px; background: rgba(0,0,0,0.2); border-radius: 4px; display: none;">
+        <div style="color: #adafb8; margin-bottom: 4px; border-bottom: 1px dashed var(--border); padding-bottom: 2px;">Active Session Homebrew:</div>
+        <ul id="hb-list-items" style="margin: 0; padding-left: 15px;"></ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="graph-container">
+    <div class="graph-title">Threat Budget Multi-Tier Analyzer</div>
+    <svg id="arc-canvas" viewBox="0 0 800 180">
+      <line x1="80" y1="140" x2="720" y2="140" stroke="#363840" stroke-width="1" stroke-dasharray="4 4" />
+      <path id="arc-line" d="M 80 140 Q 400 20 720 140" fill="none" stroke="#2c2e35" stroke-width="10" stroke-linecap="round" />
+      <g id="node-low"><circle cx="0" cy="0" r="5" fill="#34a853" /><text text-anchor="middle" dy="18">Low</text></g>
+      <g id="node-mod"><circle cx="0" cy="0" r="5" fill="#fbbc04" /><text text-anchor="middle" dy="18">Mod</text></g>
+      <g id="node-deadly"><circle cx="0" cy="0" r="5" fill="#ea4335" /><text text-anchor="middle" dy="18">Deadly</text></g>
+      <g id="node-current">
+        <circle cx="80" cy="140" r="9" fill="#e6e8f0" stroke="#336ef3" stroke-width="3" id="current-bubble-edge" />
+        <circle cx="80" cy="140" r="3" fill="#272930" />
+      </g>
+    </svg>
+  </div>
+  
+  <div class="metrics-bar">
+    <div><div style="font-size:11px; color:#adafb8;">Selected Difficulty</div><div style="font-size:16px; font-weight:bold; text-transform: uppercase;" id="stat-difficulty-flag">NONE</div></div>
+    <div><div style="font-size:11px; color:#adafb8;">Selected Limit Value</div><div style="font-size:16px; font-weight:bold;" id="stat-target">0 XP</div></div>
+    <div><div style="font-size:11px; color:#adafb8;">Current Threat XP</div><div style="font-size:16px; font-weight:bold;" id="stat-current">0 XP</div></div>
+    <div><div style="font-size:11px; color:#adafb8;">Available XP Left</div><div style="font-size:16px; font-weight:bold; color: #34a853;" id="stat-available">0 XP</div></div>
+    <div><div style="font-size:11px; color:#adafb8;">Encounter Danger</div><div style="margin-top:2px;"><span id="stat-danger" class="status-badge bg-low">No Threat</span></div></div>
+  </div>
+    <div class="flex-grid" id="party-panel" style="display: none; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+    <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <h3 style="color: var(--players);">Adventuring Party</h3>
+        <button type="button" class="btn" style="background:var(--players);" onclick="addPartyRow()">+ Add Group</button>
+      </div>
+      <div id="party-rows-container"></div>
+    </div>
+  </div>
+
+  <div class="panel" id="monster-panel" style="display: none; margin-top:10px;">
+    <h3>2024 Messy Monster Database & Tiers</h3> 
+	
+    <!-- Minions Container With ID Hook -->
+    <div class="threat-container" style="border-color: rgba(251,188,4,0.3); background: rgba(251,188,4,0.3);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <h4 style="color:var(--minions); margin:0;">Minions & Swarms</h4>
+        <button type="button" class="btn" style="background:var(--minions);" onclick="addThreatRow('minion')">+ Add Minion</button>
+      </div>
+      <div id="minions-container"></div>
+    </div>
+
+    <!-- Leaders Container With ID Hook -->
+    <div class="threat-container" style="border-color: rgba(255,109,0,0.3); background: rgba(255,109,0,0.3);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <h4 style="color:var(--leaders); margin:0;">Lieutenants & Leaders</h4>
+        <button type="button" class="btn" style="background:var(--leaders);" onclick="addThreatRow('leader')">+ Add Leader</button>
+      </div>
+      <div id="leaders-container"></div>
+    </div>
+
+    <!-- Bosses Container With ID Hook -->
+    <div class="threat-container" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <h4 style="color:var(--bosses); margin:0;">Apex Threats & Bosses</h4>
+        <button type="button" class="btn" style="background:var(--bosses);" onclick="addThreatRow('boss')">+ Add Boss</button>
+      </div>
+      <div id="bosses-container"></div>
+    </div>
+  </div>
+
+  <script>
+    // Master configuration path pointing directly to your GitHub repository folder
+    // Replace 'your-github-username' and 'encounter-data' with your actual layout paths
+    const GITHUB_BASE_URL = "https://github.io";
+
+    let srdMonsters = [];
+    window.SRD_MONSTERS = [];
+    let loadedLetterCache = {};
+
+    window.fetchOnlineDropdownIndex = function() {
+      fetch(GITHUB_BASE_URL + "index.json")
+        .then(res => {
+          if (!res.ok) throw new Error("Index file not found on GitHub");
+          return res.json();
+        })
+        .then(data => {
+          srdMonsters = data;
+          srdMonsters.unshift({ name: "", challenge_rating: "", type: "Any", slug: "" });
+          window.SRD_MONSTERS = srdMonsters.sort((a, b) => a.name.localeCompare(b.name));
+          
+          if (typeof checkEncounterRequirements === 'function') {
+            checkEncounterRequirements();
+          }
+        })
+        .catch(err => {
+          console.error("Index load failed:", err);
+          alert("Failed to sync dropdown database from your GitHub directory.");
+        });
+    };
+
+    window.fetchOnlineDropdownIndex();
+
+    window.injectHomebrewMonster = function() {
+      const nameEl = document.getElementById('hb-name');
+      const crEl = document.getElementById('hb-cr');
+      const typeEl = document.getElementById('hb-type');
+      
+      const name = nameEl.value.trim();
+      const cr = crEl.value;
+      const type = typeEl.value.trim() || "Any";
+      
+      if (!name) {
+        alert("Please enter a name for your homebrew monster!");
+        return;
+      }
+      
+      const newMonster = { 
+        name: name, 
+        challenge_rating: cr, 
+        type: type,
+        armor_class: "Custom",
+        hit_points: "Custom",
+        speed: "Custom",
+        strength: "-", dexterity: "-", constitution: "-", intelligence: "-", wisdom: "-", charisma: "-"
+      };
+      srdMonsters.push(newMonster);
+      window.SRD_MONSTERS = srdMonsters.sort((a, b) => a.name.localeCompare(b.name));
+
+      const listContainer = document.getElementById('hb-session-list');
+      const listItems = document.getElementById('hb-list-items');
+      if (listContainer && listItems) {
+        listContainer.style.display = 'block';
+        const li = document.createElement('li');
+        li.style.color = 'var(--text-main)';
+        li.innerHTML = `<strong>${name}</strong> (CR ${cr} - <span style="color: var(--text-muted);">${type}</span>)`;
+        listItems.appendChild(li);
+      }
+      
+      nameEl.value = '';
+      typeEl.value = '';
+      alert(`Successfully added "${name}" (CR ${cr}) to your session database!`);
+    };
+
+    (function() {
+      const XP_THRESHOLDS_2024 = {
+        1: { low: 25, moderate: 50, deadly: 100 }, 2: { low: 50, moderate: 100, deadly: 200 }, 3: { low: 75, moderate: 150, deadly: 400 }, 4: { low: 125, moderate: 250, deadly: 500 }, 5: { low: 250, moderate: 500, deadly: 1100 },
+        6: { low: 300, moderate: 600, deadly: 1400 }, 7: { low: 375, moderate: 750, deadly: 1700 }, 8: { low: 450, moderate: 900, deadly: 2100 }, 9: { low: 550, moderate: 1100, deadly: 2400 }, 10: { low: 650, moderate: 1300, deadly: 2800 },
+        11: { low: 800, moderate: 1600, deadly: 3600 }, 12: { low: 1000, moderate: 2000, deadly: 4500 }, 13: { low: 1100, moderate: 2200, deadly: 5100 }, 14: { low: 1250, moderate: 2500, deadly: 5700 }, 15: { low: 1400, moderate: 2800, deadly: 6400 },
+        16: { low: 1600, moderate: 3200, deadly: 7200 }, 17: { low: 2000, moderate: 4000, deadly: 8800 }, 18: { low: 2100, moderate: 4200, deadly: 9500 }, 19: { low: 2400, moderate: 4800, deadly: 10900 }, 20: { low: 2800, moderate: 5600, deadly: 12700 }
+      };
+
+      const CR_XP_MAP = {
+        "": 0, "0": 10, "1/8": 25, "1/4": 50, "1/2": 100, "1": 200, "2": 450, "3": 700, "4": 1100, "5": 1800, "6": 2300, "7": 2900, "8": 3900, "9": 5000, "10": 5900, "11": 7200, "12": 8400, "13": 10000, "14": 11500, "15": 13000, "16": 15000, "17": 18000, "18": 20000, "19": 22000, "20": 25000, "21": 33000, "22": 41000, "23": 50000, "24": 62000, "25": 75000, "26": 90000, "27": 105000, "28": 120000, "29": 135000, "30": 155000
+      };
+ 
+      let partyData = [{ id: "p1", count: 0, level: "1" }];
+      let threatData = [
+        { id: "t1", count: 1, challenge_rating: "", role: "minion", name: "", armor_class: "N/A", hit_points: "N/A", speed: "N/A" },
+        { id: "t2", count: 1, challenge_rating: "", role: "leader", name: "", armor_class: "N/A", hit_points: "N/A", speed: "N/A" },
+        { id: "t3", count: 1, challenge_rating: "", role: "boss", name: "", armor_class: "N/A", hit_points: "N/A", speed: "N/A" }
+      ];
+	        window.addPartyRow = function() {
+        partyData.push({ id: "p_" + Date.now(), count: 0, level: 1 });
+        renderParty(); updateMath();
+      };
+
+      window.removePartyRow = function(id) {
+        if (partyData.length > 1) { partyData = partyData.filter(r => r.id !== id); renderParty(); updateMath(); }
+      };
+
+      window.addThreatRow = function(role) {
+        const id = "t_" + Date.now() + "_" + Math.floor(Math.random()*100);
+        threatData.push({ id, count: 1, challenge_rating: "", role, name: "", armor_class: "N/A", hit_points: "N/A", speed: "N/A" });
+        renderThreats(); updateMath();
+      };
+
+      window.removeThreatRow = function(id) {
+        threatData = threatData.filter(t => t.id !== id);
+        renderThreats(); updateMath();
+      };
+
+      window.clearThreatRow = function(id) {
+        const threat = threatData.find(t => t.id === id);
+        if (threat) {
+          threat.name = "";
+          threat.challenge_rating = "";
+          threat.count = 1;
+          threat.armor_class = "N/A";
+          threat.hit_points = "N/A";
+          threat.speed = "N/A";
+        }
+        renderThreats(); 
+        updateMath();
+      };
+
+      function getArcXy(xp, maxVal) {
+        const startX = 80, endX = 720, startY = 140, controlY = -100;
+        let t = Math.min(Math.max(xp / maxVal, 0), 1);
+        let x = startX + t * (endX - startX);
+        let y = (1 - t) * (1 - t) * startY + 2 * (1 - t) * t * controlY + t * t * startY;
+        return { x, y };
+      }
+
+      function renderParty() {
+        const con = document.getElementById("party-rows-container");
+        if (!con) return;
+        con.innerHTML = partyData.map(p => `
+          <div class="party-row">
+            <div style="flex:1;"><span style="font-size:10px; color:#adafb8;">Players/NPCs</span>
+              <input type="number" min="0" value="${p.count}" style="width:100%;" oninput="updatePartyProp('${p.id}', 'count', this.value)">
+            </div>
+            <div style="flex:1;"><span style="font-size:10px; color:#adafb8;">Level</span>
+              <select style="width:100%;" onchange="updatePartyProp('${p.id}', 'level', this.value)">
+                ${Array.from({length:20},(_,i)=>i+1).map(l => `<option value="${l}" ${l===p.level?'selected':''}>Lvl ${l}</option>`).join('')}
+              </select>
+            </div>
+            ${partyData.length > 1 ? `<button type="button" class="btn btn-del" onclick="removePartyRow('${p.id}')">Delete</button>` : ''}
+          </div>
+        `).join('');
+      }
+
+      function renderThreats() {
+        const roles = ['minion', 'leader', 'boss'];
+        roles.forEach(role => {
+          const containerId = role === 'boss' ? 'bosses-container' : role + 's-container';
+          const con = document.getElementById(containerId);
+          if (!con) return;
+          const list = threatData.filter(t => t.role === role);
+          con.innerHTML = list.map(t => `
+            <div class="threat-row">
+              <div class="autocomplete-wrapper">
+                <span style="font-size:10px; color:#adafb8;">5.5e Creature</span>
+                <input type="text" value="${t.name}" style="width:100%;" placeholder="Click field to browse..." oninput="searchMonsters('${t.id}', this.value, '${t.role}')" onfocus="searchMonsters('${t.id}', this.value, '${t.role}')">
+                <div class="suggestions-box" id="box-${t.id}" style="display:none;"></div>
+              </div>
+              <div style="width:60px;"><span style="font-size:10px; color:#adafb8;">Qty</span>
+                <input type="number" min="0" value="${t.count}" style="width:100%; text-align:center;" oninput="updateThreatProp('${t.id}', 'count', this.value)">
+              </div>
+              <div style="width:80px;"><span style="font-size:10px; color:#adafb8;">CR</span>
+                <input type="text" value="${t.challenge_rating ? 'CR ' + t.challenge_rating : ''}" style="width:100%; text-align:center;" readonly>
+              </div>
+              <div style="width:90px;"><span style="font-size:10px; color:#adafb8;">XP Each</span>
+                <input type="text" value="${(CR_XP_MAP[t.challenge_rating]||0)}" style="width:100%; text-align:right;" readonly>
+              </div>
+              <button type="button" class="btn" style="background: var(--muted); border: 1px solid var(--border); padding: 4px 8px; color: var(--text-muted);" onclick="clearThreatRow('${t.id}')">Clear</button>
+              <button type="button" class="btn btn-del" style="padding: 4px 8px; margin-left: 4px;" onclick="removeThreatRow('${t.id}')">Delete</button>
+            </div>
+          `).join('');
+        });
+      }
+
+      window.updatePartyProp = function(id, prop, val) { partyData.find(p => p.id === id)[prop] = parseInt(val) || 0; updateMath(); };
+      window.updateThreatProp = function(id, prop, val) { threatData.find(t => t.id === id)[prop] = parseInt(val) || 0; updateMath(); };
+	  
+	        window.updateMath = function() {
+        let low = 0, moderate = 0, deadly = 0;
+        
+        partyData.forEach(p => {
+          const currentLvl = parseInt(p.level) || 1;
+          const currentCount = parseInt(p.count) || 0;
+          const row = XP_THRESHOLDS_2024[currentLvl];
+          if (row) {
+            low += row.low * currentCount; 
+            moderate += row.moderate * currentCount; 
+            deadly += row.deadly * currentCount;
+          }
+        });
+
+        const selectedTier = document.getElementById("budget-tier-selector").value;
+        let chosenTargetXp = moderate; 
+        if (selectedTier === "low") { chosenTargetXp = low; }
+        else if (selectedTier === "deadly") { chosenTargetXp = deadly; }
+
+        let currentXp = threatData.reduce((sum, t) => sum + ((CR_XP_MAP[t.challenge_rating] || 0) * t.count), 0);
+        document.getElementById("stat-target").innerText = chosenTargetXp.toLocaleString() + " XP";
+        document.getElementById("stat-current").innerText = currentXp.toLocaleString() + " XP";
+
+        const diffFlagEl = document.getElementById("stat-difficulty-flag");
+        if (diffFlagEl) {
+          if (selectedTier === "PLEASE_SELECT") {
+            diffFlagEl.innerText = "NONE";
+            diffFlagEl.style.color = "#fff";
+          } else {
+            diffFlagEl.innerText = selectedTier;
+            if (selectedTier === "low") diffFlagEl.style.color = "var(--success)";
+            else if (selectedTier === "moderate") diffFlagEl.style.color = "var(--warning)";
+            else if (selectedTier === "deadly") diffFlagEl.style.color = "var(--error)";
+          }
+        }
+
+        let availableXpLeft = chosenTargetXp - currentXp;
+        const availEl = document.getElementById("stat-available");
+        if (availEl) { 
+          if (availableXpLeft < 0) { availEl.style.color = "var(--error)"; } 
+          else { availEl.style.color = "var(--players)"; }
+          availEl.innerText = availableXpLeft.toLocaleString() + " XP";
+        }
+
+        let graphMaxBudget = deadly > 0 ? deadly : 400;
+        let maxVal = Math.max(graphMaxBudget * 1.6, currentXp, 100);
+        
+        let posLow = getArcXy(low, maxVal), posMod = getArcXy(moderate, maxVal), posDeadly = getArcXy(deadly, maxVal), posCurrent = getArcXy(currentXp, maxVal);
+
+        document.getElementById("node-low").setAttribute("transform", `translate(${posLow.x}, ${posLow.y})`);
+        document.getElementById("node-mod").setAttribute("transform", `translate(${posMod.x}, ${posMod.y})`);
+        document.getElementById("node-deadly").setAttribute("transform", `translate(${posDeadly.x}, ${posDeadly.y})`);
+        
+        let bubbleGroup = document.getElementById("node-current");
+        let circles = bubbleGroup.getElementsByTagName("circle");
+        for(let c of circles) { c.setAttribute("cx", posCurrent.x); c.setAttribute("cy", posCurrent.y); }
+
+        const badge = document.getElementById("stat-danger");
+        const bubbleBorder = document.getElementById("current-bubble-edge");
+        badge.className = "status-badge";
+        
+        if (currentXp === 0) { badge.innerText = "No Threat"; badge.className = "status-badge bg-low"; bubbleBorder.setAttribute("stroke", "#363840"); }
+        else if (currentXp <= chosenTargetXp * 0.5) { badge.innerText = "Trivial Challenge"; badge.className = "status-badge bg-low"; bubbleBorder.setAttribute("stroke", "var(--success)"); }
+        else if (currentXp <= chosenTargetXp) { badge.innerText = "Target Match"; badge.className = "status-badge bg-mod"; bubbleBorder.setAttribute("stroke", "var(--warning)"); }
+        else if (currentXp <= chosenTargetXp * 1.25) { badge.innerText = "Hard / Risky"; badge.className = "status-badge bg-deadly"; bubbleBorder.setAttribute("stroke", "var(--error)"); }
+        else { badge.innerText = "Over Budget / Extreme"; badge.className = "status-badge bg-deadly"; bubbleBorder.setAttribute("stroke", "var(--error)"); }
+      };
+
+      window.searchMonsters = function(id, query, role) {
+        const box = document.getElementById("box-" + id);
+        let matches = [];
+        const sourceList = typeof window.SRD_MONSTERS !== 'undefined' ? window.SRD_MONSTERS : [];
+
+        let activeRole = role;
+        const inputElement = document.querySelector(`input[oninput*="${id}"]`);
+        if (inputElement) {
+          if (inputElement.closest('#minions-container')) activeRole = 'minion';
+          else if (inputElement.closest('#leaders-container')) activeRole = 'leader';
+          else if (inputElement.closest('#bosses-container')) activeRole = 'boss';
+        }
+
+        let partyLow = 0, partyModerate = 0, partyDeadly = 0;
+        let hasLevel20Character = false;
+
+        partyData.forEach(p => {
+          const currentLvl = parseInt(p.level) || 1;
+          const currentCount = parseInt(p.count) || 0;
+          if (currentLvl === 20 && currentCount > 0) hasLevel20Character = true;
+          const thresholds = XP_THRESHOLDS_2024[currentLvl];
+          if (thresholds && currentCount > 0) {
+            partyLow += thresholds.low * currentCount;
+            partyModerate += thresholds.moderate * currentCount;
+            partyDeadly += thresholds.deadly * currentCount;
+          }
+        });
+
+        const selectorEl = document.getElementById("budget-tier-selector");
+        const selectedTier = selectorEl ? selectorEl.value : "moderate";
+        let activeBudget = selectedTier === "low" ? partyLow : (selectedTier === "deadly" ? partyDeadly : partyModerate);
+        if (activeBudget === 0) activeBudget = 200;
+
+        let liveXpSpent = 0;
+        threatData.forEach(t => {
+          if (t.id !== id) {
+            liveXpSpent += ((CR_XP_MAP[t.challenge_rating] || 0) * t.count);
+          }
+        });
+
+        const maxBossAbsoluteCeiling = partyDeadly * 1.25 || 500;
+        const realRemainingXp = Math.max(0, (activeRole === 'boss' ? maxBossAbsoluteCeiling : activeBudget) - liveXpSpent);
+
+        let minXP = 0, maxXP = 999999;
+        if (activeRole === 'minion') {
+          minXP = 0; maxXP = activeBudget * 0.10; if (maxXP < 25) maxXP = 25;
+        } else if (activeRole === 'leader') {
+          minXP = (activeBudget * 0.10) + 1; maxXP = Math.min(activeBudget * 0.33, realRemainingXp); if (maxXP < 50) maxXP = 50;
+        } else if (activeRole === 'boss') {
+          minXP = (activeBudget * 0.33) + 1; maxXP = hasLevel20Character ? 999999 : realRemainingXp;
+        }
+
+        const roleFilteredMonsters = sourceList.filter(m => {
+          const monsterXP = CR_XP_MAP[m.challenge_rating] || 0;
+          return monsterXP >= minXP && monsterXP <= maxXP;
+        });
+
+        const cleanQuery = query.trim().toLowerCase();
+        let baseFiltered = cleanQuery ? roleFilteredMonsters.filter(m => m.name.toLowerCase().includes(cleanQuery)) : roleFilteredMonsters;
+
+        matches = baseFiltered.sort((a, b) => {
+          const xpA = CR_XP_MAP[a.challenge_rating] || 0, xpB = CR_XP_MAP[b.challenge_rating] || 0;
+          if (xpA !== xpB) return xpA - xpB;
+          if (cleanQuery) {
+            const aStarts = a.name.toLowerCase().startsWith(cleanQuery), bStarts = b.name.toLowerCase().startsWith(cleanQuery);
+            if (aStarts && !bStarts) return -1; if (!aStarts && bStarts) return 1;
+          }
+          return a.name.localeCompare(b.name);
+        });
+
+        if (matches.length === 0) { box.style.display = 'none'; return; }
+
+        box.innerHTML = matches.map(m => `
+          <div class="suggestion-item" onclick="selectMonster('${id}', '${m.name.replace(/'/g, "\\'")}', '${m.challenge_rating}')">
+            <span>${m.name}</span><strong>CR ${m.challenge_rating || 0} (${(CR_XP_MAP[m.challenge_rating] || 0)} XP)</strong>
+          </div>
+        `).join('');
+        box.style.maxHeight = "200px"; box.style.overflowY = "auto"; box.style.display = 'block';
+      };
+
+      window.selectMonster = function(id, name, challenge_rating) {
+        const threat = threatData.find(t => t.id === id);
+        const original = srdMonsters.find(m => m.name === name);
+        if (threat && original) {
+          threat.name = name;
+          threat.challenge_rating = challenge_rating;
+          threat.slug = original.slug || "";
+        }
+        document.getElementById("box-" + id).style.display = 'none';
+        renderThreats(); 
+        updateMath();
+      };
+
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.autocomplete-wrapper')) {
+          document.querySelectorAll('.suggestions-box').forEach(box => box.style.display = 'none');
+        }
+      });
+
+      window.printDMSheet = function() {
+        const campaign = document.getElementById('aux-campaign').value || 'Unnamed Campaign';
+        const encounter = document.getElementById('aux-encounter').value || 'Unnamed Encounter';
+        const mapKey = document.getElementById('aux-mapkey').value || 'N/A';
+        
+        const chosenDiff = document.getElementById('stat-difficulty-flag').innerText;
+        const targetXp = document.getElementById('stat-target').innerText;
+        const currentXp = document.getElementById('stat-current').innerText;
+        const availableXp = document.getElementById('stat-available').innerText;
+        const danger = document.getElementById('stat-danger').innerText;
+
+        let partyListText = "";
+        partyData.forEach(p => {
+          const count = parseInt(p.count) || 0;
+          if (count > 0) {
+            partyListText += `<li>${count}x Characters at Level ${p.level}</li>`;
+          }
+        });
+        if (!partyListText) partyListText = "<li>No player characters set.</li>";
+
+        const activeThreats = threatData.filter(t => t.name && t.slug);
+        const requiredLetters = [...new Set(activeThreats.map(t => t.slug.charAt(0).toLowerCase()))];
+
+        const fetchPromises = requiredLetters.map(letter => {
+          if (loadedLetterCache[letter]) return Promise.resolve();
+          return fetch(GITHUB_BASE_URL + letter + ".json")
+            .then(res => res.json())
+            .then(fileData => { loadedLetterCache[letter] = fileData; })
+            .catch(err => console.error("Could not fetch file for letter " + letter, err));
+        });
+
+        Promise.all(fetchPromises).then(() => {
+          let monsterListText = "";
+          
+          activeThreats.forEach(t => {
+            const letter = t.slug.charAt(0).toLowerCase();
+            const letterDatabase = loadedLetterCache[letter] || {};
+            const fullProfile = letterDatabase[t.slug] || {};
+            
+            const ac = fullProfile.armor_class || "N/A";
+            const hp = fullProfile.hit_points || "N/A";
+            
+            let speedStr = "N/A";
+            if (fullProfile.speed && typeof fullProfile.speed === 'object') {
+              speedStr = Object.entries(fullProfile.speed)
+                .map(([type, val]) => `${type}: ${val}`)
+                .join(", ");
+            } else if (typeof fullProfile.speed === 'string') {
+              speedStr = fullProfile.speed;
+            }
+
+            const str = fullProfile.strength || 10;
+            const dex = fullProfile.dexterity || 10;
+            const con = fullProfile.constitution || 10;
+            const intel = fullProfile.intelligence || 10;
+            const wis = fullProfile.wisdom || 10;
+            const cha = fullProfile.charisma || 10;
+
+            monsterListText += `
+              <div style="margin-bottom:15px; padding-bottom:10px; border-bottom:1px dotted #000;">
+                <strong>[${t.role.toUpperCase()}] ${t.name} x${t.count}</strong> (CR ${t.challenge_rating || 0})<br>
+                <span style="font-size:12px;">
+                  <strong>AC:</strong> ${ac} | <strong>HP:</strong> ${hp} | <strong>Speed:</strong> ${speedStr}<br>
+                  <strong>Attributes:</strong> 
+                  STR: ${str} | DEX: ${dex} | CON: ${con} | INT: ${intel} | WIS: ${wis} | CHA: ${cha}
+                </span>
+              </div>`;
+          });
+
+          if (!monsterListText) monsterListText = "<p>No creatures selected.</p>";
+          executePDFPrintWindow(monsterListText);
+        });
+      };
+
+      function executePDFPrintWindow(monsterListText) {
+        const campaign = document.getElementById('aux-campaign').value || 'Unnamed Campaign';
+        const encounter = document.getElementById('aux-encounter').value || 'Unnamed Encounter';
+        const mapKey = document.getElementById('aux-mapkey').value || 'N/A';
+        const chosenDiff = document.getElementById('stat-difficulty-flag').innerText;
+        const targetXp = document.getElementById('stat-target').innerText;
+        const currentXp = document.getElementById('stat-current').innerText;
+        const availableXp = document.getElementById('stat-available').innerText;
+        const danger = document.getElementById('stat-danger').innerText;
+
+        let partyListText = "";
+        partyData.forEach(p => {
+          const count = parseInt(p.count) || 0;
+          if (count > 0) partyListText += `<li>${count}x Characters at Level ${p.level}</li>`;
+        });
+        if (!partyListText) partyListText = "<li>No player characters set.</li>";
+        const pWin = window.open('', '_blank');
+        pWin.document.write(`
+          <html>
+          <head>
+            <title>DM Reference - ${encounter}</title>
+            <style>
+              body { font-family: monospace; padding: 30px; color: #000; background: #fff; line-height: 1.5; }
+              .header { border-bottom: 2px dashed #000; padding-bottom: 10px; margin-bottom: 20px; }
+              .grid { display: flex; justify-content: space-between; margin-bottom: 10px; }
+              h2, h3 { margin: 0 0 10px 0; text-transform: uppercase; }
+              ul { margin: 0 0 20px 0; }
+            </style>
+          </head>
+          <body>
+            <div class="header">
+              <h2>D&D 2024 Encounter Log Sheet</h2>
+              <div class="grid">
+                <div><strong>CAMPAIGN:</strong> ${campaign}</div>
+                <div><strong>ENCOUNTER:</strong> ${encounter}</div>
+                <div><strong>MAP KEY:</strong> ${mapKey}</div>
+              </div>
+            </div>
+            
+            <h3>Encounter Metrics</h3>
+            <ul>
+              <li><strong>Selected Difficulty Level:</strong> ${chosenDiff}</li>
+              <li><strong>Target Budget Limit:</strong> ${targetXp}</li>
+              <li><strong>Current Encounter XP:</strong> ${currentXp}</li>
+              <li><strong>Remaining Available XP:</strong> ${availableXp}</li>
+              <li><strong>Encounter Danger Assessment:</strong> ${danger}</li>
+            </ul>
+
+            <h3>Player Characters</h3>
+            <ul>${partyListText}</ul>
+
+            <h3>Combatant Roster & Stat Blocks</h3>
+            <div>${monsterListText}</div>
+            
+            <div style="margin-top: 40px; font-size: 11px; border-top: 1px dashed #ccc; padding-top: 10px;">
+              Generated via D&D 5.5e Sandbox Analyzer
+            </div>
+            <script>window.print();<\/script>
+          </body>
+          </html>
+        `);
+        pWin.document.close();
+      };
+
+      window.checkEncounterRequirements = function() {
+        const campaign = document.getElementById('aux-campaign').value.trim();
+        const encounter = document.getElementById('aux-encounter').value.trim();
+        const mapKey = document.getElementById('aux-mapkey').value.trim();
+        const difficulty = document.getElementById('budget-tier-selector').value;
+        
+        const hbCheckbox = document.getElementById('hb-enable-checkbox');
+        const hbInstructions = document.getElementById('hb-instructions-text');
+
+        const partyPanel = document.getElementById('party-panel');
+        const monsterPanel = document.getElementById('monster-panel');
+        const homebrewPanel = document.getElementById('homebrew-panel');
+
+        if (campaign && encounter && mapKey && difficulty !== 'PLEASE_SELECT') {
+          if (partyPanel) partyPanel.style.display = 'flex';
+          if (monsterPanel) monsterPanel.style.display = 'block';
+          
+          if (hbCheckbox && hbCheckbox.checked) {
+            if (homebrewPanel) homebrewPanel.style.display = 'block';
+            if (hbInstructions) hbInstructions.style.display = 'block';
+          } else {
+            if (homebrewPanel) homebrewPanel.style.display = 'none';
+            if (hbInstructions) hbInstructions.style.display = 'none';
+          }
+          
+          renderParty();
+          renderThreats();
+          updateMath();
+        } else {
+          if (partyPanel) partyPanel.style.display = 'none';
+          if (monsterPanel) monsterPanel.style.display = 'none';
+          if (homebrewPanel) homebrewPanel.style.display = 'none';
+          if (hbInstructions) hbInstructions.style.display = 'none';
+        }
+      };
+
+      // Let our 'load' window event listener handle the requirement boot order safely
+      renderParty(); 
+      renderThreats(); 
+      updateMath();
+    })();
+  </script>
+ </div>
+</body>
+</html>
