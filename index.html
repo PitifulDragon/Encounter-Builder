@@ -752,11 +752,12 @@
                 <div class="legendary-section" style="font-family: sans-serif;">
                   ${legendaryHTML}
                 </div>
+              </div>
+              <!-- Close the print page wrapper element nicely -->
               </div>`;
           });
 
-          if (!monsterListText) monsterListText = "<p>No creatures selected.</p>";
-          executePDFPrintWindow(monsterListText);
+          if (!monsterListText) monsterListText = "<p>No creatures selected.</p>";          executePDFPrintWindow(monsterListText);
         });
       };
 
