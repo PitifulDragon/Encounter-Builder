@@ -642,7 +642,28 @@
             };
 
             monsterListText += `
-               <div class="stat-block-wrapper" style="background: #FDF1DC; font-family: 'Georgia', serif; padding: 20px; box-sizing: border-box; border: 1px solid #DDD; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border-top: 5px solid #7A200D; border-bottom: 5px solid #7A200D; margin: 0 0 30px 0; border-radius: 4px; overflow: hidden; page-break-inside: avoid; width: 100%; max-width: 8.5in;">
+              <!-- Force a clean hard print page split before each monster profile card -->
+              <div class="print-page-wrapper" style="page-break-before: always; margin-top: 20px; max-width: 8.5in; width: 100%;">
+                
+                <!-- Combat Encounter Tracking Grid Matrix -->
+                <table style="width: auto; border-collapse: collapse; margin-bottom: 15px; font-family: sans-serif; font-size: 11px; color: #000; border: 1px solid #000;">
+                  <thead>
+                    <tr style="background: #f2f2f2; font-weight: bold; text-transform: uppercase;">
+                      <th style="border: 1px solid #000; padding: 6px 12px; text-align: center; width: 90px;">Initiative</th>
+                      <th style="border: 1px solid #000; padding: 6px 12px; text-align: center; width: 100px;">Starting HP</th>
+                      <th style="border: 1px solid #000; padding: 6px 12px; text-align: center; width: 100px;">Current HP</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="border: 1px solid #000; height: 28px; padding: 6px;"></td>
+                      <td style="border: 1px solid #000; height: 28px; padding: 6px;"></td>
+                      <td style="border: 1px solid #000; height: 28px; padding: 6px;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="stat-block-wrapper" style="background: #FDF1DC; font-family: 'Georgia', serif; padding: 20px; box-sizing: border-box; border: 1px solid #DDD; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border-top: 5px solid #7A200D; border-bottom: 5px solid #7A200D; margin: 0; border-radius: 4px; overflow: hidden; page-break-inside: avoid; width: 100%;">
                 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
                   <h2 style="font-size: 28px; font-weight: bold; color: #7A200D; margin: 0; font-family: 'Georgia', serif; letter-spacing: -0.5px;">${fullProfile.name || t.name}</h2>
                   <span style="font-size: 14px; font-weight: bold; color: #7A200D; font-family: sans-serif; background: rgba(122,32,13,0.08); padding: 3px 8px; border-radius: 4px;">[${t.role.toUpperCase()}] x${t.count}</span>
