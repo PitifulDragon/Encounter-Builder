@@ -94,12 +94,17 @@
         </select>
       </div>
       
-      <!-- Checkbox field to toggle homebrew activation -->
+     <!-- Checkbox field to toggle homebrew activation -->
       <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px;">
         <input type="checkbox" id="hb-enable-checkbox" onchange="checkEncounterRequirements()" style="cursor: pointer; width: auto;">
         <label for="hb-enable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Enable Homebrew</label>
       </div>
 
+      <!-- NEW: Checkbox field to completely disable tier constraint logic filters -->
+      <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px; margin-left: 10px;">
+        <input type="checkbox" id="tier-disable-checkbox" onchange="updateMath()" style="cursor: pointer; width: auto;">
+        <label for="tier-disable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Disable Tier Constraints</label>
+      </div>
       <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
     </div>
     
@@ -504,19 +509,26 @@
         const realRemainingXp = Math.max(0, (activeRole === 'boss' ? maxBossAbsoluteCeiling : activeBudget) - liveXpSpent);
 
         let minXP = 0, maxXP = 999999;
-        if (activeRole === 'minion') {
-          minXP = 0; maxXP = activeBudget * 0.10; if (maxXP < 25) maxXP = 25;
-        } else if (activeRole === 'leader') {
-          minXP = (activeBudget * 0.10) + 1; maxXP = Math.min(activeBudget * 0.33, realRemainingXp); if (maxXP < 50) maxXP = 50;
-        } else if (activeRole === 'boss') {
-          minXP = (activeBudget * 0.33) + 1; maxXP = hasLevel20Character ? 999999 : realRemainingXp;
+        const tiersDisabled = document.getElementById('tier-disable-checkbox')?.checked;
+
+        // If the box is checked, completely skip calculating role constraints
+        if (tiersDisabled) {
+          minXP = 0;
+          maxXP = 999999;
+        } else {
+          if (activeRole === 'minion') {
+            minXP = 0; maxXP = activeBudget * 0.10; if (maxXP < 25) maxXP = 25;
+          } else if (activeRole === 'leader') {
+            minXP = (activeBudget * 0.10) + 1; maxXP = Math.min(activeBudget * 0.33, realRemainingXp); if (maxXP < 50) maxXP = 50;
+          } else if (activeRole === 'boss') {
+            minXP = (activeBudget * 0.33) + 1; maxXP = hasLevel20Character ? 999999 : realRemainingXp;
+          }
         }
 
         const roleFilteredMonsters = sourceList.filter(m => {
           const monsterXP = CR_XP_MAP[m.challenge_rating] || 0;
           return monsterXP >= minXP && monsterXP <= maxXP;
         });
-
         const cleanQuery = query.trim().toLowerCase();
         let baseFiltered = cleanQuery ? roleFilteredMonsters.filter(m => m.name.toLowerCase().includes(cleanQuery)) : roleFilteredMonsters;
 
