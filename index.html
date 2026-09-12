@@ -104,7 +104,8 @@
       <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px; margin-left: 10px;">
         <input type="checkbox" id="tier-disable-checkbox" onchange="updateMath()" style="cursor: pointer; width: auto;">
         <label for="tier-disable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Disable Tier Constraints</label>
-      </div>
+ 	  </div>
+		
       <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
     </div>
     
@@ -204,12 +205,21 @@
     </div>
 
     <!-- Bosses Container With ID Hook -->
-    <div class="threat-container" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3);">
+    <div class="threat-container" id="boss-tier-wrapper" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <h4 style="color:var(--bosses); margin:0;">Apex Threats & Bosses</h4>
         <button type="button" class="btn" style="background:var(--bosses);" onclick="addThreatRow('boss')">+ Add Boss</button>
       </div>
       <div id="bosses-container"></div>
+    </div>
+
+    <!-- NEW: Flat layout container used when tiers are completely disabled -->
+    <div class="threat-container" id="flat-tier-wrapper" style="border-color: rgba(51,110,243,0.3); background: rgba(51,110,243,0.15); display: none;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <h4 style="color: var(--primary); margin:0;">All Combatants & Monsters</h4>
+        <button type="button" class="btn" style="background: var(--primary);" onclick="addThreatRow('monster')">+ Add Monster</button>
+      </div>
+      <div id="all-monsters-container"></div>
     </div>
   </div>
 
@@ -365,9 +375,13 @@
       }
 
       function renderThreats() {
-        const roles = ['minion', 'leader', 'boss'];
+        // Append your flat tracker token handler string right into the core assignment keys array
+        const roles = ['minion', 'leader', 'boss', 'monster'];
         roles.forEach(role => {
-          const containerId = role === 'boss' ? 'bosses-container' : role + 's-container';
+          let containerId = role + 's-container';
+          if (role === 'boss') containerId = 'bosses-container';
+          if (role === 'monster') containerId = 'all-monsters-container';
+          
           const con = document.getElementById(containerId);
           if (!con) return;
           const list = threatData.filter(t => t.role === role);
@@ -855,6 +869,25 @@
         if (campaign && encounter && mapKey && difficulty !== 'PLEASE_SELECT') {
           if (partyPanel) partyPanel.style.display = 'flex';
           if (monsterPanel) monsterPanel.style.display = 'block';
+          
+          const tiersDisabled = document.getElementById('tier-disable-checkbox')?.checked;
+          const minionWrap = document.getElementById('minion-s-wrapper') || document.querySelector('[style*="rgba(251,188,4"]');
+          const leaderWrap = document.getElementById('leader-s-wrapper') || document.querySelector('[style*="rgba(255,109,0"]');
+          const bossWrap = document.getElementById('boss-tier-wrapper');
+          const flatWrap = document.getElementById('flat-tier-wrapper');
+
+          // Smoothly toggle container panels out of sight depending on checkbox checks state
+          if (tiersDisabled) {
+            if (minionWrap) minionWrap.style.display = 'none';
+            if (leaderWrap) leaderWrap.style.display = 'none';
+            if (bossWrap) bossWrap.style.display = 'none';
+            if (flatWrap) flatWrap.style.display = 'block';
+          } else {
+            if (minionWrap) minionWrap.style.display = 'block';
+            if (leaderWrap) leaderWrap.style.display = 'block';
+            if (bossWrap) bossWrap.style.display = 'block';
+            if (flatWrap) flatWrap.style.display = 'none';
+          }
           
           if (hbCheckbox && hbCheckbox.checked) {
             if (homebrewPanel) homebrewPanel.style.display = 'block';
