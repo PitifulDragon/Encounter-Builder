@@ -76,7 +76,9 @@
       <div style="flex: 2; min-width: 150px;">
         <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Campaign Name</span>
         <input type="text" id="aux-campaign" placeholder="e.g., Curse of Strahd" style="width: 100%;" oninput="checkEncounterRequirements()">
-      </div>
+	  <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
+
+	  </div>
       <div style="flex: 2; min-width: 150px;">
         <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Encounter Title</span>
         <input type="text" id="aux-encounter" placeholder="e.g., Ambush at Old Bonegrinder" style="width: 100%;" oninput="checkEncounterRequirements()">
@@ -107,7 +109,7 @@
         <label for="tier-disable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Disable Tiers (Minions, Leaders, Bosses)</label>
  	  </div>
 		
-      <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
+      <!-- REmoved print button from here -->
     </div>
     
     <!-- Instruction box that toggles with the checkbox -->
@@ -226,7 +228,7 @@
 
     <!-- Application Workspace Legal Block Footer Footer -->
     <div style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 15px; font-size: 11px; color: var(--text-muted); line-height: 1.5; font-family: sans-serif;">
-      <p style="margin: 0 0 8px 0; font-weight: bold; color: var(--text-main);">&copy; 2026 C.R.Francis. All rights reserved.</p>
+      <p style="margin: 0 0 8px 0; font-weight: bold; color: var(--text-main);">&copy; 2026 C. R. Francis. All rights reserved.</p>
       <p style="margin: 0;">This work features content derived from the Systems Reference Document 5.2.1 (SRD 5.2.1) by Wizards of the Coast LLC, available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). No endorsement by Wizards of the Coast LLC is implied or intended.</p>
     </div>
   </div>
