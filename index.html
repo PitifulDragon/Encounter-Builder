@@ -157,12 +157,11 @@
     </div>
   </div>
 	 
-<!-- Relocated Adventuring Party Panel Grid Layout Base -->
-  
-	<div class="flex-grid" id="party-panel" style="display: none; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
-    <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3);">
+  <!-- Relocated Adventuring Party Isolated Row Container -->
+  <div id="party-panel" style="display: none; margin-bottom: 15px; width: 100%; clear: both;">
+    <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3); width: 100%; box-sizing: border-box; display: block;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-        <h3 style="color: var(--players);">Adventuring Party</h3>
+        <h3 style="color: var(--players); margin: 0;">Adventuring Party</h3>
         <button type="button" class="btn" style="background:var(--players);" onclick="addPartyRow()">+ Add Group</button>
       </div>
       <div id="party-rows-container"></div>
