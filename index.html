@@ -866,12 +866,11 @@
           if (partyPanel) partyPanel.style.display = 'flex';
           if (monsterPanel) monsterPanel.style.display = 'block';
           
-          if (hbCheckbox && hbCheckbox.checked) {
+          // Control the entire cohesive workshop block using only the master homebrew checkbox state
+        if (hbCheckbox && hbCheckbox.checked) {
             if (homebrewPanel) homebrewPanel.style.display = 'block';
-            if (hbInstructions) hbInstructions.style.display = 'block';
           } else {
             if (homebrewPanel) homebrewPanel.style.display = 'none';
-            if (hbInstructions) hbInstructions.style.display = 'none';
           }
           
           renderParty();
