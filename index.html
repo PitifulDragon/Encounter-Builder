@@ -182,41 +182,44 @@
       </div>
     </div>
 	 
-  <!-- Relocated Adventuring Party Isolated Row Container -->
-  <div id="party-panel" style="display: none; margin-bottom: 15px; width: 100%; clear: both;">
-    <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3); width: 100%; box-sizing: border-box; display: block;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-        <h3 style="color: var(--players); margin: 0;">Adventuring Party</h3>
-        <button type="button" class="btn" style="background:var(--players);" onclick="addPartyRow()">+ Add Group</button>
-      </div>
-      <div id="party-rows-container"></div>
-    </div>
-  </div>
-   
-  <div class="graph-container">
-    <div class="graph-title">Threat Budget Multi-Tier Analyzer</div>
-    <svg id="arc-canvas" viewBox="0 0 800 180">
-      <line x1="80" y1="140" x2="720" y2="140" stroke="#363840" stroke-width="1" stroke-dasharray="4 4" />
-      <path id="arc-line" d="M 80 140 Q 400 20 720 140" fill="none" stroke="#2c2e35" stroke-width="10" stroke-linecap="round" />
-      <g id="node-low"><circle cx="0" cy="0" r="5" fill="#34a853" /><text text-anchor="middle" dy="18">Low</text></g>
-      <g id="node-mod"><circle cx="0" cy="0" r="5" fill="#fbbc04" /><text text-anchor="middle" dy="18">Mod</text></g>
-      <g id="node-deadly"><circle cx="0" cy="0" r="5" fill="#ea4335" /><text text-anchor="middle" dy="18">Deadly</text></g>
-      <g id="node-current">
-        <circle cx="80" cy="140" r="9" fill="#e6e8f0" stroke="#336ef3" stroke-width="3" id="current-bubble-edge" />
-        <circle cx="80" cy="140" r="3" fill="#272930" />
-      </g>
-    </svg>
-  </div>
-  
-  <div class="metrics-bar">
-    <div><div style="font-size:11px; color:#adafb8;">Selected Difficulty</div><div style="font-size:16px; font-weight:bold; text-transform: uppercase;" id="stat-difficulty-flag">NONE</div></div>
-    <div><div style="font-size:11px; color:#adafb8;">Selected Limit Value</div><div style="font-size:16px; font-weight:bold;" id="stat-target">0 XP</div></div>
-    <div><div style="font-size:11px; color:#adafb8;">Current Threat XP</div><div style="font-size:16px; font-weight:bold;" id="stat-current">0 XP</div></div>
-    <div><div style="font-size:11px; color:#adafb8;">Available XP Left</div><div style="font-size:16px; font-weight:bold; color: #34a853;" id="stat-available">0 XP</div></div>
-    <div><div style="font-size:11px; color:#adafb8;">Encounter Danger</div><div style="margin-top:2px;"><span id="stat-danger" class="status-badge bg-low">No Threat</span></div></div>
-  </div>
+  <!-- NEW WORKSPACE GRID wrapper: Keeps all calculations, graphs, and monster rosters locked out of sight initially -->
+  <div id="srd-conditional-encounter-workspace" style="display: none; width: 100%; clear: both;">
 
-  <div class="panel" id="monster-panel" style="display: none; margin-top:10px;">
+    <!-- Relocated Adventuring Party Isolated Row Container -->
+    <div id="party-panel" style="display: none; margin-bottom: 15px; width: 100%; clear: both;">
+      <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3); width: 100%; box-sizing: border-box; display: block;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+          <h3 style="color: var(--players); margin: 0;">Adventuring Party</h3>
+          <button type="button" class="btn" style="background:var(--players);" onclick="addPartyRow()">+ Add Group</button>
+        </div>
+        <div id="party-rows-container"></div>
+      </div>
+    </div>
+     
+    <div class="graph-container">
+      <div class="graph-title">Threat Budget Multi-Tier Analyzer</div>
+      <svg id="arc-canvas" viewBox="0 0 800 180">
+        <line x1="80" y1="140" x2="720" y2="140" stroke="#363840" stroke-width="1" stroke-dasharray="4 4" />
+        <path id="arc-line" d="M 80 140 Q 400 20 720 140" fill="none" stroke="#2c2e35" stroke-width="10" stroke-linecap="round" />
+        <g id="node-low"><circle cx="0" cy="0" r="5" fill="#34a853" /><text text-anchor="middle" dy="18">Low</text></g>
+        <g id="node-mod"><circle cx="0" cy="0" r="5" fill="#fbbc04" /><text text-anchor="middle" dy="18">Mod</text></g>
+        <g id="node-deadly"><circle cx="0" cy="0" r="5" fill="#ea4335" /><text text-anchor="middle" dy="18">Deadly</text></g>
+        <g id="node-current">
+          <circle cx="80" cy="140" r="9" fill="#e6e8f0" stroke="#336ef3" stroke-width="3" id="current-bubble-edge" />
+          <circle cx="80" cy="140" r="3" fill="#272930" />
+        </g>
+      </svg>
+    </div>
+    
+    <div class="metrics-bar">
+      <div><div style="font-size:11px; color:#adafb8;">Selected Difficulty</div><div style="font-size:16px; font-weight:bold; text-transform: uppercase;" id="stat-difficulty-flag">NONE</div></div>
+      <div><div style="font-size:11px; color:#adafb8;">Selected Limit Value</div><div style="font-size:16px; font-weight:bold;" id="stat-target">0 XP</div></div>
+      <div><div style="font-size:11px; color:#adafb8;">Current Threat XP</div><div style="font-size:16px; font-weight:bold;" id="stat-current">0 XP</div></div>
+      <div><div style="font-size:11px; color:#adafb8;">Available XP Left</div><div style="font-size:16px; font-weight:bold; color: #34a853;" id="stat-available">0 XP</div></div>
+      <div><div style="font-size:11px; color:#adafb8;">Encounter Danger</div><div style="margin-top:2px;"><span id="stat-danger" class="status-badge bg-low">No Threat</span></div></div>
+    </div>
+
+    <div class="panel" id="monster-panel" style="display: none; margin-top:10px;">
     <h3>2024 (5.5e) SRD 5.2.1 Monsters Database & Tiers</h3> 
 	
     <!-- Minions Container With ID Hook -->
@@ -255,6 +258,8 @@
       <div id="all-monsters-container"></div>
     </div>
   </div>
+</div> <!-- NEW: This explicitly seals off the conditional encounter workspace container block! -->
+
 
     <!-- Application Workspace Legal Block Footer Footer -->
     <div style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 15px; font-size: 11px; color: var(--text-muted); line-height: 1.5; font-family: sans-serif;">
@@ -949,11 +954,15 @@
           if (flatWrap) flatWrap.style.display = 'none';
         }
 
+        const masterWorkspace = document.getElementById('srd-conditional-encounter-workspace');
+
+        // Dynamic Gatekeeper: Check if all 4 required header variables contain valid user values
         if (campaign && encounter && mapKey && difficulty !== 'PLEASE_SELECT') {
+          if (masterWorkspace) masterWorkspace.style.display = 'block';
           if (partyPanel) partyPanel.style.display = 'flex';
           if (monsterPanel) monsterPanel.style.display = 'block';
           
-        if (hbCheckbox && hbCheckbox.checked) {
+          if (hbCheckbox && hbCheckbox.checked) {
             if (homebrewPanel) homebrewPanel.style.display = 'block';
             if (hbInstructions) hbInstructions.style.display = 'block';
           } else {
@@ -965,6 +974,8 @@
           renderThreats();
           updateMath();
         } else {
+          // Keep all workspace operations entirely out of sight if form values are incomplete
+          if (masterWorkspace) masterWorkspace.style.display = 'none';
           if (partyPanel) partyPanel.style.display = 'none';
           if (monsterPanel) monsterPanel.style.display = 'none';
           if (homebrewPanel) homebrewPanel.style.display = 'none';
