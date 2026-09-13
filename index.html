@@ -136,8 +136,9 @@
           <button type="button" class="btn" onclick="document.getElementById('srd-instructions-modal').style.display='none'">Close Instructions</button>
         </div>
       </div>
-    </div>
+    </div> <!-- This closes your modal card backdrop completely -->
 	  
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; width: 100%;">
       <div style="flex: 2; min-width: 150px;">
         <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Campaign Name</span>
         <input type="text" id="aux-campaign" placeholder="e.g., Curse of Strahd" style="width: 100%;" oninput="checkEncounterRequirements()">
@@ -160,6 +161,7 @@
           <option value="deadly">Deadly Challenge</option>
         </select>
       </div>
+	</div>
 
     <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
 		
