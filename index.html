@@ -303,6 +303,10 @@
         alert("Please enter a name for your homebrew monster!");
         return;
       }
+      if (!type) {
+        alert("Please select a Creature Type for your homebrew monster!");
+        return;
+      }
       
       const newMonster = { 
         name: name, 
