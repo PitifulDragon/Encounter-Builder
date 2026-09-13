@@ -74,6 +74,10 @@
     <button type="button" class="btn" id="srd-top-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none;">Print / Save to PDF</button>
   </div>
   <p style="margin-top: 0; margin-bottom: 20px;"> With Monster Stat Printer for D&D 5.5e (SRD 5.2.1) Monsters</p>  
+  <p style="margin-top: 0; margin-bottom: 20px;"> The Pitiful Encounter Builder by default is setup to help you build a balanced encounter that is keyed to the Difficultly level you choose. In particular, it allows you to set an encounter using Minions (low level - easy to kill opponents), Leaders (mid range - harder to kill opponents) and Bosses (higher level - hard to kill opponents). You can choose to build the encounter with only minions or only leaders or only bosses, or you can build it with any combination of tiers. Each tier will have range of CRs at your disposal with the idea that you can choose 10 minions, 2 or 3 leaders and one Bosse without going over the target XP budget.</p>  
+  <p style="margin-top: 0; margin-bottom: 20px;"> This means that for lower level parties some monsters wiht high CRs will not be available becuase they would take the encounter to beyound 1.25 times the deadly encounter budget.</p>
+  <p style="margin-top: 0; margin-bottom: 20px;"> Turning off Tiers by selecting the checkbox will give you all the monsters available to you without limit. It is recommended to pay attention to the Theate Budget Analyzer graph while doing this.</p>  
+	 
   <!-- Encounter Panel -->
   <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
     <h4 style="color: var(--primary); margin: 0 0 5px 0;">Encounter Information</h4>
@@ -123,7 +127,9 @@
         <label for="tier-disable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Disable Tiers (Minions, Leaders, Bosses)</label>
  	  </div>
 		
-      <!-- REmoved print button from here -->
+	<div style="font-size: 12px; color: #adafb8; line-height: 1.4; margin: 0 0 15px 0;">When this option is selected the tier system designed to build balanced encounters is shut off. 
+	</div>	
+		
     </div>
 	  </div>	  
     
@@ -226,12 +232,12 @@
     </div>
 
     <div class="panel" id="monster-panel" style="display: none; margin-top:10px;">
-    <h3>2024 (5.5e) SRD 5.2.1 Monsters Database & Tiers</h3> 
+    <h3>2024 (5.5e) SRD 5.2.1 Monsters Databases</h3> 
 	
     <!-- Minions Container With ID Hook -->
     <div class="threat-container" id="minion-s-wrapper" style="border-color: rgba(251,188,4,0.3); background: rgba(251,188,4,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <h4 style="color:var(--minions); margin:0;">Minions & Swarms</h4>
+        <h4 style="color:var(--minions); margin:0;">Minions & Swarms Tier</h4>
         <button type="button" class="btn" style="background:var(--minions);" onclick="addThreatRow('minion')">+ Add Minion</button>
       </div>
       <div id="minions-container"></div>
@@ -240,7 +246,7 @@
     <!-- Leaders Container With ID Hook -->
     <div class="threat-container" id="leader-s-wrapper" style="border-color: rgba(255,109,0,0.3); background: rgba(255,109,0,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <h4 style="color:var(--leaders); margin:0;">Lieutenants & Leaders</h4>
+        <h4 style="color:var(--leaders); margin:0;">Lieutenants & Leaders Tier</h4>
         <button type="button" class="btn" style="background:var(--leaders);" onclick="addThreatRow('leader')">+ Add Leader</button>
       </div>
       <div id="leaders-container"></div>
@@ -249,7 +255,7 @@
     <!-- Bosses Container With ID Hook -->
     <div class="threat-container" id="boss-tier-wrapper" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <h4 style="color:var(--bosses); margin:0;">Apex Threats & Bosses</h4>
+        <h4 style="color:var(--bosses); margin:0;">Apex Threats & Bosses Tier</h4>
         <button type="button" class="btn" style="background:var(--bosses);" onclick="addThreatRow('boss')">+ Add Boss</button>
       </div>
       <div id="bosses-container"></div>
@@ -258,13 +264,13 @@
     <!-- NEW: Flat layout container used when tiers are completely disabled -->
     <div class="threat-container" id="flat-tier-wrapper" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3); display: none;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <h4 style="color: var(--bosses; margin:0;">All Combatants & Monsters</h4>
-        <button type="button" class="btn" style="background:var(--Bosses);" onclick="addThreatRow('monster')">+ Add Monster</button>
+        <h4 style="color: var(--bosses; margin:0;">All Combatants & Monsters (No Tiers)</h4>
+        <button type="button" class="btn" style="background:var(--bosses);" onclick="addThreatRow('monster')">+ Add Monster</button>
       </div>
       <div id="all-monsters-container"></div>
     </div>
   </div>
-</div> <!-- NEW: This explicitly seals off the conditional encounter workspace container block! -->
+</div> 
 
 
     <!-- Application Workspace Legal Block Footer Footer -->
