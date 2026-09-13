@@ -254,7 +254,8 @@
       <p style="margin: 0 0 8px 0; font-weight: bold; color: var(--text-main);">&copy; 2026 C. R. Francis. All rights reserved.</p>
       <p style="margin: 0;">This work features content derived from the Systems Reference Document 5.2.1 (SRD 5.2.1) by Wizards of the Coast LLC, available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). No endorsement by Wizards of the Coast LLC is implied or intended.</p>
     </div>
-    <button type="button" class="btn" onclick="printDMSheet()" style="background: var(--success); height: 34px;">Print / Save to PDF</button>
+    <!-- HIDDEN BY DEFAULT: Added a clear ID handle and display none style state -->
+    <button type="button" class="btn" id="srd-main-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none;">Print / Save to PDF</button>
    </div>
   </div>
 	 
@@ -473,6 +474,12 @@
         document.getElementById("stat-target").innerText = chosenTargetXp.toLocaleString() + " XP";
         document.getElementById("stat-current").innerText = currentXp.toLocaleString() + " XP";
 
+        // DYNAMIC TOGGLE: Scan if there are any active rows containing an explicitly selected monster name handle
+        const hasSelectedMonsters = threatData.some(t => t.name && t.name.trim() !== "");
+        const printBtnElement = document.getElementById("srd-main-print-btn");
+        if (printBtnElement) {
+          printBtnElement.style.display = hasSelectedMonsters ? "inline-block" : "none";
+        }
         const diffFlagEl = document.getElementById("stat-difficulty-flag");
         if (diffFlagEl) {
           if (selectedTier === "PLEASE_SELECT") {
