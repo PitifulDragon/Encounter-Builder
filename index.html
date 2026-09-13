@@ -259,9 +259,12 @@
       <p style="margin: 0 0 8px 0; font-weight: bold; color: var(--text-main);">&copy; 2026 C. R. Francis. All rights reserved.</p>
       <p style="margin: 0;">This work features content derived from the Systems Reference Document 5.2.1 (SRD 5.2.1) by Wizards of the Coast LLC, available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). No endorsement by Wizards of the Coast LLC is implied or intended.</p>
     </div>
-    <!-- BOTTOM PRINT BUTTON: Anchored cleanly back to the bottom-left with explicit spacing rules -->
-    <button type="button" class="btn" id="srd-bottom-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none; margin-top: 25px; clear: both;">Print / Save to PDF</button>
-   </div>
+   </div> <!-- This tag completely seals off the open monster tiers panel data rows container -->
+
+    <!-- New block layout wrapper forces the button to drop to its own line at the absolute bottom-left margin -->
+    <div style="width: 100%; display: block; clear: both; text-align: left; padding-top: 25px; padding-bottom: 10px;">
+      <button type="button" class="btn" id="srd-bottom-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none;">Print / Save to PDF</button>
+    </div>
   </div>
 	 
   <script>
