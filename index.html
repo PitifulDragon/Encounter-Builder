@@ -839,6 +839,8 @@
         const difficulty = document.getElementById('budget-tier-selector').value;
         
         const hbCheckbox = document.getElementById('hb-enable-checkbox');
+        const hbInstructions = document.getElementById('hb-instructions-text');
+
         const partyPanel = document.getElementById('party-panel');
         const monsterPanel = document.getElementById('monster-panel');
         const homebrewPanel = document.getElementById('homebrew-panel');
@@ -866,11 +868,12 @@
           if (partyPanel) partyPanel.style.display = 'flex';
           if (monsterPanel) monsterPanel.style.display = 'block';
           
-          // Control the entire cohesive workshop block using only the master homebrew checkbox state
         if (hbCheckbox && hbCheckbox.checked) {
             if (homebrewPanel) homebrewPanel.style.display = 'block';
+            if (hbInstructions) hbInstructions.style.display = 'block';
           } else {
             if (homebrewPanel) homebrewPanel.style.display = 'none';
+            if (hbInstructions) hbInstructions.style.display = 'none';
           }
           
           renderParty();
