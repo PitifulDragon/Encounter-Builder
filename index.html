@@ -84,8 +84,8 @@
   <h4 style="color:var(--leaders); margin: 0 0 5px 0;">With Monster Stat Printer for 5.5e (SRD 5.2.1) Monsters</h4>
   
   <!-- Interactive Modal Click Link Element Toggle Handle -->
-  <span class="srd-modal-link" onclick="document.getElementById('srd-info-modal').style.display='flex'">More Information</span>
-
+  <span class="srd-modal-link" onclick="document.getElementById('srd-info-modal').style.display='flex'">More Information About Tiers</span>
+	 
   <!-- Pop-Up Info Window Backdrop Box Wrapper Overlay -->
   <div class="srd-info-modal-overlay" id="srd-info-modal" onclick="if(event.target===this) this.style.display='none'">
     <div class="srd-info-modal-card">
@@ -108,8 +108,36 @@
   <!-- Encounter Panel -->
   <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
     <h4 style="color: var(--primary); margin: 0 0 5px 0;">Encounter Information</h4>
-    <span style="font-size: 12px; color: #adafb8; display: block; margin-bottom: 15px; font-style: italic;">Complete the following fields to begin.</span>
-	  <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end;">
+    <div style="margin-bottom: 15px;">
+      <span style="font-size: 12px; color: #adafb8; font-style: italic; display: inline-block; margin-right: 8px;">Complete the following fields to begin.</span>
+      <!-- NEW LINK: Opens the multi-step structural instructions pop-up -->
+      <span class="srd-modal-link" style="margin-bottom: 0; font-size: 12px;" onclick="document.getElementById('srd-instructions-modal').style.display='flex'">View Setup Instructions</span>
+    </div>
+
+    <!-- NEW POPUP: Multi-step instructions modal window card frame wrapper -->
+    <div class="srd-info-modal-overlay" id="srd-instructions-modal" onclick="if(event.target===this) this.style.display='none'">
+      <div class="srd-info-modal-card" style="max-width: 680px; max-height: 85vh; overflow-y: auto;">
+        <h3 style="color: var(--primary); margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">Pitiful Encounter Builder Instructions</h3>
+        
+        <ol style="margin: 0; padding-left: 20px; font-size: 13.5px; color: #e6e8f0; line-height: 1.6;">
+          <li style="margin-bottom: 10px;"><strong>Input Context Data:</strong> Type out your Campaign name, Encounter Title, and Map Key.</li>
+          <li style="margin-bottom: 10px;"><strong>Select the Difficulty Target:</strong> In 5.5e there are three levels of difficulty: Low Challenge, Moderate Challenge, or Deadly Challenge.<br>
+              <span style="color: #adafb8; font-size: 12px; display: block; margin-top: 4px;"><em>NOTE: It is recommended that for a “day” of adventuring you should budget your encounters to 1 to 5 low encounters or a combination of some lows and mediums – If you have a deadly challenge in mind then it may be best to limit the rest of the “day” to 1 low and 1 medium depending on how strong your players are.</em></span>
+          </li>
+          <li style="margin-bottom: 10px;"><strong>Homebrew Activation:</strong> Decide if you want to add your own Homebrew Monster to the encounter. If so, select the “Enable Homebrew Monsters” checkbox.</li>
+          <li style="margin-bottom: 10px;"><strong>Constraint Toggle:</strong> Decide if you want to turn off the tier system and difficulty target restraints entirely.</li>
+          <li style="margin-bottom: 10px;"><strong>Configure the Adventuring Party:</strong> Input the number of players and their levels. If the party contains characters at various levels, use the “+ Add Group” button to add a separate row for each level of character.</li>
+          <li style="margin-bottom: 10px;"><strong>Monitor the Metrics & Graph:</strong> Notice the “Threat Analyzer” graph and the calculation fields below it to track the threat assessment of your encounter based on the player levels and monsters selected. Pay close attention to the “Encounter Danger” flag status and the target bubble index icon on the graph arc canvas. The further past deadly it goes, the more likely you will see character death and possibly experience a TPK (Total Party Kill).</li>
+          <li style="margin-bottom: 10px;"><strong>Select Monsters:</strong> Choose your combatants from the autocomplete search fields dropdown menus. If you have tiers turned on, it may be best to choose a boss first (if this is a boss fight), then spend your remaining XP budget on minions and/or leaders.</li>
+          <li style="margin-bottom: 10px;"><strong>Print & Output Log Sheets:</strong> When you have selected your monsters and feel good about the balance, click the <em>Print / Save to PDF</em> button. This opens a new tab in your browser containing complete encounter logs along with clean, styled creature stat block reference cards for the official SRD monsters. <span style="font-style: italic; color: #adafb8;">It will not display details for homebrew layout records.</span></li>
+        </ol>
+
+        <div style="text-align: right; margin-top: 20px;">
+          <button type="button" class="btn" onclick="document.getElementById('srd-instructions-modal').style.display='none'">Close Instructions</button>
+        </div>
+      </div>
+    </div>
+	  
       <div style="flex: 2; min-width: 150px;">
         <span style="font-size: 10px; color: #adafb8; display: block; margin-bottom: 4px;">Campaign Name</span>
         <input type="text" id="aux-campaign" placeholder="e.g., Curse of Strahd" style="width: 100%;" oninput="checkEncounterRequirements()">
