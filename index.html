@@ -65,9 +65,14 @@
 </head>
 <body>
  <div id="srd-encounter-builder-app">
-  <h2 style="color:var(--primary);">Pitiful Encounter Builder</h2>
-	 <p> With Monster Stat Printer for D&D 5.5e (SRD 5.2.1) Monsters</p>
-  
+  <!-- Dynamic Flex Row Container to lock Title to the Left and Print Button to the Right -->
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; margin-bottom: 5px;">
+    <h2 style="color:var(--primary); margin: 0;">Pitiful Encounter Builder</h2>
+    
+    <!-- TOP PRINT BUTTON: Relocated here to live perfectly right-aligned on your title row line -->
+    <button type="button" class="btn" id="srd-top-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none;">Print / Save to PDF</button>
+  </div>
+  <p style="margin-top: 0; margin-bottom: 20px;"> With Monster Stat Printer for D&D 5.5e (SRD 5.2.1) Monsters</p>  
   <!-- Encounter Panel -->
   <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
     <h4 style="color: var(--primary); margin: 0 0 5px 0;">Encounter Information</h4>
@@ -95,12 +100,9 @@
           <option value="deadly">Deadly Challenge</option>
         </select>
       </div>
-      
-      <!-- TOP PRINT BUTTON: Hidden by default, aligned to the top-left section -->
-      <button type="button" class="btn" id="srd-top-print-btn" onclick="printDMSheet()" style="background: var(--success); height: 34px; display: none;">Print / Save to PDF</button>
 
     <div class="panel" style="margin-bottom: 15px; border-color: var(--border);">
-	
+		
 	<h4 style="color: var(--primary); margin: 0 0 5px 0;">Options</h4>
 <!--    <span style="font-size: 12px; color: #adafb8; display: block; margin-bottom: 15px; font-style: italic;">Choose Wisely!</span> -->
 
