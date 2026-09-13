@@ -118,7 +118,7 @@
 
       <!-- NEW: Checkbox field to completely disable tier constraint logic filters -->
       <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px; margin-left: 10px;">
-        <input type="checkbox" id="tier-disable-checkbox" onchange="checkEncounterRequirements(); updateMath();" style="cursor: pointer; width: auto;">
+        <input type="checkbox" id="tier-disable-checkbox" onchange="checkEncounterRequirements(); renderThreats(); updateMath();" style="cursor: pointer; width: auto;">
         <label for="tier-disable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Disable Tiers (Minions, Leaders, Bosses)</label>
  	  </div>
 		
@@ -435,13 +435,24 @@
       }
 
       function renderThreats() {
+        const tiersDisabled = document.getElementById('tier-disable-checkbox')?.checked;
+        
+        // DYNAMIC FALLBACK: If tiers are disabled and no general monster rows exist, push a starting empty input slot row automatically
+        if (tiersDisabled) {
+          const hasMonsterRow = threatData.some(t => t.role === 'monster');
+          if (!hasMonsterRow) {
+            const id = "t_" + Date.now() + "_" + Math.floor(Math.random()*100);
+            threatData.push({ id, count: 1, challenge_rating: "", role: "monster", name: "", armor_class: "N/A", hit_points: "N/A", speed: "N/A" });
+          }
+        }
+
         // Append your flat tracker token handler string right into the core assignment keys array
         const roles = ['minion', 'leader', 'boss', 'monster'];
         roles.forEach(role => {
           let containerId = role + 's-container';
           if (role === 'boss') containerId = 'bosses-container';
           if (role === 'monster') containerId = 'all-monsters-container';
-          
+			
           const con = document.getElementById(containerId);
           if (!con) return;
           const list = threatData.filter(t => t.role === role);
