@@ -115,7 +115,7 @@
     </div>
     
     <!-- Instruction box that toggles with the checkbox -->
-    <div id="hb-instructions-text" style="display: none; margin-top: 15px; font-size: 12px; color: #adafb8; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 10px; padding-bottom: 10px;">
+	<div id="hb-instructions-text" style="display: none; margin-top: 15px; font-size: 12px; color: #adafb8; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 10px; padding-bottom: 10px;">
        <h4 style="color: var(--primary); margin: 0 0 5px 0;">Homebrew Monsters</h4>
 	   Add the Homebrew Monster Name, CR and Creature Type below and click "Add HB Monster". You can do this multiple times. The Homebrew monster will be available in the monster tiers below (depending on CR and Encounter Difficulty) while this tab remains open.
     </div>
@@ -145,7 +145,9 @@
           <input type="text" id="hb-type" placeholder="e.g., Monstrosity" style="width: 100%;">
         </div>
         <button type="button" class="btn" onclick="injectHomebrewMonster()" style="background: var(--primary); height: 34px;">Add HB Monster</button>
-		  <hr>
+	    <div style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 15px; font-size: 11px; color: var(--text-muted); line-height: 1.5; font-family: sans-serif;">
+      <p style="margin: 0 0 8px 0; font-weight: bold; color: var(--text-main);">List will appear below after you Add HB Monster.</p>
+
       </div>
       
       <!-- Live Session Homebrew Inventory List -->
@@ -158,7 +160,8 @@
   </div>
 	 
 <!-- Relocated Adventuring Party Panel Grid Layout Base -->
-  <div class="flex-grid" id="party-panel" style="display: none; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+  
+	<div class="flex-grid" id="party-panel" style="display: none; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
     <div class="panel" style="border-color: rgba(52,168,83,0.3); background: rgba(52,168,83,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
         <h3 style="color: var(--players);">Adventuring Party</h3>
