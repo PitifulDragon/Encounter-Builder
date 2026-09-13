@@ -109,8 +109,10 @@
      <!-- Checkbox field to toggle homebrew activation -->
       <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px; margin-left: 10px;">
         <input type="checkbox" id="hb-enable-checkbox" onchange="checkEncounterRequirements()" style="cursor: pointer; width: auto;">
-        <label for="hb-enable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Enable Homebrew</label>
-      </div>
+        <label for="hb-enable-checkbox" style="font-size: 13px; color: #fff; cursor: pointer; user-select: none;">Enable Homebrew Monsters</label>
+        <p style="font-size: 12px; color: #adafb8; line-height: 1.4; margin: 0 0 15px 0;">When this option is selected you can add your own homebrew monsters to the encounter. Note that it only adds the data needed to calcuate the threat. It dose not let you create the homebrew monster with all its stats and features.</p>
+
+	  </div>
 
       <!-- NEW: Checkbox field to completely disable tier constraint logic filters -->
       <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding-bottom: 2px; margin-left: 10px;">
@@ -127,7 +129,7 @@
       <!-- This wraps your existing text inside a clean panel style matching your monster tiers -->
       <div class="panel" style="border-color: rgba(51, 110, 243, 0.3); background: rgba(51, 110, 243, 0.1); box-sizing: border-box; padding: 15px; border-radius: 8px;">
         <h4 style="color: var(--primary); margin: 0 0 5px 0;">Homebrew Monsters</h4>
-        <p style="font-size: 12px; color: #adafb8; line-height: 1.4; margin: 0 0 15px 0;">Add the Homebrew Monster Name, CR and Creature Type below and click "Add HB Monster". You can do this multiple times. The Homebrew monster will be available in the monster tiers below (depending on CR and Encounter Difficulty) while this tab remains open.</p>
+        <p style="font-size: 12px; color: #adafb8; line-height: 1.4; margin: 0 0 15px 0;">Remember this dose not let you create the complete homebrew monster with all its stats and features. To make your monster availabe for the encounter add the Homebrew Monster Name, CR and Creature Type below and click "Add HB Monster". You can do this multiple times. The Homebrew monster will be available in the monster tiers below (depending on CR and Encounter Difficulty) while this tab remains open.</p>
         
         <!-- Horizontal Fields Input Sub-Grid Layout Panel -->
         <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; width: 100%;">
