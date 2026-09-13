@@ -62,6 +62,61 @@
     #srd-encounter-builder-app .btn { background: var(--primary); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
     #srd-encounter-builder-app .btn-del { background: rgba(234,67,53,0.2); color: var(--error); border: 1px solid var(--error); padding: 4px 8px; }
     #srd-encounter-builder-app .btn-del:hover { background: var(--error); color: white; }
+
+    /* MOBILE SCREEN COMPATIBILITY RESPONSIVE GRID SHIELD */
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 8px !important;
+      }
+      #srd-encounter-builder-app {
+        padding: 12px !important;
+        margin: 5px auto !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      #srd-encounter-builder-app .panel {
+        min-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 12px !important;
+      }
+      #srd-encounter-builder-app .flex-grid {
+        gap: 12px !important;
+      }
+      #srd-encounter-builder-app .party-row, 
+      #srd-encounter-builder-app .threat-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+      }
+      #srd-encounter-builder-app .party-row div, 
+      #srd-encounter-builder-app .threat-row div,
+      #srd-encounter-builder-app .party-row input,
+      #srd-encounter-builder-app .threat-row input,
+      #srd-encounter-builder-app .party-row select,
+      #srd-encounter-builder-app .threat-row select {
+        width: 100% !important;
+        flex: none !important;
+      }
+      #srd-encounter-builder-app .party-row .btn-del,
+      #srd-encounter-builder-app .threat-row .btn-del {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 4px !important;
+      }
+      #srd-encounter-builder-app .metrics-bar {
+        flex-direction: column !important;
+        gap: 10px !important;
+        text-align: center !important;
+      }
+      #srd-encounter-builder-app .metrics-bar > div {
+        border-bottom: 1px solid var(--border) !important;
+        padding-bottom: 8px !important;
+      }
+      #srd-encounter-builder-app .metrics-bar > div:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+      }
+    }
     
     /* Responsive Modal Layer Framework Overlay */
     .srd-info-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; justify-content: center; align-items: center; z-index: 10000; padding: 20px; box-sizing: border-box; }
@@ -318,10 +373,10 @@
       <div id="bosses-container"></div>
     </div>
 
-    <!-- NEW: Flat layout container used when tiers are completely disabled -->
+     <!-- NEW: Flat layout container used when tiers are completely disabled -->
     <div class="threat-container" id="flat-tier-wrapper" style="border-color: rgba(234,67,53,0.3); background: rgba(234,67,53,0.3); display: none;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <h4 style="color: var(--bosses; margin:0;">All Combatants & Monsters (No Tiers)</h4>
+        <h4 style="color: var(--bosses); margin:0;">All Combatants & Monsters (No Tiers)</h4>
         <button type="button" class="btn" style="background:var(--bosses);" onclick="addThreatRow('monster')">+ Add Monster</button>
       </div>
       <div id="all-monsters-container"></div>
